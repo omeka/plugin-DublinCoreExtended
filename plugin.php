@@ -1,20 +1,8 @@
 <?php
 define('DUBLIN_CORE_EXTENDED_PLUGIN_VERSION', '1.0');
 
-add_plugin_hook('install', 'dublin_core_extended_install');
-add_plugin_hook('uninstall', 'dublin_core_extended_uninstall');
-
-function dublin_core_extended_install()
-{
-    $dces = new DublinCoreExtendedPlugin;
-    $dces->install();
-}
-
-function dublin_core_extended_uninstall()
-{
-    $dces = new DublinCoreExtendedPlugin;
-    $dces->uninstall();
-}
+add_plugin_hook('install', 'DublinCoreExtendedPlugin::install');
+add_plugin_hook('uninstall', 'DublinCoreExtendedPlugin::uninstall');
 
 class DublinCoreExtendedPlugin
 {
@@ -32,20 +20,25 @@ class DublinCoreExtendedPlugin
         $this->_setElements();
     }
     
-    public function install()
+    public static function install()
     {
-        set_option('dublin_core_extended_plugin_version', DUBLIN_CORE_EXTENDED_PLUGIN_VERSION);
-        $this->_createTable();
-        $this->_addElements();
-        $this->_insertRelationships();
+        set_option('dublin_core_extended_plugin_version', 
+                   DUBLIN_CORE_EXTENDED_PLUGIN_VERSION);
+        
+        $dces = new DublinCoreExtendedPlugin;
+        $dces->_createTable();
+        $dces->_addElements();
+        $dces->_insertRelationships();
     }
     
-    public function uninstall()
+    public static function uninstall()
     {
         delete_option('dublin_core_extended_plugin_version');
-        $this->_dropTable();
-        $this->_deleteElements();
-        $this->_resetOrder();
+        
+        $dces = new DublinCoreExtendedPlugin;
+        $dces->_dropTable();
+        $dces->_deleteElements();
+        $dces->_resetOrder();
     }
     
     private function _setElements()
