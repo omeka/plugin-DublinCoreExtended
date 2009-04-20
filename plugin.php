@@ -3,6 +3,8 @@ define('DUBLIN_CORE_EXTENDED_PLUGIN_VERSION', '1.0');
 
 add_plugin_hook('install', 'DublinCoreExtendedPlugin::install');
 add_plugin_hook('uninstall', 'DublinCoreExtendedPlugin::uninstall');
+add_filter('define_response_contexts', 'DublinCoreExtendedPlugin::defineResponseContexts');
+add_filter('define_action_contexts', 'DublinCoreExtendedPlugin::defineActionContexts');
 
 class DublinCoreExtendedPlugin
 {
@@ -39,6 +41,22 @@ class DublinCoreExtendedPlugin
         $dces->_dropTable();
         $dces->_deleteElements();
         $dces->_resetOrder();
+    }
+    
+    public static function defineResponseContexts($contexts)
+    {
+        $contexts['dc-rdf'] = array('suffix' => 'dc-rdf', 
+                                    'headers' => array('Content-Type' => 'text/xml'));
+        return $contexts;
+    }
+    
+    public static function defineActionContexts($contexts, $controller)
+    {
+        if ($controller instanceof ItemsController) {
+            $contexts['browse'][] = 'dc-rdf';
+            $contexts['show'][] = 'dc-rdf';
+        }
+        return $contexts;
     }
     
     private function _setElements()
