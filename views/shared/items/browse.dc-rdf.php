@@ -5,7 +5,9 @@
 <?php 
 require_once 'ItemDcRdf.php';
 $convert = new ItemDcRdf;
-echo $convert->itemToDcRdf($item);
+while ($item = loop_items()) {
+    echo $convert->itemToDcRdf($item);
+}
 ?>
 
 </rdf:RDF>

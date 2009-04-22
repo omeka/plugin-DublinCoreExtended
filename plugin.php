@@ -59,6 +59,11 @@ class DublinCoreExtendedPlugin
         return $contexts;
     }
     
+    public function getElements()
+    {
+        return $this->_elements;
+    }
+    
     private function _setElements()
     {
         include 'elements.php';
@@ -92,8 +97,8 @@ class DublinCoreExtendedPlugin
         foreach ($this->_elements as $key => $element) {
             
             // The element already exists.
-            if (in_array($element['name'], $this->_dcElements)) {
-                $e = $this->_getElement($element['name']);
+            if (in_array($element['label'], $this->_dcElements)) {
+                $e = $this->_getElement($element['label']);
             
             // Build a new element.
             } else {
@@ -101,7 +106,7 @@ class DublinCoreExtendedPlugin
                 $e->record_type_id = $this->_getRecordTypeId('Item');
                 $e->data_type_id   = $this->_getDataTypeId($element['data_type']);
                 $e->element_set_id = $elementSet->id;
-                $e->name           = $element['name'];
+                $e->name           = $element['label'];
                 $e->description    = $element['description'];
             }
             $e->order = $key + 1;
@@ -112,7 +117,7 @@ class DublinCoreExtendedPlugin
     private function _insertRelationships()
     {
         foreach ($this->_elements as $element) {
-            $elementId = $this->_getElement($element['name'])->id;
+            $elementId = $this->_getElement($element['label'])->id;
             if (isset($element['_refines'])) {
                 $refinesElementId = $this->_getElement($element['_refines'])->id;
             } else {
@@ -137,8 +142,8 @@ class DublinCoreExtendedPlugin
     {
         // Delete all the elements and element texts.
         foreach ($this->_elements as $element) {
-            if (!in_array($element['name'], $this->_dcElements)) {
-                $this->_getElement($element['name'])->delete();
+            if (!in_array($element['label'], $this->_dcElements)) {
+                $this->_getElement($element['label'])->delete();
             }
         }
     }

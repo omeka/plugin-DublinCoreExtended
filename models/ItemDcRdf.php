@@ -1,24 +1,29 @@
 <?php
 class ItemDcRdf
 {
-    public function recordToDcRdf($item)
-    {      
-        $dcElements = $item->getElementsBySetName('Dublin Core');
+    protected $_elements;
     
-        $xml = "\n" . '<rdf:Description rdf:about="' . abs_item_uri($item) . '">';
-        // Iterate throught the DCMES.
-        foreach ($dcElements as $element) {
-            $elementName = $element->name;
-            if ($text = item('Dublin Core', $elementName, 'all')) {
-                foreach ($text as $k => $v) {
-                    if (!empty($v)) {
-                        $xml .= "\n" . '<dcterms:' . strtolower($elementName) . '><![CDATA[' 
-                            . $v . ']]></dcterms:' . strtolower($elementName) . '>';
+    public function __construct()
+    {
+        $dces = new DublinCoreExtendedPlugin;
+        $this->_elements = $dces->getElements();
+    }
+    
+    public function itemToDcRdf(Item $item)
+    {
+        $xml = '<rdf:Description rdf:about="' . abs_item_uri($item) . '">';
+        foreach ($this->_elements as $element) {
+            $label = $element['label'];
+            $name = $element['name'];
+            if ($text = item('Dublin Core', $label, 'all')) {
+                foreach ($text as $value) {
+                    if (strlen($value) != 0) {
+                        $xml .= "\n    <dcterms:$name><![CDATA[$value]]></dcterms:$name>" ;
                     }
                 }
             }
         }
-        $xml .= "\n" . '</rdf:Description>';
-        return $xml;        
+        $xml .= "\n</rdf:Description>";
+        return $xml;
     }
 }
