@@ -1,5 +1,5 @@
 <?php
-define('DUBLIN_CORE_EXTENDED_PLUGIN_VERSION', '1.0');
+define('DUBLIN_CORE_EXTENDED_PLUGIN_VERSION', get_plugin_ini('DublinCoreExtended', 'version'));
 
 add_plugin_hook('install', 'DublinCoreExtendedPlugin::install');
 add_plugin_hook('uninstall', 'DublinCoreExtendedPlugin::uninstall');
