@@ -1,8 +1,8 @@
 <?php
-define('DUBLIN_CORE_EXTENDED_PLUGIN_VERSION', get_plugin_ini('DublinCoreExtended', 'version'));
-
 add_plugin_hook('install', 'DublinCoreExtendedPlugin::install');
 add_plugin_hook('uninstall', 'DublinCoreExtendedPlugin::uninstall');
+add_plugin_hook('admin_append_to_plugin_uninstall_message', 'DublinCoreExtendedPlugin::adminAppendToPluginUninstallMessage');
+
 add_filter('define_response_contexts', 'DublinCoreExtendedPlugin::defineResponseContexts');
 add_filter('define_action_contexts', 'DublinCoreExtendedPlugin::defineActionContexts');
 
@@ -24,9 +24,6 @@ class DublinCoreExtendedPlugin
     
     public static function install()
     {
-        set_option('dublin_core_extended_plugin_version', 
-                   DUBLIN_CORE_EXTENDED_PLUGIN_VERSION);
-        
         $dces = new DublinCoreExtendedPlugin;
         $dces->_createTable();
         $dces->_addElements();
@@ -35,12 +32,17 @@ class DublinCoreExtendedPlugin
     
     public static function uninstall()
     {
-        delete_option('dublin_core_extended_plugin_version');
-        
         $dces = new DublinCoreExtendedPlugin;
         $dces->_dropTable();
         $dces->_deleteElements();
         $dces->_resetOrder();
+    }
+    
+    public static function adminAppendToPluginUninstallMessage()
+    {
+        echo '<p><strong>Warning</strong>: This will remove all the Dublin Core 
+        elements added by this plugin and permanently delete all element texts 
+        entered in those fields.</p>';
     }
     
     public static function defineResponseContexts($contexts)
