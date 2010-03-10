@@ -1,6 +1,7 @@
 <?php
 add_plugin_hook('install', 'DublinCoreExtendedPlugin::install');
 add_plugin_hook('uninstall', 'DublinCoreExtendedPlugin::uninstall');
+add_plugin_hook('upgrade', 'DublinCoreExtendedPlugin::upgrade');
 add_plugin_hook('admin_append_to_plugin_uninstall_message', 'DublinCoreExtendedPlugin::adminAppendToPluginUninstallMessage');
 
 add_filter('define_response_contexts', 'DublinCoreExtendedPlugin::defineResponseContexts');
@@ -36,6 +37,32 @@ class DublinCoreExtendedPlugin
         $dces->_dropTable();
         $dces->_deleteElements();
         $dces->_resetOrder();
+    }
+    
+    public static function upgrade($oldVersion, $newVersion)
+    {
+        $db = get_db();
+        switch ($oldVersion) {
+            case '1.0':
+                // Fixes a bug that incorrectly set the record type of the new 
+                // elements to "Item." Sets them to "All" instead.
+                $sql = "
+                UPDATE `{$db->prefix}elements` e 
+                SET e.`record_type_id` = (
+                    SELECT rt.`id` 
+                    FROM `{$db->prefix}record_types` rt 
+                    WHERE rt.`name` = 'All'
+                )
+                WHERE e.`element_set_id` = (
+                    SELECT es.`id` 
+                    FROM `{$db->prefix}element_sets` es 
+                    WHERE es.`name` = 'Dublin Core'
+                )";
+                $db->query($sql);
+                break;
+            default:
+                break;
+        }
     }
     
     public static function adminAppendToPluginUninstallMessage()
@@ -105,7 +132,7 @@ class DublinCoreExtendedPlugin
             // Build a new element.
             } else {
                 $e = new Element;
-                $e->record_type_id = $this->_getRecordTypeId('Item');
+                $e->record_type_id = $this->_getRecordTypeId('All');
                 $e->data_type_id   = $this->_getDataTypeId($element['data_type']);
                 $e->element_set_id = $elementSet->id;
                 $e->name           = $element['label'];
