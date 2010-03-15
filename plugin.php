@@ -59,7 +59,6 @@ class DublinCoreExtendedPlugin
                     WHERE es.`name` = 'Dublin Core'
                 )";
                 $db->query($sql);
-                break;
             default:
                 break;
         }
