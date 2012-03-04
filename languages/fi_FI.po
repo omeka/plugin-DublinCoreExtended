@@ -1,0 +1,432 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Dublin Core Extented\n"
+"POT-Creation-Date: 2012-03-04 21:49-0500\n"
+"PO-Revision-Date: 2012-03-04 12:04+0200\n"
+"Last-Translator: Matti Lassila <matti@sange.fi>\n"
+"Language-Team: Finnish (http://www.transifex.net/projects/p/omeka/team/fi/) <matti@sange.fi>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-Language: Finnish\n"
+"X-Poedit-Country: FINLAND\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\\\\n\n"
+
+# Translation for the Dublin Core Extented plugin for Omeka.
+# Copyright (C) 2011 Roy Rosenzweig Center for History and New Media
+# This file is distributed under the same license as the Omeka package.
+# Matti Lassila <matti@sange.fi>, 2012.
+
+#: elements.php:11
+#: elements.php:19
+msgid "Title"
+msgstr "Nimeke"
+
+#: elements.php:15
+msgid "Alternative Title"
+msgstr "Vaihtoehtoinen nimeke"
+
+#: elements.php:17
+msgid "An alternative name for the resource. The distinction between titles and alternative titles is application-specific."
+msgstr "Nimekkeen vaihtoehtoinen tai korvaava muoto. Esimerkiksi rinnakkaisnimeke, käännös tai lyhennys."
+
+#: elements.php:22
+msgid "Subject"
+msgstr "Aihe"
+
+#: elements.php:26
+#: elements.php:34
+#: elements.php:41
+msgid "Description"
+msgstr "Kuvaus"
+
+#: elements.php:30
+msgid "Abstract"
+msgstr "Tiivistelmä"
+
+#: elements.php:32
+msgid "A summary of the resource."
+msgstr "Tiivistelmä, abstrakti, yhteenveto."
+
+#: elements.php:37
+msgid "Table Of Contents"
+msgstr "Sisällysluettelo"
+
+#: elements.php:39
+msgid "A list of subunits of the resource."
+msgstr "Luettelo teoksen osista."
+
+#: elements.php:44
+msgid "Creator"
+msgstr "Tekijä"
+
+#: elements.php:48
+msgid "Source"
+msgstr "Lähde"
+
+#: elements.php:52
+msgid "Publisher"
+msgstr "Julkaisija"
+
+#: elements.php:56
+#: elements.php:64
+#: elements.php:71
+#: elements.php:78
+#: elements.php:85
+#: elements.php:92
+#: elements.php:99
+#: elements.php:106
+#: elements.php:113
+msgid "Date"
+msgstr "Aikamääre"
+
+#: elements.php:60
+msgid "Date Available"
+msgstr "Saatavuusaika"
+
+#: elements.php:62
+msgid "Date (often a range) that the resource became or will become available."
+msgstr "Ajankohta, jolloin teos tuli tai tuli saataville."
+
+#: elements.php:67
+msgid "Date Created"
+msgstr "Luontiajankohta"
+
+#: elements.php:69
+msgid "Date of creation of the resource."
+msgstr "Teoksen luontiajankohta. Esimerkiksi alkuperäisen dokumentin ilmestymisvuosi."
+
+#: elements.php:74
+msgid "Date Accepted"
+msgstr "Hyväksyntäpäivä"
+
+#: elements.php:76
+msgid "Date of acceptance of the resource. Examples of resources to which a Date Accepted may be relevant are a thesis (accepted by a university department) or an article (accepted by a journal)."
+msgstr "Päivämäärä jolloin teos on hyväksytty. Esimerkiksi väitöskirjan hyväksyntäpäivä tai päivä, jolloin vertaisarvioitu artikkeli on hyväksytty julkaistavaksi."
+
+#: elements.php:81
+msgid "Date Copyrighted"
+msgstr "Tekijänoikeusaika"
+
+#: elements.php:83
+msgid "Date of copyright."
+msgstr "Tekijänoikeuden voimaantulopäivä"
+
+#: elements.php:88
+msgid "Date Submitted"
+msgstr "Lähettämisaika"
+
+#: elements.php:90
+msgid "Date of submission of the resource. Examples of resources to which a Date Submitted may be relevant are a thesis (submitted to a university department) or an article (submitted to a journal)."
+msgstr "Päivämäärä jolloin teos on lähetetty arvioitavaksi. Esimerkiksi päivä jolloin väitöskirja on jätetty esitarkastajille tai artikkeli lähetetty vertaisarvioitavaksi."
+
+#: elements.php:95
+msgid "Date Issued"
+msgstr "Julkistamisajankohta"
+
+#: elements.php:97
+msgid "Date of formal issuance (e.g., publication) of the resource."
+msgstr "Teoksen virallinen julkistamisajankohta."
+
+#: elements.php:102
+msgid "Date Modified"
+msgstr "Muokkausajankohta"
+
+#: elements.php:104
+msgid "Date on which the resource was changed."
+msgstr "Teoksen muokkausajankohta. Ajankohta jollain teosta muutettiin/muokattiin."
+
+#: elements.php:109
+msgid "Date Valid"
+msgstr "Voimassaoloaika"
+
+#: elements.php:111
+msgid "Date (often a range) of validity of a resource."
+msgstr "Teoksen voimassaoloaika, yleensä ajanjakso."
+
+#: elements.php:116
+msgid "Contributor"
+msgstr "Muu tekijä"
+
+#: elements.php:120
+#: elements.php:128
+#: elements.php:135
+msgid "Rights"
+msgstr "Oikeudet"
+
+#: elements.php:124
+msgid "Access Rights"
+msgstr "Pääsyoikeudet"
+
+#: elements.php:126
+msgid "Information about who can access the resource or an indication of its security status. Access Rights may include information regarding access or restrictions based on privacy, security, or other policies."
+msgstr "Käyttörajoitukset, jotka liittyvät teoksen turvaluokitukseen, yksityisyyteen tai muihin pääsyä rajoittaviin sääntöihin."
+
+#: elements.php:131
+msgid "License"
+msgstr "Lisenssi"
+
+#: elements.php:133
+msgid "A legal document giving official permission to do something with the resource."
+msgstr "Lupa käyttää teosta johonkin tarkoitukseen."
+
+#: elements.php:138
+#: elements.php:146
+#: elements.php:153
+#: elements.php:160
+#: elements.php:167
+#: elements.php:174
+#: elements.php:181
+#: elements.php:188
+#: elements.php:195
+#: elements.php:202
+#: elements.php:209
+#: elements.php:216
+#: elements.php:223
+#: elements.php:230
+msgid "Relation"
+msgstr "Suhde"
+
+#: elements.php:142
+msgid "Conforms To"
+msgstr "Noudattaa standardia"
+
+#: elements.php:144
+msgid "An established standard to which the described resource conforms."
+msgstr "Standardi jota kuvailtu teos noudattaa."
+
+#: elements.php:149
+msgid "Has Format"
+msgstr "Teos muussa formaatissa"
+
+#: elements.php:151
+msgid "A related resource that is substantially the same as the pre-existing described resource, but in another format."
+msgstr "Muu teos, joka on olennaisesti sama kuin kuvailtu resurssi mutta julkaistu toisessa formaatissa."
+
+#: elements.php:156
+msgid "Has Part"
+msgstr "Teoksen osa"
+
+#: elements.php:158
+msgid "A related resource that is included either physically or logically in the described resource."
+msgstr "Muu teos, joka on osa kuvailtua teosta."
+
+#: elements.php:163
+msgid "Has Version"
+msgstr "Teoksen versio"
+
+#: elements.php:165
+msgid "A related resource that is a version, edition, or adaptation of the described resource."
+msgstr "Muu teos, joka on versio, editio tai muokkaus kuvatusta teoksesta."
+
+#: elements.php:170
+msgid "Is Format Of"
+msgstr "Teoksen muu formaatti"
+
+#: elements.php:172
+msgid "A related resource that is substantially the same as the described resource, but in another format."
+msgstr "Muu teos, joka on olennaisesti sama kuin kuvailtu resurssi mutta julkaistu toisessa formaatissa."
+
+#: elements.php:177
+msgid "Is Part Of"
+msgstr "Osa teosta"
+
+#: elements.php:179
+msgid "A related resource in which the described resource is physically or logically included."
+msgstr "Muu teos, jonka osa kuvailtava teos on."
+
+#: elements.php:184
+msgid "Is Referenced By"
+msgstr "Viitattu teoksesta"
+
+#: elements.php:186
+msgid "A related resource that references, cites, or otherwise points to the described resource."
+msgstr "Muu teos, joka viittaa, lainaa tai muulla tavoin käsittelee kuvailtua teosta."
+
+#: elements.php:191
+msgid "Is Replaced By"
+msgstr "Korvattu teoksella"
+
+#: elements.php:193
+msgid "A related resource that supplants, displaces, or supersedes the described resource."
+msgstr "Muu teos, joka korvaa kuvaillun teoksen."
+
+#: elements.php:198
+msgid "Is Required By"
+msgstr "Vaaditaan käytettäessä"
+
+#: elements.php:200
+msgid "A related resource that requires the described resource to support its function, delivery, or coherence."
+msgstr "Muu teos, jonka käyttö vaatii kuvailun teoksen."
+
+#: elements.php:205
+msgid "Is Version Of"
+msgstr "Versioi teosta"
+
+#: elements.php:207
+msgid "A related resource of which the described resource is a version, edition, or adaptation. Changes in version imply substantive changes in content rather than differences in format."
+msgstr "Muu teos, jonka versio teos on."
+
+#: elements.php:212
+msgid "References"
+msgstr "Viittaa teokseen"
+
+#: elements.php:214
+msgid "A related resource that is referenced, cited, or otherwise pointed to by the described resource."
+msgstr "Muu teos, johon teos viittaa."
+
+#: elements.php:219
+msgid "Replaces"
+msgstr "Korvaa teoksen"
+
+#: elements.php:221
+msgid "A related resource that is supplanted, displaced, or superseded by the described resource."
+msgstr "Muu teos, jonka teos korvaa."
+
+#: elements.php:226
+msgid "Requires"
+msgstr "Vaatii rinnalleen teoksen"
+
+#: elements.php:228
+msgid "A related resource that is required by the described resource to support its function, delivery, or coherence."
+msgstr "Muu teos, jonka kuvaillun teoksen käyttö vaatii."
+
+#: elements.php:233
+#: elements.php:241
+#: elements.php:248
+msgid "Format"
+msgstr "Formaatti"
+
+#: elements.php:237
+msgid "Extent"
+msgstr "Mittasuhteet"
+
+#: elements.php:239
+msgid "The size or duration of the resource."
+msgstr "Tallenteen koko tai kesto."
+
+#: elements.php:244
+msgid "Medium"
+msgstr "Tallennusväline"
+
+#: elements.php:246
+msgid "The material or physical carrier of the resource."
+msgstr "Elektroninen tai fyysinen tallennusväline."
+
+#: elements.php:251
+msgid "Language"
+msgstr "Kieli"
+
+#: elements.php:255
+msgid "Type"
+msgstr "Laji"
+
+#: elements.php:259
+#: elements.php:267
+msgid "Identifier"
+msgstr "Identifiointitunnus"
+
+#: elements.php:263
+msgid "Bibliographic Citation"
+msgstr "Bibliografinen viite"
+
+#: elements.php:265
+msgid "A bibliographic reference for the resource. Recommended practice is to include sufficient bibliographic detail to identify the resource as unambiguously as possible."
+msgstr "Bibliografinen viite, jolla voidaan viitata kuvailtuun teokseen."
+
+#: elements.php:270
+#: elements.php:278
+#: elements.php:285
+msgid "Coverage"
+msgstr "Kattavuus"
+
+#: elements.php:274
+msgid "Spatial Coverage"
+msgstr "Alueellinen kattavuus"
+
+#: elements.php:276
+msgid "Spatial characteristics of the resource."
+msgstr "Alue tai tila, johon voidaan viitata paikan nimellä tai koordinaateilla."
+
+#: elements.php:281
+msgid "Temporal Coverage"
+msgstr "Ajallinen kattavuus"
+
+#: elements.php:283
+msgid "Temporal characteristics of the resource."
+msgstr "Aikakausi, jota teoksen sisältö käsittelee. Aikamääritys tehdään joko aikakauden nimeä (esimerkiksi rauta-aika) käyttäen tai aikamääre-kentässä määritellyllä tavalla."
+
+#: elements.php:288
+msgid "Accrual Method"
+msgstr "Kartuntatapa"
+
+#: elements.php:290
+msgid "The method by which items are added to a collection."
+msgstr "Miten teos on hankittu? Fraaseja suomenkielisinä: ostot / lahjoitukset / siirrot / vaihdot / oma tuotanto (myös digitoitu). Pääasiallinen kartuntatapa ilmoitetaan."
+
+#: elements.php:294
+msgid "Accrual Periodicity"
+msgstr "Kartuntatiheys"
+
+#: elements.php:296
+msgid "The frequency with which items are added to a collection."
+msgstr "Millä tiheydellä teoksia lisätään kokoelmaan."
+
+#: elements.php:300
+msgid "Accrual Policy"
+msgstr "Kartunnan tila"
+
+#: elements.php:302
+msgid "The policy governing the addition of items to a collection."
+msgstr "Kokoelman kartunnan tila: jatkuva / täydentyvä / ei tietoa / päättynyt."
+
+#: elements.php:306
+#: elements.php:316
+#: elements.php:323
+msgid "Audience"
+msgstr "Kohderyhmä"
+
+#: elements.php:308
+msgid "A class of entity for whom the resource is intended or useful."
+msgstr "Ryhmä, jolle kokoelma on suunnattu tai jolle se on hyödyllinen. Mikäli kokoelmalla on erityinen kohderyhmä, esim. lapset, se voidaan mainita tässä."
+
+#: elements.php:312
+msgid "Audience Education Level"
+msgstr "Kohderyhmän koulutustaso"
+
+#: elements.php:314
+msgid "A class of entity, defined in terms of progression through an educational or training context, for which the described resource is intended."
+msgstr "Koulutustaso jonka teoksen käyttö vaatii. Käytetään kuvailtaessa oppimateriaaleja."
+
+#: elements.php:319
+msgid "Mediator"
+msgstr "Teoksen välittäjä"
+
+#: elements.php:321
+msgid "An entity that mediates access to the resource and for whom the resource is intended or useful. In an educational context, a mediator might be a parent, teacher, teaching assistant, or care-giver."
+msgstr "Osapuoli, jonka välitettäväksi teos on tarkoitettu niin, että yleisö on teoksen varsinainen käyttäjä. Käytetään kuvailtaessa oppimateriaaleja. Esimerkiksi: opettaja, lastenhoitaja, vanhempi. "
+
+#: elements.php:326
+msgid "Instructional Method"
+msgstr "Opetusmenetelmä"
+
+#: elements.php:328
+msgid "A process, used to engender knowledge, attitudes and skills, that the described resource is designed to support. Instructional Method will typically include ways of presenting instructional materials or conducting instructional activities, patterns of learner-to-learner and learner-to-instructor interactions, and mechanisms by which group and individual levels of learning are measured. Instructional methods include all aspects of the instruction and learning processes from planning and implementation through evaluation and feedback."
+msgstr "Opetusmenetelmä, jota teos tukee. Esimerkiksi: luento, opintopiiri, verkkokurssi."
+
+#: elements.php:332
+msgid "Provenance"
+msgstr "Provenienssi"
+
+#: elements.php:334
+msgid "A statement of any changes in ownership and custody of the resource since its creation that are significant for its authenticity, integrity, and interpretation. The statement may include a description of any changes successive custodians made to the resource."
+msgstr "Teoksen elinkaaren aikana tapahtuneet omistus- tai hallintasuhteiden muutokset, jotka voivat vaikuttaa teoksen alkuperäisyyten, sisällön eheyteen tai tulkintaan."
+
+#: elements.php:338
+msgid "Rights Holder"
+msgstr "Oikeudenhaltija"
+
+#: elements.php:340
+msgid "A person or organization owning or managing rights over the resource."
+msgstr "Henkilö tai organisaatio joka hallinnoi teoksen oikeuksia."
+

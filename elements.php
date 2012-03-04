@@ -8,336 +8,337 @@
 // Dublin Core properties and property refinements See: http://dublincore.org/documents/dcmi-terms/
 $elements = array(
     array(
-        'label' => 'Title', 
+        'label' => 'Title',
         'name'  => 'title'
-    ), 
+    ),
     array(
-        'label'       => 'Alternative Title', 
-        'name'        => 'alternative', 
-        'description' => 'An alternative name for the resource. The distinction between titles and alternative titles is application-specific.', 
-        'data_type'   => 'Tiny Text', 
-        '_refines'    => 'Title'
-    ), 
+        'label'       => __('Alternative Title'),
+        'name'        => 'alternative',
+        'description' => __('An alternative name for the resource. The distinction between titles and alternative titles is application-specific.'),
+        'data_type'   => 'Tiny Text',
+        '_refines' => 'Title'
+    ),
     array(
-        'label' => 'Subject', 
+        'label' => 'Subject',
         'name'  => 'subject'
-    ), 
+    ),
     array(
-        'label' => 'Description', 
+        'label' => 'Description',
         'name'  => 'description'
-    ), 
+    ),
     array(
-        'label'       => 'Abstract', 
-        'name'        => 'abstract', 
-        'description' => 'A summary of the resource.', 
-        'data_type'   => 'Text', 
-        '_refines'    => 'Description'
-    ), 
+        'label'       => __('Abstract'),
+        'name'        => 'abstract',
+        'description' => __('A summary of the resource.'),
+        'data_type'   => 'Text',
+        '_refines' => 'Description'
+    ),
     array(
-        'label'       => 'Table Of Contents', 
-        'name'        => 'tableOfContents', 
-        'description' => 'A list of subunits of the resource.', 
-        'data_type'   => 'Text', 
-        '_refines'    => 'Description'
-    ), 
+        'label'       => __('Table Of Contents'),
+        'name'        => 'tableOfContents',
+        'description' => __('A list of subunits of the resource.'),
+        'data_type'   => 'Text',
+        '_refines' => 'Description'
+    ),
     array(
-        'label' => 'Creator', 
+        'label' => 'Creator',
         'name'  => 'creator'
-    ), 
+    ),
     array(
-        'label' => 'Source', 
+        'label' => 'Source',
         'name'  => 'source'
-    ), 
+    ),
     array(
-        'label' => 'Publisher', 
+        'label' => 'Publisher',
         'name'  => 'publisher'
-    ), 
+    ),
     array(
-        'label' => 'Date', 
+        'label' => 'Date',
         'name'  => 'date'
-    ), 
+    ),
     array(
-        'label'       => 'Date Available', 
-        'name'        => 'available', 
-        'description' => 'Date (often a range) that the resource became or will become available.', 
-        'data_type'   => 'Tiny Text', 
-        '_refines'    => 'Date'
-    ), 
+        'label'       => __('Date Available'),
+        'name'        => 'available',
+        'description' => __('Date (often a range) that the resource became or will become available.'),
+        'data_type'   => 'Tiny Text',
+        '_refines' => 'Date'
+    ),
     array(
-        'label'       => 'Date Created', 
-        'name'        => 'created', 
-        'description' => 'Date of creation of the resource.', 
-        'data_type'   => 'Tiny Text', 
-        '_refines'    => 'Date'
-    ), 
+        'label'       => __('Date Created'),
+        'name'        => 'created',
+        'description' => __('Date of creation of the resource.'),
+        'data_type'   => 'Tiny Text',
+        '_refines' => 'Date'
+    ),
     array(
-        'label'       => 'Date Accepted', 
-        'name'        => 'dateAccepted', 
-        'description' => 'Date of acceptance of the resource. Examples of resources to which a Date Accepted may be relevant are a thesis (accepted by a university department) or an article (accepted by a journal).', 
-        'data_type'   => 'Tiny Text', 
-        '_refines'    => 'Date'
-    ), 
+        'label'       => __('Date Accepted'),
+        'name'        => 'dateAccepted',
+        'description' => __('Date of acceptance of the resource. Examples of resources to which a Date Accepted may be relevant are a thesis (accepted by a university department) or an article (accepted by a journal).'),
+        'data_type'   => 'Tiny Text',
+        '_refines' => 'Date'
+    ),
     array(
-        'label'       => 'Date Copyrighted', 
-        'name'        => 'dateCopyrighted', 
-        'description' => 'Date of copyright.', 
-        'data_type'   => 'Tiny Text', 
-        '_refines'    => 'Date'
-    ), 
+        'label'       => __('Date Copyrighted'),
+        'name'        => 'dateCopyrighted',
+        'description' => __('Date of copyright.'),
+        'data_type'   => 'Tiny Text',
+        '_refines' => 'Date'
+    ),
     array(
-        'label'       => 'Date Submitted', 
-        'name'        => 'dateSubmitted', 
-        'description' => 'Date of submission of the resource. Examples of resources to which a Date Submitted may be relevant are a thesis (submitted to a university department) or an article (submitted to a journal).', 
-        'data_type'   => 'Tiny Text', 
-        '_refines'    => 'Date'
-    ), 
+        'label'       => __('Date Submitted'),
+        'name'        => 'dateSubmitted',
+        'description' => __('Date of submission of the resource. Examples of resources to which a Date Submitted may be relevant are a thesis (submitted to a university department) or an article (submitted to a journal).'),
+        'data_type'   => 'Tiny Text',
+        '_refines' => 'Date'
+    ),
     array(
-        'label'       => 'Date Issued', 
-        'name'        => 'issued', 
-        'description' => 'Date of formal issuance (e.g., publication) of the resource.', 
-        'data_type'   => 'Tiny Text', 
-        '_refines'    => 'Date'
-    ), 
+        'label'       => __('Date Issued'),
+        'name'        => 'issued',
+        'description' => __('Date of formal issuance (e.g., publication) of the resource.'),
+        'data_type'   => 'Tiny Text',
+        '_refines' => 'Date'
+    ),
     array(
-        'label'        => 'Date Modified', 
-        'name'        => '', 
-        'description' => 'Date on which the resource was changed.', 
-        'data_type'   => 'Tiny Text', 
-        '_refines'    => 'Date'
-    ), 
+        'label'        => __('Date Modified'),
+        'name'        => '',
+        'description' => __('Date on which the resource was changed.'),
+        'data_type'   => 'Tiny Text',
+        '_refines' => 'Date'
+    ),
     array(
-        'label'       => 'Date Valid', 
-        'name'        => 'valid', 
-        'description' => 'Date (often a range) of validity of a resource.', 
-        'data_type'   => 'Tiny Text', 
-        '_refines'    => 'Date'
-    ), 
+        'label'       => __('Date Valid'),
+        'name'        => 'valid',
+        'description' => __('Date (often a range) of validity of a resource.'),
+        'data_type'   => 'Tiny Text',
+        '_refines' => 'Date'
+    ),
     array(
-        'label' => 'Contributor', 
+        'label' => 'Contributor',
         'name'  => 'contributor'
-    ), 
+    ),
     array(
-        'label' => 'Rights', 
+        'label' => 'Rights',
         'name'  => 'rights'
-    ), 
+    ),
     array(
-        'label'       => 'Access Rights', 
-        'name'        => 'accessRights', 
-        'description' => 'Information about who can access the resource or an indication of its security status. Access Rights may include information regarding access or restrictions based on privacy, security, or other policies.', 
-        'data_type'   => 'Tiny Text', 
-        '_refines'    => 'Rights'
-    ), 
+        'label'       => __('Access Rights'),
+        'name'        => 'accessRights',
+        'description' => __('Information about who can access the resource or an indication of its security status. Access Rights may include information regarding access or restrictions based on privacy, security, or other policies.'),
+        'data_type'   => 'Tiny Text',
+        '_refines' => 'Rights'
+    ),
     array(
-        'label'       => 'License', 
-        'name'        => 'license', 
-        'description' => 'A legal document giving official permission to do something with the resource.', 
-        'data_type'   => 'Tiny Text', 
-        '_refines'    => 'Rights'
-    ), 
+        'label'       => __('License'),
+        'name'        => 'license',
+        'description' => __('A legal document giving official permission to do something with the resource.'),
+        'data_type'   => 'Tiny Text',
+        '_refines' => 'Rights'
+    ),
     array(
-        'label' => 'Relation', 
+        'label' => 'Relation',
         'name'  => 'relation'
-    ), 
+    ),
     array(
-        'label'       => 'Conforms To', 
-        'name'        => 'conformsTo', 
-        'description' => 'An established standard to which the described resource conforms.', 
-        'data_type'   => 'Tiny Text', 
-        '_refines'    => 'Relation'
-    ), 
+        'label'       => __('Conforms To'),
+        'name'        => 'conformsTo',
+        'description' => __('An established standard to which the described resource conforms.'),
+        'data_type'   => 'Tiny Text',
+        '_refines' => 'Relation'
+    ),
     array(
-        'label'       => 'Has Format', 
-        'name'        => 'hasFormat', 
-        'description' => 'A related resource that is substantially the same as the pre-existing described resource, but in another format.', 
-        'data_type'   => 'Tiny Text', 
-        '_refines'    => 'Relation'
-    ), 
+        'label'       => __('Has Format'),
+        'name'        => 'hasFormat',
+        'description' => __('A related resource that is substantially the same as the pre-existing described resource, but in another format.'),
+        'data_type'   => 'Tiny Text',
+        '_refines' => 'Relation'
+    ),
     array(
-        'label'       => 'Has Part', 
-        'name'        => 'hasPart', 
-        'description' => 'A related resource that is included either physically or logically in the described resource.', 
-        'data_type'   => 'Tiny Text', 
-        '_refines'    => 'Relation'
-    ), 
+        'label'       => __('Has Part'),
+        'name'        => 'hasPart',
+        'description' => __('A related resource that is included either physically or logically in the described resource.'),
+        'data_type'   => 'Tiny Text',
+        '_refines' => 'Relation'
+    ),
     array(
-        'label'       => 'Has Version', 
-        'name'        => 'hasVersion', 
-        'description' => 'A related resource that is a version, edition, or adaptation of the described resource.', 
-        'data_type'   => 'Tiny Text', 
-        '_refines'    => 'Relation'
-    ), 
+        'label'       => __('Has Version'),
+        'name'        => 'hasVersion',
+        'description' => __('A related resource that is a version, edition, or adaptation of the described resource.'),
+        'data_type'   => 'Tiny Text',
+        '_refines' => 'Relation'
+    ),
     array(
-        'label'       => 'Is Format Of', 
-        'name'        => 'isFormatOf', 
-        'description' => 'A related resource that is substantially the same as the described resource, but in another format.', 
-        'data_type'   => 'Tiny Text', 
-        '_refines'    => 'Relation'
-    ), 
+        'label'       => __('Is Format Of'),
+        'name'        => 'isFormatOf',
+        'description' => __('A related resource that is substantially the same as the described resource, but in another format.'),
+        'data_type'   => 'Tiny Text',
+        '_refines' => 'Relation'
+    ),
     array(
-        'label'       => 'Is Part Of', 
-        'name'        => 'isPartOf', 
-        'description' => 'A related resource in which the described resource is physically or logically included.', 
-        'data_type'   => 'Tiny Text', 
-        '_refines'    => 'Relation'
-    ), 
+        'label'       => __('Is Part Of'),
+        'name'        => 'isPartOf',
+        'description' => __('A related resource in which the described resource is physically or logically included.'),
+        'data_type'   => 'Tiny Text',
+        '_refines' => 'Relation'
+    ),
     array(
-        'label'       => 'Is Referenced By', 
-        'name'        => 'isReferencedBy', 
-        'description' => 'A related resource that references, cites, or otherwise points to the described resource.', 
-        'data_type'   => 'Tiny Text', 
-        '_refines'    => 'Relation'
-    ), 
+        'label'       => __('Is Referenced By'),
+        'name'        => 'isReferencedBy',
+        'description' => __('A related resource that references, cites, or otherwise points to the described resource.'),
+        'data_type'   => 'Tiny Text',
+        '_refines' => 'Relation'
+    ),
     array(
-        'label'       => 'Is Replaced By', 
-        'name'        => 'isReplacedBy', 
-        'description' => 'A related resource that supplants, displaces, or supersedes the described resource.', 
-        'data_type'   => 'Tiny Text', 
-        '_refines'    => 'Relation'
-    ), 
+        'label'       => __('Is Replaced By'),
+        'name'        => 'isReplacedBy',
+        'description' => __('A related resource that supplants, displaces, or supersedes the described resource.'),
+        'data_type'   => 'Tiny Text',
+        '_refines' => 'Relation'
+    ),
     array(
-        'label'       => 'Is Required By', 
-        'name'        => 'isRequiredBy', 
-        'description' => 'A related resource that requires the described resource to support its function, delivery, or coherence.', 
-        'data_type'   => 'Tiny Text', 
-        '_refines'    => 'Relation'
-    ), 
+        'label'       => __('Is Required By'),
+        'name'        => 'isRequiredBy',
+        'description' => __('A related resource that requires the described resource to support its function, delivery, or coherence.'),
+        'data_type'   => 'Tiny Text',
+        '_refines' => 'Relation'
+    ),
     array(
-        'label'       => 'Is Version Of', 
-        'name'        => 'isVersionOf', 
-        'description' => 'A related resource of which the described resource is a version, edition, or adaptation. Changes in version imply substantive changes in content rather than differences in format.', 
-        'data_type'   => 'Tiny Text', 
-        '_refines'    => 'Relation'
-    ), 
+        'label'       => __('Is Version Of'),
+        'name'        => 'isVersionOf',
+        'description' => __('A related resource of which the described resource is a version, edition, or adaptation. Changes in version imply substantive changes in content rather than differences in format.'),
+        'data_type'   => 'Tiny Text',
+        '_refines' => 'Relation'
+    ),
     array(
-        'label'       => 'References', 
-        'name'        => 'references', 
-        'description' => 'A related resource that is referenced, cited, or otherwise pointed to by the described resource.', 
-        'data_type'   => 'Tiny Text', 
-        '_refines'    => 'Relation'
-    ), 
+        'label'       => __('References'),
+        'name'        => 'references',
+        'description' => __('A related resource that is referenced, cited, or otherwise pointed to by the described resource.'),
+        'data_type'   => 'Tiny Text',
+        '_refines' => 'Relation'
+    ),
     array(
-        'label'       => 'Replaces', 
-        'name'        => 'replaces', 
-        'description' => 'A related resource that is supplanted, displaced, or superseded by the described resource.', 
-        'data_type'   => 'Tiny Text', 
-        '_refines'    => 'Relation'
-    ), 
+        'label'       => __('Replaces'),
+        'name'        => 'replaces',
+        'description' => __('A related resource that is supplanted, displaced, or superseded by the described resource.'),
+        'data_type'   => 'Tiny Text',
+        '_refines' => 'Relation'
+    ),
     array(
-        'label'       => 'Requires', 
-        'name'        => 'requires', 
-        'description' => 'A related resource that is required by the described resource to support its function, delivery, or coherence.', 
-        'data_type'   => 'Tiny Text', 
-        '_refines'    => 'Relation'
-    ), 
+        'label'       => __('Requires'),
+        'name'        => 'requires',
+        'description' => __('A related resource that is required by the described resource to support its function, delivery, or coherence.'),
+        'data_type'   => 'Tiny Text',
+        '_refines' => 'Relation'
+    ),
     array(
-        'label' => 'Format', 
+        'label' => 'Format',
         'name'  => 'format'
-    ), 
+    ),
     array(
-        'label'       => 'Extent', 
-        'name'        => 'extent', 
-        'description' => 'The size or duration of the resource.', 
-        'data_type'   => 'Tiny Text', 
-        '_refines'    => 'Format'
-    ), 
+        'label'       => __('Extent'),
+        'name'        => 'extent',
+        'description' => __('The size or duration of the resource.'),
+        'data_type'   => 'Tiny Text',
+        '_refines' => 'Format'
+    ),
     array(
-        'label'       => 'Medium', 
-        'name'        => 'medium', 
-        'description' => 'The material or physical carrier of the resource.', 
-        'data_type'   => 'Tiny Text', 
-        '_refines'    => 'Format'
-    ), 
+        'label'       => __('Medium'),
+        'name'        => 'medium',
+        'description' => __('The material or physical carrier of the resource.'),
+        'data_type'   => 'Tiny Text',
+        '_refines' => 'Format'
+    ),
     array(
-        'label' => 'Language', 
+        'label' => 'Language',
         'name'  => 'language'
-    ), 
+    ),
     array(
-        'label' => 'Type', 
+        'label' => 'Type',
         'name'  => 'type'
-    ), 
+    ),
     array(
-        'label' => 'Identifier', 
+        'label' => 'Identifier',
         'name'  => 'identifier'
-    ), 
+    ),
     array(
-        'label'       => 'Bibliographic Citation', 
-        'name'        => 'bibliographicCitation', 
-        'description' => 'A bibliographic reference for the resource. Recommended practice is to include sufficient bibliographic detail to identify the resource as unambiguously as possible.', 
-        'data_type'   => 'Tiny Text', 
-        '_refines'    => 'Identifier'
-    ), 
+        'label'       => __('Bibliographic Citation'),
+        'name'        => 'bibliographicCitation',
+        'description' => __('A bibliographic reference for the resource. Recommended practice is to include sufficient bibliographic detail to identify the resource as unambiguously as possible.'),
+        'data_type'   => 'Tiny Text',
+        '_refines' => 'Identifier'
+    ),
     array(
-        'label' => 'Coverage', 
+        'label' => 'Coverage',
         'name'  => 'coverage'
-    ), 
+    ),
     array(
-        'label'       => 'Spatial Coverage', 
-        'name'        => 'spatial', 
-        'description' => 'Spatial characteristics of the resource.', 
-        'data_type'   => 'Tiny Text', 
-        '_refines'    => 'Coverage'
-    ), 
+        'label'       => __('Spatial Coverage'),
+        'name'        => 'spatial',
+        'description' => __('Spatial characteristics of the resource.'),
+        'data_type'   => 'Tiny Text',
+        '_refines' => 'Coverage'
+    ),
     array(
-        'label'       => 'Temporal Coverage', 
-        'name'        => 'temporal', 
-        'description' => 'Temporal characteristics of the resource.', 
-        'data_type'   => 'Tiny Text', 
-        '_refines'    => 'Coverage'
-    ), 
+        'label'       => __('Temporal Coverage'),
+        'name'        => 'temporal',
+        'description' => __('Temporal characteristics of the resource.'),
+        'data_type'   => 'Tiny Text',
+        '_refines' => 'Coverage'
+    ),
     array(
-        'label'       => 'Accrual Method', 
-        'name'        => 'accrualMethod', 
-        'description' => 'The method by which items are added to a collection.', 
+        'label'       => __('Accrual Method'),
+        'name'        => 'accrualMethod',
+        'description' => __('The method by which items are added to a collection.'),
         'data_type'   => 'Tiny Text'
-    ), 
+    ),
     array(
-        'label'       => 'Accrual Periodicity', 
-        'name'        => 'accrualPeriodicity', 
-        'description' => 'The frequency with which items are added to a collection.', 
+        'label'       => __('Accrual Periodicity'),
+        'name'        => 'accrualPeriodicity',
+        'description' => __('The frequency with which items are added to a collection.'),
         'data_type'   => 'Tiny Text'
-    ), 
+    ),
     array(
-        'label'       => 'Accrual Policy', 
-        'name'        => 'accrualPolicy', 
-        'description' => 'The policy governing the addition of items to a collection.', 
+        'label'       => __('Accrual Policy'),
+        'name'        => 'accrualPolicy',
+        'description' => __('The policy governing the addition of items to a collection.'),
         'data_type'   => 'Tiny Text'
-    ), 
+    ),
     array(
-        'label'       => 'Audience', 
-        'name'        => 'audience', 
-        'description' => 'A class of entity for whom the resource is intended or useful.', 
+        'label'       => __('Audience'),
+        'name'        => 'audience',
+        'description' => __('A class of entity for whom the resource is intended or useful.'),
         'data_type'   => 'Tiny Text'
-    ), 
+    ),
     array(
-        'label'       => 'Audience Education Level', 
-        'name'        => 'educationLevel', 
-        'description' => 'A class of entity, defined in terms of progression through an educational or training context, for which the described resource is intended.', 
-        'data_type'   => 'Tiny Text', 
-        '_refines'    => 'Audience'
-    ), 
+        'label'       => __('Audience Education Level'),
+        'name'        => 'educationLevel',
+        'description' => __('A class of entity, defined in terms of progression through an educational or training context, for which the described resource is intended.'),
+        'data_type'   => 'Tiny Text',
+        '_refines' => __('Audience')
+    ),
     array(
-        'label'       => 'Mediator', 
-        'name'        => 'mediator', 
-        'description' => 'An entity that mediates access to the resource and for whom the resource is intended or useful. In an educational context, a mediator might be a parent, teacher, teaching assistant, or care-giver.', 
-        'data_type'   => 'Tiny Text', 
-        '_refines'    => 'Audience'
-    ), 
+        'label'       => __('Mediator'),
+        'name'        => 'mediator',
+        'description' => __('An entity that mediates access to the resource and for whom the resource is intended or useful. In an educational context, a mediator might be a parent, teacher, teaching assistant, or care-giver.'),
+        'data_type'   => 'Tiny Text',
+        '_refines' => __('Audience')
+    ),
     array(
-        'label'       => 'Instructional Method', 
-        'name'        => 'instructionalMethod', 
-        'description' => 'A process, used to engender knowledge, attitudes and skills, that the described resource is designed to support. Instructional Method will typically include ways of presenting instructional materials or conducting instructional activities, patterns of learner-to-learner and learner-to-instructor interactions, and mechanisms by which group and individual levels of learning are measured. Instructional methods include all aspects of the instruction and learning processes from planning and implementation through evaluation and feedback.', 
+        'label'       => __('Instructional Method'),
+        'name'        => 'instructionalMethod',
+        'description' => __('A process, used to engender knowledge, attitudes and skills, that the described resource is designed to support. Instructional Method will typically include ways of presenting instructional materials or conducting instructional activities, patterns of learner-to-learner and learner-to-instructor interactions, and mechanisms by which group and individual levels of learning are measured. Instructional methods include all aspects of the instruction and learning processes from planning and implementation through evaluation and feedback.'),
         'data_type'   => 'Tiny Text'
-    ), 
+    ),
     array(
-        'label'       => 'Provenance', 
-        'name'        => 'provenance', 
-        'description' => 'A statement of any changes in ownership and custody of the resource since its creation that are significant for its authenticity, integrity, and interpretation. The statement may include a description of any changes successive custodians made to the resource.', 
+        'label'       => __('Provenance'),
+        'name'        => 'provenance',
+        'description' => __('A statement of any changes in ownership and custody of the resource since its creation that are significant for its authenticity, integrity, and interpretation. The statement may include a description of any changes successive custodians made to the resource.'),
         'data_type'   => 'Tiny Text'
-    ), 
+    ),
     array(
-        'label'       => 'Rights Holder', 
-        'name'        => 'rightsHolder', 
-        'description' => 'A person or organization owning or managing rights over the resource.', 
+        'label'       => __('Rights Holder'),
+        'name'        => 'rightsHolder',
+        'description' => __('A person or organization owning or managing rights over the resource.'),
         'data_type'   => 'Tiny Text'
     )
 );
+
