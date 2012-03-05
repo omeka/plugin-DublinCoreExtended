@@ -96,9 +96,13 @@ class DublinCoreExtendedPlugin
         return $this->_elements;
     }
 
+    public static function dcextented_initialize()
+    {
+      add_translation_source(dirname(__FILE__) . '/languages');
+    }
+
     private function _setElements()
     {
-        add_translation_source(dirname(__FILE__) . '/languages');
         include 'elements.php';
         $this->_elements = $elements;
     }
