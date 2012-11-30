@@ -21,6 +21,10 @@ class DublinCoreExtendedPlugin
                                  'Relation', 'Format', 'Language',
                                  'Type', 'Identifier', 'Coverage');
 
+    
+    private $isOmekaTwo = false; //set once whether we're in the new Omeka 2.0 world
+    
+
     public function __construct()
     {
         $this->_db = get_db();
@@ -28,7 +32,7 @@ class DublinCoreExtendedPlugin
     }
 
     public static function install()
-    {
+    {       
         $dces = new DublinCoreExtendedPlugin;
         $dces->_createTable();
         $dces->_addElements();
@@ -140,8 +144,7 @@ class DublinCoreExtendedPlugin
             // Build a new element.
             } else {
                 $e = new Element;
-                $e->record_type_id = $this->_getRecordTypeId('All');
-                $e->data_type_id   = $this->_getDataTypeId($element['data_type']);
+                $e->record_type_id = $this->_getRecordTypeId('All');              
                 $e->element_set_id = $elementSet->id;
                 $e->name           = $element['label'];
                 $e->description    = $element['description'];
@@ -212,6 +215,7 @@ class DublinCoreExtendedPlugin
     {
         return $this->_db->getTable('RecordType')->findIdFromName($recordTypeName);
     }
+
 
     private function _getDataTypeId($dataTypeName)
     {
