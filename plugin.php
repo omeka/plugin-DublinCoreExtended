@@ -11,6 +11,7 @@ add_plugin_hook('install', 'DublinCoreExtendedPlugin::install');
 add_plugin_hook('uninstall', 'DublinCoreExtendedPlugin::uninstall');
 add_plugin_hook('upgrade', 'DublinCoreExtendedPlugin::upgrade');
 add_plugin_hook('admin_append_to_plugin_uninstall_message', 'DublinCoreExtendedPlugin::adminAppendToPluginUninstallMessage');
+add_plugin_hook('initialize', 'DublinCoreExtendedPlugin::dcextented_initialize');
 
 add_filter('define_response_contexts', 'DublinCoreExtendedPlugin::defineResponseContexts');
 add_filter('define_action_contexts', 'DublinCoreExtendedPlugin::defineActionContexts');
