@@ -18,6 +18,7 @@ class DublinCoreExtendedPlugin extends Omeka_Plugin_AbstractPlugin
         'uninstall', 
         'uninstall_message', 
         'upgrade', 
+        'initialize', 
     );
     
     protected $_filters = array(
@@ -68,9 +69,9 @@ class DublinCoreExtendedPlugin extends Omeka_Plugin_AbstractPlugin
      */
     public function hookUninstallMessage()
     {
-        echo '<p><strong>Warning</strong>: This will remove all the Dublin Core 
-        elements added by this plugin and permanently delete all element texts 
-        entered in those fields.</p>';
+        echo __('%sWarning%s: This will remove all the Dublin Core elements added ' 
+        . 'by this plugin and permanently delete all element texts entered in those ' 
+        . 'fields.%s', '<p><strong>', '</strong>', '</p>');
     }
     
     /**
@@ -85,6 +86,15 @@ class DublinCoreExtendedPlugin extends Omeka_Plugin_AbstractPlugin
             $sql = "DROP TABLE IF EXISTS `{$this->_db->DublinCoreExtendedRelationship}`";
             $this->_db->query($sql);
         }
+    }
+    
+    /**
+     * Initialize this plugin.
+     */
+    public function hookInitialize()
+    {
+        // Add translation.
+        add_translation_source(dirname(__FILE__) . '/languages');
     }
     
     /**
