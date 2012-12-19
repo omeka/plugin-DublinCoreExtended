@@ -6,15 +6,26 @@
  * @license http://www.gnu.org/licenses/gpl-3.0.txt GNU GPLv3
  */
 
-// Dublin Core properties and property refinements in the /terms/ namespace and 
-// not in the /elements/1.1/ namespace. See DCMI Metadata Terms: 
+// Dublin Core properties and property refinements. See DCMI Metadata Terms: 
 // http://dublincore.org/documents/dcmi-terms/
 $elements = array(
+    array(
+        'label' => 'Title', 
+        'name'  => 'title'
+    ), 
     array(
         'label'       => 'Alternative Title', 
         'name'        => 'alternative', 
         'description' => 'An alternative name for the resource. The distinction between titles and alternative titles is application-specific.', 
         '_refines'    => 'Title'
+    ), 
+    array(
+        'label' => 'Subject', 
+        'name'  => 'subject'
+    ), 
+    array(
+        'label' => 'Description', 
+        'name'  => 'description'
     ), 
     array(
         'label'       => 'Abstract', 
@@ -27,6 +38,22 @@ $elements = array(
         'name'        => 'tableOfContents', 
         'description' => 'A list of subunits of the resource.', 
         '_refines'    => 'Description'
+    ), 
+    array(
+        'label' => 'Creator', 
+        'name'  => 'creator'
+    ), 
+    array(
+        'label' => 'Source', 
+        'name'  => 'source'
+    ), 
+    array(
+        'label' => 'Publisher', 
+        'name'  => 'publisher'
+    ), 
+    array(
+        'label' => 'Date', 
+        'name'  => 'date'
     ), 
     array(
         'label'       => 'Date Available', 
@@ -77,6 +104,14 @@ $elements = array(
         '_refines'    => 'Date'
     ), 
     array(
+        'label' => 'Contributor', 
+        'name'  => 'contributor'
+    ), 
+    array(
+        'label' => 'Rights', 
+        'name'  => 'rights'
+    ), 
+    array(
         'label'       => 'Access Rights', 
         'name'        => 'accessRights', 
         'description' => 'Information about who can access the resource or an indication of its security status. Access Rights may include information regarding access or restrictions based on privacy, security, or other policies.', 
@@ -87,6 +122,10 @@ $elements = array(
         'name'        => 'license', 
         'description' => 'A legal document giving official permission to do something with the resource.', 
         '_refines'    => 'Rights'
+    ), 
+    array(
+        'label' => 'Relation', 
+        'name'  => 'relation'
     ), 
     array(
         'label'       => 'Conforms To', 
@@ -167,6 +206,10 @@ $elements = array(
         '_refines'    => 'Relation'
     ), 
     array(
+        'label' => 'Format', 
+        'name'  => 'format'
+    ), 
+    array(
         'label'       => 'Extent', 
         'name'        => 'extent', 
         'description' => 'The size or duration of the resource.', 
@@ -179,10 +222,26 @@ $elements = array(
         '_refines'    => 'Format'
     ), 
     array(
+        'label' => 'Language', 
+        'name'  => 'language'
+    ), 
+    array(
+        'label' => 'Type', 
+        'name'  => 'type'
+    ), 
+    array(
+        'label' => 'Identifier', 
+        'name'  => 'identifier'
+    ), 
+    array(
         'label'       => 'Bibliographic Citation', 
         'name'        => 'bibliographicCitation', 
         'description' => 'A bibliographic reference for the resource. Recommended practice is to include sufficient bibliographic detail to identify the resource as unambiguously as possible.', 
         '_refines'    => 'Identifier'
+    ), 
+    array(
+        'label' => 'Coverage', 
+        'name'  => 'coverage'
     ), 
     array(
         'label'       => 'Spatial Coverage', 

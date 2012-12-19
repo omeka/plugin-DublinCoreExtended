@@ -28,6 +28,12 @@ class DublinCoreExtendedPlugin extends Omeka_Plugin_AbstractPlugin
     
     private $_elements;
     
+    private $_dcElements = array(
+        'Title', 'Subject', 'Description', 'Creator', 'Source', 'Publisher', 
+        'Date', 'Contributor', 'Rights', 'Relation', 'Format', 'Language', 
+        'Type', 'Identifier', 'Coverage', 
+    );
+    
     public function __construct()
     {
         parent::__construct();
@@ -45,10 +51,12 @@ class DublinCoreExtendedPlugin extends Omeka_Plugin_AbstractPlugin
         // Add the new elements to the Dublin Core element set. 
         $elementSet = $this->_db->getTable('ElementSet')->findByName('Dublin Core');
         foreach ($this->_elements as $key => $element) {
-            $sql = "
-            INSERT INTO `{$this->_db->Element}` (`element_set_id`, `name`, `description`) 
-            VALUES (?, ?, ?)";
-            $this->_db->query($sql, array($elementSet->id, $element['label'], $element['description']));
+            if (!in_array($element['label'], $this->_dcElements)) {
+                $sql = "
+                INSERT INTO `{$this->_db->Element}` (`element_set_id`, `name`, `description`) 
+                VALUES (?, ?, ?)";
+                $this->_db->query($sql, array($elementSet->id, $element['label'], $element['description']));
+            }
         }
     }
     
@@ -60,7 +68,9 @@ class DublinCoreExtendedPlugin extends Omeka_Plugin_AbstractPlugin
         // Delete all the elements and element texts.
         $elementTable = $this->_db->getTable('Element');
         foreach ($this->_elements as $element) {
-            $elementTable->findByElementSetNameAndElementName('Dublin Core', $element['label'])->delete();
+            if (!in_array($element['label'], $this->_dcElements)) {
+                $elementTable->findByElementSetNameAndElementName('Dublin Core', $element['label'])->delete();
+            }
         }
     }
     
