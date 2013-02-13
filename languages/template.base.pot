@@ -1,4 +1,4 @@
-# Translation for the Collection Tree plugin for Omeka.
+# Translation for the Dublin Core Extended plugin for Omeka.
 # Copyright (C) 2012 Roy Rosenzweig Center for History and New Media
 # This file is distributed under the same license as the Omeka package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
