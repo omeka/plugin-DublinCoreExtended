@@ -190,62 +190,84 @@ class DublinCoreExtendedPlugin extends Omeka_Plugin_AbstractPlugin
         $select = $args['select'];
         $db = get_db();
 
-        // Adapted from application/models/Table/Item.php.
-        $advancedIndex = 0;
-        foreach ($params['dublin_core_extended'] as $filter) {
-            $type = $filter['advanced']['type'];
-            $value = $filter['advanced']['terms'];
-            $refinements = array_keys($filter['refinements']);
+        if (isset($params['dublin_core_extended']['filters'])) {
+            // Adapted from application/models/Table/Item.php.
+            $advancedIndex = 0;
+            foreach ($params['dublin_core_extended']['filters'] as $filter) {
+                $type = $filter['advanced']['type'];
+                $value = $filter['advanced']['terms'];
+                $refinements = array_keys($filter['refinements']);
 
-            // Determine what the WHERE clause should look like.
-            $predicates = array();
-            switch ($type) {
-                case 'contains':
-                    $oneWhere = true;
-                    $predicate = 'LIKE ' . $db->quote('%' . $value .'%');
-                    break;
-                case 'is exactly':
-                    $oneWhere = true;
-                    $predicate = '= ' . $db->quote($value);
-                    break;
-                case 'is not empty':
-                    $oneWhere = true;
-                    $predicate = 'IS NOT NULL';
-                    break;
-                case 'does not contain':
-                    $oneWhere = false;
-                    $predicates[] = 'NOT LIKE ' . $db->quote('%' . $value .'%');
-                    $predicates[] = 'IS NULL';
-                    break;
-                case 'is empty':
-                    $oneWhere = false;
-                    $predicates = array('IS NULL');
-                    break;
-                default:
-                    throw new Omeka_Record_Exception(__('Invalid search type given!'));
-            }
-
-            // One where with zero or multiple OR.
-            if ($oneWhere) {
-                foreach ($refinements as $elementId) {
-                    $alias = '_dcAdvanced_' .  $advancedIndex++;
-                    $joinCondition = "{$alias}.record_id = items.id AND {$alias}.record_type = 'Item' AND {$alias}.element_id = $elementId";
-                    $select->joinLeft(array($alias => $db->ElementText), $joinCondition, array());
-                    $predicates[] = $alias . '.text ' . $predicate;
+                // Determine what the WHERE clause should look like.
+                $predicates = array();
+                switch ($type) {
+                    case 'contains':
+                        $oneWhere = true;
+                        $predicate = 'LIKE ' . $db->quote('%' . $value .'%');
+                        break;
+                    case 'is exactly':
+                        $oneWhere = true;
+                        $predicate = '= ' . $db->quote($value);
+                        break;
+                    case 'is not empty':
+                        $oneWhere = true;
+                        $predicate = 'IS NOT NULL';
+                        break;
+                    case 'does not contain':
+                        $oneWhere = false;
+                        $predicates[] = 'NOT LIKE ' . $db->quote('%' . $value .'%');
+                        $predicates[] = 'IS NULL';
+                        break;
+                    case 'is empty':
+                        $oneWhere = false;
+                        $predicates = array('IS NULL');
+                        break;
+                    default:
+                        throw new Omeka_Record_Exception(__('Invalid search type given!'));
                 }
-                $where = implode(' OR ', $predicates);
-                $select->where($where);
-            }
 
-            // Multiple where with zero or one OR.
+                // One where with zero or multiple OR.
+                if ($oneWhere) {
+                    foreach ($refinements as $elementId) {
+                        $alias = '_dcAdvanced_' .  $advancedIndex++;
+                        $joinCondition = "{$alias}.record_id = items.id AND {$alias}.record_type = 'Item' AND {$alias}.element_id = $elementId";
+                        $select->joinLeft(array($alias => $db->ElementText), $joinCondition, array());
+                        $predicates[] = $alias . '.text ' . $predicate;
+                    }
+                    $where = implode(' OR ', $predicates);
+                    $select->where($where);
+                }
+
+                // Multiple where with zero or one OR.
+                else {
+                    foreach ($refinements as $elementId) {
+                        $alias = '_dcAdvanced_' .  $advancedIndex++;
+                        $joinCondition = "{$alias}.record_id = items.id AND {$alias}.record_type = 'Item' AND {$alias}.element_id = $elementId";
+                        $select->joinLeft(array($alias => $db->ElementText), $joinCondition, array());
+                        $select->where($alias . '.text ' . implode(" OR {$alias}.text ", $predicates));
+                    }
+                }
+            }
+        }
+
+        if (isset($params['dublin_core_extended']['sort_field'])) {
+            $sortField = array_keys($params['dublin_core_extended']['sort_field']);
+            $sortField = implode(',', $sortField);
+
+            if (isset($params['sort_dir'])) {
+                $sortDir = $params['sort_dir'] == 'd' ? 'DESC' : 'ASC';
+            }
             else {
-                foreach ($refinements as $elementId) {
-                    $alias = '_dcAdvanced_' .  $advancedIndex++;
-                    $joinCondition = "{$alias}.record_id = items.id AND {$alias}.record_type = 'Item' AND {$alias}.element_id = $elementId";
-                    $select->joinLeft(array($alias => $db->ElementText), $joinCondition, array());
-                    $select->where($alias . '.text ' . implode(" OR {$alias}.text ", $predicates));
-                }
+                $sortDir = 'ASC';
             }
+
+            $select
+                ->joinLeft(array('et_sort' => $db->ElementText),
+                    "et_sort.record_id = items.id AND et_sort.record_type = 'Item' AND et_sort.element_id IN ($sortField)",
+                    array())
+                ->group('items.id')
+                ->order(array("IF(ISNULL(et_sort.text), 1, 0) $sortDir",
+                    "et_sort.text $sortDir"));
         }
     }
 
@@ -292,35 +314,55 @@ class DublinCoreExtendedPlugin extends Omeka_Plugin_AbstractPlugin
      */
     public function filterItemsBrowseParams($params)
     {
-
-        if (get_option('dublin_core_extended_refines')
-                && isset($params['advanced'])
-                && !empty($params['advanced'])
-            ) {
-            $advanced = $params['advanced'];
-            $result = &$params['advanced'];
-
+        if (get_option('dublin_core_extended_refines')) {
             $refinements = unserialize(get_option('dublin_core_extended_refinements'));
 
-            // Manage each advanced selection.
-            foreach ($advanced as $key => $param) {
-                // Do not search on blank rows.
-                if (empty($param['element_id']) || empty($param['type'])) {
-                    unset($result[$key]);
-                    continue;
-                }
+            if (isset($params['advanced']) && !empty($params['advanced'])) {
+                $advanced = $params['advanced'];
+                $result = &$params['advanced'];
 
-                // Process only if the element id is a Dublin Core one.
-                if (isset($refinements[$param['element_id']])) {
-                    $parent = &$refinements[$param['element_id']];
-                    // Check if there are refinements (if not, the element is
-                    // already processed via Omeka Core).
-                    if (count($parent) > 1) {
-                        // Save key for hook.
-                        $params['dublin_core_extended'][$key]['advanced'] = $param;
-                        $params['dublin_core_extended'][$key]['refinements'] = $parent;
-                        // Remove the element from params to avoid two filters.
+                // Manage each advanced selection.
+                foreach ($advanced as $key => $param) {
+                    // Do not search on blank rows.
+                    if (empty($param['element_id']) || empty($param['type'])) {
                         unset($result[$key]);
+                        continue;
+                    }
+
+                    // Process only if the element id is a Dublin Core one.
+                    if (isset($refinements[$param['element_id']])) {
+                        $parent = &$refinements[$param['element_id']];
+                        // Check if there are refinements (if not, the element is
+                        // already processed via Omeka Core).
+                        if (count($parent) > 1) {
+                            // Save key for hook.
+                            $params['dublin_core_extended']['filters'][$key]['advanced'] = $param;
+                            $params['dublin_core_extended']['filters'][$key]['refinements'] = $parent;
+                            // Remove the element from params to avoid two filters.
+                            unset($result[$key]);
+                        }
+                    }
+                }
+            }
+
+            if (isset($params['sort_field']) && !empty($params['sort_field'])) {
+                // Check if the sort field is a Dublin Core one.
+                if (strpos($params['sort_field'], 'Dublin Core,') === 0) {
+                    // Get the id of the element via the refinements array.
+                    $elementName = substr($params['sort_field'], 12);
+                    foreach ($refinements as $parent => $refinementList) {
+                        $elementId = array_search($elementName, $refinementList);
+                        if ($elementId) {
+                            $parent = &$refinements[$elementId];
+                            // Check if there are refinements (if not, the element is
+                            // already processed via Omeka Core).
+                            if (count($parent) > 1) {
+                                $params['dublin_core_extended']['sort_field'] = $parent;
+                                // Remove the element from params to avoid two sorts.
+                                unset($params['sort_field']);
+                            }
+                            break;
+                        }
                     }
                 }
             }

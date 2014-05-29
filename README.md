@@ -12,7 +12,8 @@ elements.
 See [DCMI Metadata Terms].
 
 An option allows to enlarge an advanced search on a base element of the
-Dublin Core to its refinements, if any.
+Dublin Core to its refinements, if any. This option applies when sorting items
+too.
 
 
 Installation
