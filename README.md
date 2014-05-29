@@ -78,7 +78,7 @@ Copyright
 [Omeka]: https://omeka.org
 [DCMI Metadata Terms]: http://dublincore.org/documents/dcmi-terms
 [Dublin Core Extended]: https://github.com/Omeka/plugin-DublinCoreExtended
-[Dublin Core Extended issues]: https://github.com/Omeka/plugin-DublinCoreExtended/Issues
+[Dublin Core Extended issues]: https://github.com/Omeka/plugin-DublinCoreExtended/issues
 [GNU/GPL]: https://www.gnu.org/licenses/gpl-3.0.html "GNU/GPL v3"
 [Daniel-KM]: https://github.com/Daniel-KM "Daniel Berthereau"
 [Mines ParisTech]: http://bib.mines-paristech.fr
