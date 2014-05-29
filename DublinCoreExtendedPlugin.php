@@ -22,6 +22,8 @@ class DublinCoreExtendedPlugin extends Omeka_Plugin_AbstractPlugin
         'uninstall_message',
         'upgrade',
         'initialize',
+        'config_form',
+        'config',
         'items_browse_sql',
     );
 
@@ -39,6 +41,7 @@ class DublinCoreExtendedPlugin extends Omeka_Plugin_AbstractPlugin
      */
     protected $_options = array(
         'dublin_core_extended_refinements' => '',
+        'dublin_core_extended_refines' => false,
     );
 
     private $_elements;
@@ -122,6 +125,7 @@ class DublinCoreExtendedPlugin extends Omeka_Plugin_AbstractPlugin
         if (version_compare($args['old_version'], '2.1', '<')) {
             $refinements = $this->_getDublinCoreRefinements();
             set_option('dublin_core_extended_refinements', serialize($refinements));
+            set_option('dublin_core_extended_refines', $this->_options['dublin_core_extended_refines']);
         }
     }
 
@@ -132,6 +136,31 @@ class DublinCoreExtendedPlugin extends Omeka_Plugin_AbstractPlugin
     {
         // Add translation.
         add_translation_source(dirname(__FILE__) . '/languages');
+    }
+
+    /**
+     * Shows plugin configuration page.
+     *
+     * @return void
+     */
+    public function hookConfigForm()
+    {
+        echo get_view()->partial(
+            'plugins/dublin-core-extended-config-form.php'
+        );
+    }
+
+    /**
+     * Processes the configuration form.
+     *
+     * @return void
+     */
+    public function hookConfig($args)
+    {
+        $post = $args['post'];
+        foreach ($post as $key => $value) {
+            set_option($key, $value);
+        }
     }
 
     /**
@@ -179,6 +208,10 @@ class DublinCoreExtendedPlugin extends Omeka_Plugin_AbstractPlugin
                     $oneWhere = true;
                     $predicate = '= ' . $db->quote($value);
                     break;
+                case 'is not empty':
+                    $oneWhere = true;
+                    $predicate = 'IS NOT NULL';
+                    break;
                 case 'does not contain':
                     $oneWhere = false;
                     $predicates[] = 'NOT LIKE ' . $db->quote('%' . $value .'%');
@@ -187,10 +220,6 @@ class DublinCoreExtendedPlugin extends Omeka_Plugin_AbstractPlugin
                 case 'is empty':
                     $oneWhere = false;
                     $predicates = array('IS NULL');
-                    break;
-                case 'is not empty':
-                    $oneWhere = true;
-                    $predicate = 'IS NOT NULL';
                     break;
                 default:
                     throw new Omeka_Record_Exception(__('Invalid search type given!'));
@@ -263,7 +292,9 @@ class DublinCoreExtendedPlugin extends Omeka_Plugin_AbstractPlugin
      */
     public function filterItemsBrowseParams($params)
     {
-        if (isset($params['advanced'])
+
+        if (get_option('dublin_core_extended_refines')
+                && isset($params['advanced'])
                 && !empty($params['advanced'])
             ) {
             $advanced = $params['advanced'];
