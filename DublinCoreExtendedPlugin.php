@@ -243,6 +243,7 @@ class DublinCoreExtendedPlugin extends Omeka_Plugin_AbstractPlugin
                 ->joinLeft(array('et_sort' => $db->ElementText),
                     "et_sort.record_id = items.id AND et_sort.record_type = 'Item' AND et_sort.element_id IN ($sortField)",
                     array())
+                ->reset('order')
                 ->group('items.id')
                 ->order(array("IF(ISNULL(et_sort.text), 1, 0) $sortDir",
                     "et_sort.text $sortDir"));
