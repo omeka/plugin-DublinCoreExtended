@@ -29,9 +29,9 @@ class DublinCoreExtendedPlugin extends Omeka_Plugin_AbstractPlugin
     private $_elements;
     
     private $_dcElements = array(
-        'Title', 'Subject', 'Description', 'Creator', 'Source', 'Publisher', 
-        'Date', 'Contributor', 'Rights', 'Relation', 'Format', 'Language', 
-        'Type', 'Identifier', 'Coverage', 
+        'Title', 'Creator', 'Subject', 'Description', 'Publisher',
+        'Contributor', 'Date', 'Type', 'Format', 'Identifier', 'Source',
+        'Language', 'Relation', 'Coverage', 'Rights',
     );
     
     public function __construct()
