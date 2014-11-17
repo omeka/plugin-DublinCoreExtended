@@ -26,7 +26,14 @@ class DublinCoreExtendedPlugin extends Omeka_Plugin_AbstractPlugin
         'action_contexts',
         'oaipmh_repository_metadata_formats',
     );
-    
+
+    /**
+     * @var array Options and their default values.
+     */
+    protected $_options = array(
+        'dublin_core_extended_oaipmh_unrefined_dc' => false,
+    );
+
     private $_elements;
     
     private $_dcElements = array(
@@ -107,7 +114,36 @@ class DublinCoreExtendedPlugin extends Omeka_Plugin_AbstractPlugin
         // Add translation.
         add_translation_source(dirname(__FILE__) . '/languages');
     }
-    
+
+    /**
+     * Shows plugin configuration page.
+     *
+     * @return void
+     */
+    public function hookConfigForm($args)
+    {
+        $view = $args['view'];
+        echo $view->partial(
+            'plugins/dublin-core-extended-config-form.php',
+            array(
+                'view' => $view,
+            )
+        );
+    }
+
+    /**
+     * Processes the configuration form.
+     *
+     * @return void
+     */
+    public function hookConfig($args)
+    {
+        $post = $args['post'];
+        foreach ($post as $key => $value) {
+            set_option($key, $value);
+        }
+    }
+
     /**
      * Add the dc-rdf response context.
      * 
@@ -143,6 +179,14 @@ class DublinCoreExtendedPlugin extends Omeka_Plugin_AbstractPlugin
         include_once dirname(__FILE__) . '/metadata/QDc.php';
         if (class_exists($format)) {
             $metadataFormats['qdc'] = $format;
+        }
+
+        if (get_option('dublin_core_extended_oaipmh_unrefined_dc')) {
+            $format = 'OaiPmhRepository_Metadata_OaiDcUnrefined';
+            include_once dirname(__FILE__) . '/metadata/OaiDcUnrefined.php';
+            if (class_exists($format)) {
+                $metadataFormats['oai_dc'] = $format;
+            }
         }
 
         return $metadataFormats;
