@@ -72,6 +72,11 @@ class OaiPmhRepository_Metadata_OaiDcUnrefined extends OaiPmhRepository_Metadata
                 ? $element['name']
                 : strtolower($element['_refines']);
 
+            // Remove elements that are not in the fifteen standard DC elements.
+            if (!in_array($elementName, $dcElementNames)) {
+                continue;
+            }
+
             $dcElements = $this->item->getElementTexts(
                 'Dublin Core', $element['label']);
 
@@ -85,7 +90,8 @@ class OaiPmhRepository_Metadata_OaiDcUnrefined extends OaiPmhRepository_Metadata
             }
 
             // Append the browse URI to all results.
-            if ($elementName == 'identifier') {
+            // Use of element['name'] to avoid duplication with refinements.
+            if ($element['name'] == 'identifier') {
                 $this->appendNewElement($oai_dc,
                     'dc:identifier', record_url($this->item, 'show', true));
 
