@@ -14,11 +14,13 @@
 class DublinCoreExtendedPlugin extends Omeka_Plugin_AbstractPlugin
 {
     protected $_hooks = array(
-        'install', 
-        'uninstall', 
-        'uninstall_message', 
-        'upgrade', 
-        'initialize', 
+        'install',
+        'uninstall',
+        'uninstall_message',
+        'upgrade',
+        'initialize',
+        'config_form',
+        'config',
     );
     
     protected $_filters = array(
