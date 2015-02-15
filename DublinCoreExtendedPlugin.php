@@ -34,6 +34,8 @@ class DublinCoreExtendedPlugin extends Omeka_Plugin_AbstractPlugin
      */
     protected $_options = array(
         'dublin_core_extended_oaipmh_unrefined_dc' => false,
+        'dublin_core_extended_oaipmh_oai_dcq' => true,
+        'dublin_core_extended_oaipmh_qdc' => false,
     );
 
     private $_elements;
@@ -68,6 +70,8 @@ class DublinCoreExtendedPlugin extends Omeka_Plugin_AbstractPlugin
                 $this->_db->query($sql, array($elementSet->id, $element['label'], $element['description']));
             }
         }
+
+        $this->_installOptions();
     }
     
     /**
@@ -82,6 +86,8 @@ class DublinCoreExtendedPlugin extends Omeka_Plugin_AbstractPlugin
                 $elementTable->findByElementSetNameAndElementName('Dublin Core', $element['label'])->delete();
             }
         }
+
+        $this->_uninstallOptions();
     }
     
     /**
@@ -177,17 +183,27 @@ class DublinCoreExtendedPlugin extends Omeka_Plugin_AbstractPlugin
 
     public function filterOaiPmhRepositoryMetadataFormats($formats)
     {
-        $formats['qdc'] = array(
-            'class' => 'DublinCoreExtended_Metadata_QDc',
-            'namespace' => DublinCoreExtended_Metadata_QDc::METADATA_NAMESPACE,
-            'schema' => DublinCoreExtended_Metadata_QDc::METADATA_SCHEMA,
-        );
-
         if (get_option('dublin_core_extended_oaipmh_unrefined_dc')) {
             $formats['oai_dc'] = array(
                 'class' => 'DublinCoreExtended_Metadata_OaiDcUnrefined',
                 'namespace' => DublinCoreExtended_Metadata_OaiDcUnrefined::METADATA_NAMESPACE,
                 'schema' => DublinCoreExtended_Metadata_OaiDcUnrefined::METADATA_SCHEMA,
+            );
+        }
+
+        if (get_option('dublin_core_extended_oaipmh_oai_dcq')) {
+            $formats['oai_dcq'] = array(
+                'class' => 'DublinCoreExtended_Metadata_OaiDcq',
+                'namespace' => DublinCoreExtended_Metadata_OaiDcq::METADATA_NAMESPACE,
+                'schema' => DublinCoreExtended_Metadata_OaiDcq::METADATA_SCHEMA,
+            );
+        }
+
+        if (get_option('dublin_core_extended_oaipmh_qdc')) {
+            $formats['qdc'] = array(
+                'class' => 'DublinCoreExtended_Metadata_QDc',
+                'namespace' => DublinCoreExtended_Metadata_QDc::METADATA_NAMESPACE,
+                'schema' => DublinCoreExtended_Metadata_QDc::METADATA_SCHEMA,
             );
         }
 

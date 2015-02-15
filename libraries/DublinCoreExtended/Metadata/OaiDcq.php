@@ -3,37 +3,36 @@
  * @package DublinCoreExtended
  * @subpackage MetadataFormats
  * @copyright Copyright 2009-2014 John Flatness, Yu-Hsun Lin
- * @copyright Copyright 2014 Daniel Berthereau
+ * @copyright Copyright 2014-2015 Daniel Berthereau
  * @license http://www.gnu.org/licenses/gpl-3.0.txt
  */
 
 /**
- * Class implementing DCMI Metadata Terms metadata output (qdc).
+ * Class implementing DCMI Metadata Terms metadata output (oai_dcq).
  *
- * This format is not standardized, but used by some repositories, as DSpace
- * and a mediawiki extension (ProofreadPage: https://wikisource.org/wiki/Special:ProofreadIndexOaiSchema/qdc).
- * The schema comes from the Science & Technology Facilities Council of the
- * United Kingdom.
+ * This format is not standardized, but used by some repositories.
+ * The schema comes from the British Library.
  *
- * @see http://epubs.cclrc.ac.uk/xsd/qdc.xsd
+ * @see http://www.bl.uk/schemas/
+ * @see http://dublincore.org/documents/dc-xml-guidelines/
  * @see http://dublincore.org/schemas/xmls/qdc/dcterms.xsd
  *
  * @see OaiPmhRepository_Metadata_FormatInterface
  * @package DublinCoreExtended
  * @subpackage Metadata Formats
  */
-class DublinCoreExtended_Metadata_QDc implements OaiPmhRepository_Metadata_FormatInterface
+class DublinCoreExtended_Metadata_OaiDcq implements OaiPmhRepository_Metadata_FormatInterface
 {
     /** OAI-PMH metadata prefix */
-    const METADATA_PREFIX = 'qdc';
+    const METADATA_PREFIX = 'oai_dcq';
 
     /** XML namespace for output format */
-    const METADATA_NAMESPACE = 'http://epubs.cclrc.ac.uk/xmlns/qdc/';
+    const METADATA_NAMESPACE = 'http://www.bl.uk/namespaces/oai_dcq/';
 
     /** XML schema for output format */
-    const METADATA_SCHEMA = 'http://epubs.cclrc.ac.uk/xsd/qdc.xsd';
+    const METADATA_SCHEMA = 'http://www.bl.uk/schemas/qualifieddc/oai_dcq.xsd';
 
-    /** XML namespace for unqualified Dublin Core */
+    /** XML namespace for simple Dublin Core */
     const DC_NAMESPACE_URI = 'http://purl.org/dc/elements/1.1/';
 
     /** XML namepace for DC element refinements*/
@@ -49,14 +48,14 @@ class DublinCoreExtended_Metadata_QDc implements OaiPmhRepository_Metadata_Forma
     public function appendMetadata($item, $metadataElement)
     {
         $document = $metadataElement->ownerDocument;
-        $qdc = $document->createElementNS(
-            self::METADATA_NAMESPACE, 'qdc:qualifieddc');
-        $metadataElement->appendChild($qdc);
+        $oai_dcq = $document->createElementNS(
+            self::METADATA_NAMESPACE, 'oai_dcq:qualifieddc');
+        $metadataElement->appendChild($oai_dcq);
 
-        $qdc->setAttribute('xmlns:qdc', self::METADATA_NAMESPACE);
-        $qdc->setAttribute('xmlns:dc', self::DC_NAMESPACE_URI);
-        $qdc->setAttribute('xmlns:dcterms', self::DC_TERMS_NAMESPACE_URI);
-        $qdc->declareSchemaLocation(self::METADATA_NAMESPACE, self::METADATA_SCHEMA);
+        $oai_dcq->setAttribute('xmlns:oai_dcq', self::METADATA_NAMESPACE);
+        $oai_dcq->setAttribute('xmlns:dc', self::DC_NAMESPACE_URI);
+        $oai_dcq->setAttribute('xmlns:dcterms', self::DC_TERMS_NAMESPACE_URI);
+        $oai_dcq->declareSchemaLocation(self::METADATA_NAMESPACE, self::METADATA_SCHEMA);
 
         // Each of the 15 unqualified Dublin Core elements, in the order
         // specified by the oai_dc XML schema.
@@ -68,7 +67,8 @@ class DublinCoreExtended_Metadata_QDc implements OaiPmhRepository_Metadata_Forma
         );
 
         // Each of metadata terms.
-        require dirname(dirname(dirname(dirname(__FILE__)))) . DIRECTORY_SEPARATOR . 'elements.php';
+        require dirname(dirname(dirname(dirname(__FILE__))))
+            . DIRECTORY_SEPARATOR . 'elements.php';
         $dcTermElements = &$elements;
 
         // Must create elements using createElement to make DOM allow a
@@ -87,19 +87,19 @@ class DublinCoreExtended_Metadata_QDc implements OaiPmhRepository_Metadata_Forma
                 // This check avoids some issues with useless data.
                 $value = trim($elementText->text);
                 if ($value || $value === '0') {
-                    $qdc->appendNewElement($namespace . $elementName, $value);
+                    $oai_dcq->appendNewElement($namespace . $elementName, $value);
                 }
             }
 
             // Append the browse URI to all results.
             if ($elementName == 'identifier') {
-                $qdc->appendNewElement('dc:identifier', record_url($item, 'show', true));
+                $oai_dcq->appendNewElement('dc:identifier', record_url($item, 'show', true));
 
                 // Also append an identifier for each file.
                 if (get_option('oaipmh_repository_expose_files') && metadata($item, 'has files')) {
                     $files = $item->getFiles();
                     foreach ($files as $file) {
-                        $qdc->appendNewElement('dc:identifier', $file->getWebPath('original'));
+                        $oai_dcq->appendNewElement('dc:identifier', $file->getWebPath('original'));
                     }
                 }
             }
