@@ -14,6 +14,7 @@ $elements = array(
     array(
         'label' => 'Title',
         'name' => 'title',
+        'description' => 'A name given to the resource.',
     ),
     array(
         'label' => 'Alternative Title',
@@ -24,14 +25,17 @@ $elements = array(
     array(
         'label' => 'Creator',
         'name' => 'creator',
+        'description' => 'An entity primarily responsible for making the resource.',
     ),
     array(
         'label' => 'Subject',
         'name' => 'subject',
+        'description' => 'The topic of the resource.',
     ),
     array(
         'label' => 'Description',
         'name' => 'description',
+        'description' => 'An account of the resource.',
     ),
     array(
         'label' => 'Table Of Contents',
@@ -48,14 +52,17 @@ $elements = array(
     array(
         'label' => 'Publisher',
         'name' => 'publisher',
+        'description' => 'An entity responsible for making the resource available.',
     ),
     array(
         'label' => 'Contributor',
         'name' => 'contributor',
+        'description' => 'An entity responsible for making contributions to the resource.',
     ),
     array(
         'label' => 'Date',
         'name' => 'date',
+        'description' => 'A point or period of time associated with an event in the lifecycle of the resource.',
     ),
     array(
         'label' => 'Date Created',
@@ -83,7 +90,7 @@ $elements = array(
     ),
     array(
         'label' => 'Date Modified',
-        'name' => '',
+        'name' => 'modified',
         'description' => 'Date on which the resource was changed.',
         '_refines' => 'Date',
     ),
@@ -108,10 +115,12 @@ $elements = array(
     array(
         'label' => 'Type',
         'name' => 'type',
+        'description' => 'The nature or genre of the resource.',
     ),
     array(
         'label' => 'Format',
         'name' => 'format',
+        'description' => 'The file format, physical medium, or dimensions of the resource.',
     ),
     array(
         'label' => 'Extent',
@@ -128,6 +137,7 @@ $elements = array(
     array(
         'label' => 'Identifier',
         'name' => 'identifier',
+        'description' => 'An unambiguous reference to the resource within a given context.',
     ),
     array(
         'label' => 'Bibliographic Citation',
@@ -138,14 +148,17 @@ $elements = array(
     array(
         'label' => 'Source',
         'name' => 'source',
+        'description' => 'A related resource from which the described resource is derived.',
     ),
     array(
         'label' => 'Language',
         'name' => 'language',
+        'description' => 'A language of the resource.',
     ),
     array(
         'label' => 'Relation',
         'name' => 'relation',
+        'description' => 'A related resource.',
     ),
     array(
         'label' => 'Is Version Of',
@@ -228,6 +241,7 @@ $elements = array(
     array(
         'label' => 'Coverage',
         'name' => 'coverage',
+        'description' => 'The spatial or temporal topic of the resource, the spatial applicability of the resource, or the jurisdiction under which the resource is relevant.',
     ),
     array(
         'label' => 'Spatial Coverage',
@@ -244,6 +258,7 @@ $elements = array(
     array(
         'label' => 'Rights',
         'name' => 'rights',
+        'description' => 'Information about rights held in and over the resource.',
     ),
     array(
         'label' => 'Access Rights',
