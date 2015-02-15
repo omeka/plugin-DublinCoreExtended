@@ -24,6 +24,7 @@ class DublinCoreExtendedPlugin extends Omeka_Plugin_AbstractPlugin
     protected $_filters = array(
         'response_contexts', 
         'action_contexts', 
+        'oai_pmh_harvester_maps',
     );
     
     private $_elements;
@@ -136,6 +137,23 @@ class DublinCoreExtendedPlugin extends Omeka_Plugin_AbstractPlugin
         return $contexts;
     }
     
+    /**
+     * Get the available OAI-PMH to Omeka maps, which should correspond to
+     * OAI-PMH metadata formats.
+     *
+     * @param array $maps Associative array of supported schemas.
+     * @return array
+     */
+    public function filterOaiPmhHarvesterMaps($maps)
+    {
+        $maps[DublinCoreExtended_Harvest_OaiDcq::METADATA_PREFIX] = array(
+            'class' => 'DublinCoreExtended_Harvest_OaiDcq',
+            'schema' => DublinCoreExtended_Harvest_OaiDcq::METADATA_SCHEMA,
+        );
+
+        return $maps;
+    }
+
     /**
      * Get the dublin core extended elements array.
      * 
