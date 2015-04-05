@@ -77,10 +77,17 @@ class DublinCoreExtended_Metadata_OaiDcUnrefined implements OaiPmhRepository_Met
             $dcElements = $item->getElementTexts(
                 'Dublin Core', $element['label']);
 
+            // Prepend the item type, if any.
+            if ($elementName == 'type') {
+                if ($dcType = $item->getProperty('item_type_name')) {
+                    $oai_dc->appendNewElement('dc:type', $dcType);
+                }
+            }
+
             foreach ($dcElements as $elementText) {
                 // This check avoids some issues with useless data.
                 $value = trim($elementText->text);
-                if ($value || $value === '0') {
+                if (strlen($value) > 0) {
                     $oai_dc->appendNewElement($namespace . $elementName, $value);
                 }
             }
