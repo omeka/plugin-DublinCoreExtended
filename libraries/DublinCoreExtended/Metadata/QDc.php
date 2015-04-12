@@ -84,7 +84,7 @@ class DublinCoreExtended_Metadata_QDc implements OaiPmhRepository_Metadata_Forma
                 'Dublin Core', $element['label']);
 
             // Prepend the item type, if any.
-            if ($elementName == 'type') {
+            if ($elementName == 'type' && get_option('oaipmh_repository_expose_item_type')) {
                 if ($dcType = $item->getProperty('item_type_name')) {
                     $qdc->appendNewElement('dc:type', $dcType);
                 }
