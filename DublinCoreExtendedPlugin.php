@@ -33,11 +33,11 @@ class DublinCoreExtendedPlugin extends Omeka_Plugin_AbstractPlugin
         'Date', 'Contributor', 'Rights', 'Relation', 'Format', 'Language', 
         'Type', 'Identifier', 'Coverage', 
     );
+
     
     public function __construct()
     {
         parent::__construct();
-        
         // Set the elements.
         include 'elements.php';
         $this->_elements = $elements;
@@ -50,8 +50,15 @@ class DublinCoreExtendedPlugin extends Omeka_Plugin_AbstractPlugin
     {
         // Add the new elements to the Dublin Core element set. 
         $elementSet = $this->_db->getTable('ElementSet')->findByName('Dublin Core');
+
+        $existingDcElements = array();
+        $elementTable = $this->_db->getTable('Element');
+        foreach ($elementTable->findBySet('Dublin Core') as $element) {
+            $existingDcElements[] = $element->name;
+        }
+
         foreach ($this->_elements as $key => $element) {
-            if (!in_array($element['label'], $this->_dcElements)) {
+            if (!in_array($element['label'], $existingDcElements)) {
                 $sql = "
                 INSERT INTO `{$this->_db->Element}` (`element_set_id`, `name`, `description`) 
                 VALUES (?, ?, ?)";
