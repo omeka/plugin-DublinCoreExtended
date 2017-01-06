@@ -83,7 +83,7 @@ class DublinCoreExtendedPlugin extends Omeka_Plugin_AbstractPlugin
             }
         }
 
-        $refinements = get_view()->getDublinCoreRefinements();
+        $refinements = $this->_getDublinCoreRefinements();
         $this->_options['dublin_core_extended_refinements'] = serialize($refinements);
 
         $this->_installOptions();
