@@ -14,24 +14,36 @@
 class DublinCoreExtendedPlugin extends Omeka_Plugin_AbstractPlugin
 {
     protected $_hooks = array(
-        'install', 
-        'uninstall', 
-        'uninstall_message', 
-        'upgrade', 
-        'initialize', 
+        'install',
+        'uninstall',
+        'uninstall_message',
+        'upgrade',
+        'initialize',
+        'config_form',
+        'config',
     );
     
     protected $_filters = array(
-        'response_contexts', 
-        'action_contexts', 
+        'response_contexts',
+        'action_contexts',
+        'oai_pmh_repository_metadata_formats',
     );
-    
+
+    /**
+     * @var array Options and their default values.
+     */
+    protected $_options = array(
+        'dublin_core_extended_oaipmh_unrefined_dc' => false,
+        'dublin_core_extended_oaipmh_oai_dcq' => true,
+        'dublin_core_extended_oaipmh_qdc' => false,
+    );
+
     private $_elements;
     
     private $_dcElements = array(
-        'Title', 'Subject', 'Description', 'Creator', 'Source', 'Publisher', 
-        'Date', 'Contributor', 'Rights', 'Relation', 'Format', 'Language', 
-        'Type', 'Identifier', 'Coverage', 
+        'Title', 'Creator', 'Subject', 'Description', 'Publisher',
+        'Contributor', 'Date', 'Type', 'Format', 'Identifier', 'Source',
+        'Language', 'Relation', 'Coverage', 'Rights',
     );
 
     
@@ -65,6 +77,8 @@ class DublinCoreExtendedPlugin extends Omeka_Plugin_AbstractPlugin
                 $this->_db->query($sql, array($elementSet->id, $element['label'], $element['description']));
             }
         }
+
+        $this->_installOptions();
     }
     
     /**
@@ -79,6 +93,8 @@ class DublinCoreExtendedPlugin extends Omeka_Plugin_AbstractPlugin
                 $elementTable->findByElementSetNameAndElementName('Dublin Core', $element['label'])->delete();
             }
         }
+
+        $this->_uninstallOptions();
     }
     
     /**
@@ -113,7 +129,36 @@ class DublinCoreExtendedPlugin extends Omeka_Plugin_AbstractPlugin
         // Add translation.
         add_translation_source(dirname(__FILE__) . '/languages');
     }
-    
+
+    /**
+     * Shows plugin configuration page.
+     *
+     * @return void
+     */
+    public function hookConfigForm($args)
+    {
+        $view = $args['view'];
+        echo $view->partial(
+            'plugins/dublin-core-extended-config-form.php',
+            array(
+                'view' => $view,
+            )
+        );
+    }
+
+    /**
+     * Processes the configuration form.
+     *
+     * @return void
+     */
+    public function hookConfig($args)
+    {
+        $post = $args['post'];
+        foreach ($post as $key => $value) {
+            set_option($key, $value);
+        }
+    }
+
     /**
      * Add the dc-rdf response context.
      * 
@@ -142,7 +187,36 @@ class DublinCoreExtendedPlugin extends Omeka_Plugin_AbstractPlugin
         }
         return $contexts;
     }
-    
+
+    public function filterOaiPmhRepositoryMetadataFormats($formats)
+    {
+        if (get_option('dublin_core_extended_oaipmh_unrefined_dc')) {
+            $formats['oai_dc'] = array(
+                'class' => 'DublinCoreExtended_Metadata_OaiDcUnrefined',
+                'namespace' => DublinCoreExtended_Metadata_OaiDcUnrefined::METADATA_NAMESPACE,
+                'schema' => DublinCoreExtended_Metadata_OaiDcUnrefined::METADATA_SCHEMA,
+            );
+        }
+
+        if (get_option('dublin_core_extended_oaipmh_oai_dcq')) {
+            $formats['oai_dcq'] = array(
+                'class' => 'DublinCoreExtended_Metadata_OaiDcq',
+                'namespace' => DublinCoreExtended_Metadata_OaiDcq::METADATA_NAMESPACE,
+                'schema' => DublinCoreExtended_Metadata_OaiDcq::METADATA_SCHEMA,
+            );
+        }
+
+        if (get_option('dublin_core_extended_oaipmh_qdc')) {
+            $formats['qdc'] = array(
+                'class' => 'DublinCoreExtended_Metadata_QDc',
+                'namespace' => DublinCoreExtended_Metadata_QDc::METADATA_NAMESPACE,
+                'schema' => DublinCoreExtended_Metadata_QDc::METADATA_SCHEMA,
+            );
+        }
+
+        return $formats;
+    }
+
     /**
      * Get the dublin core extended elements array.
      * 
