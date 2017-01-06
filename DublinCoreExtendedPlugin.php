@@ -122,13 +122,7 @@ class DublinCoreExtendedPlugin extends Omeka_Plugin_AbstractPlugin
      */
     public function hookUpgrade($args)
     {
-        // Drop the unused dublin_core_extended_relationships table.
-        if (version_compare($args['old_version'], '2.0', '<')) {
-            $sql = "DROP TABLE IF EXISTS `{$this->_db->DublinCoreExtendedRelationship}`";
-            $this->_db->query($sql);
-        }
-
-        if (version_compare($args['old_version'], '2.1', '<')) {
+        if (version_compare($args['old_version'], '2.1', '<=')) {
             $refinements = $this->_getDublinCoreRefinements();
             set_option('dublin_core_extended_refinements', serialize($refinements));
             set_option('dublin_core_extended_refines', $this->_options['dublin_core_extended_refines']);
