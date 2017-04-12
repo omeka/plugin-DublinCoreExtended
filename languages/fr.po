@@ -1,0 +1,327 @@
+# Translation for the Dublin Core Extended plugin for Omeka.
+# Copyright (C) 2012 Roy Rosenzweig Center for History and New Media
+# This file is distributed under the same license as the Omeka package.
+# 
+# Translators:
+# Daniel Berthereau <daniel.transifex@berthereau.net>, 2016
+# Delaye <stephane.delaye@biblibre.com>, 2015
+# fiuzzy <fiuzzy1@gmail.com>, 2016
+# Isabelle Gilles <isabelle.gillesgallet@gmail.com>, 2015
+# Julian Maurice <julian.maurice@biblibre.com>, 2015
+# Julien Sicot <julien.sicot@gmail.com>, 2013,2015
+# Mathieu Beaudin <macthieu@me.com>, 2013
+# rcheno <remi.cheno@ideo-cairo.org>, 2014
+# Thierry Pasquier <thierry.pasquier@emf.ccsti.eu>, 2013
+msgid ""
+msgstr ""
+"Project-Id-Version: Omeka\n"
+"Report-Msgid-Bugs-To: http://github.com/omeka/plugin-DublinCoreExtended/issues\n"
+"POT-Creation-Date: 2012-12-17 21:49-0500\n"
+"PO-Revision-Date: 2016-10-10 15:04+0000\n"
+"Last-Translator: Daniel Berthereau <daniel.transifex@berthereau.net>\n"
+"Language-Team: French (http://www.transifex.com/omeka/omeka/language/fr/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: fr\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+msgid "Alternative Title"
+msgstr "Autre forme de titre"
+
+msgid ""
+"An alternative name for the resource. The distinction between titles and "
+"alternative titles is application-specific."
+msgstr "Autre nom pour la ressource. La distinction entre Titres et Autres formes de titres varie selon l'application"
+
+msgid "Abstract"
+msgstr "Résumé"
+
+msgid "A summary of the resource."
+msgstr "Un résumé de la ressource."
+
+msgid "Table Of Contents"
+msgstr "Table des matières"
+
+msgid "A list of subunits of the resource."
+msgstr "Une liste des sous-unités de la ressource."
+
+msgid "Date Available"
+msgstr "Date de disponibilité"
+
+msgid ""
+"Date (often a range) that the resource became or will become available."
+msgstr "La date (souvent une période) à laquelle la ressource est devenue ou deviendra disponible."
+
+msgid "Date Created"
+msgstr "Date de création"
+
+msgid "Date of creation of the resource."
+msgstr "Date de création de la ressource."
+
+msgid "Date Accepted"
+msgstr "Date d'acceptation"
+
+msgid ""
+"Date of acceptance of the resource. Examples of resources to which a Date "
+"Accepted may be relevant are a thesis (accepted by a university department) "
+"or an article (accepted by a journal)."
+msgstr "Date de l'acceptation de la ressource. Exemples de ressources pour lesquelles une Date acceptée peut faire sens : une thèse (acceptée par un département d'université) ou un article (accepté par une revue)."
+
+msgid "Date Copyrighted"
+msgstr "Date du copyright"
+
+msgid "Date of copyright."
+msgstr "Date du copyright."
+
+msgid "Date Submitted"
+msgstr "Date de soumission"
+
+msgid ""
+"Date of submission of the resource. Examples of resources to which a Date "
+"Submitted may be relevant are a thesis (submitted to a university "
+"department) or an article (submitted to a journal)."
+msgstr "Date de soumission de la ressource. Exemples de ressources pour lesquelles une Date de soumission peut faire sens : une thèse (soumise à un département d'université) ou un article (soumis à une revue)."
+
+msgid "Date Issued"
+msgstr "Date de parution"
+
+msgid "Date of formal issuance (e.g., publication) of the resource."
+msgstr "Date de parution officielle (ex. : une publication) de la ressource."
+
+msgid "Date on which the resource was changed."
+msgstr "Date à laquelle la ressource a été modifiée."
+
+msgid "Date Valid"
+msgstr "Date de validité"
+
+msgid "Date (often a range) of validity of a resource."
+msgstr "La date (souvent une période) de validité d'une ressource."
+
+msgid "Access Rights"
+msgstr "Droit d'accès"
+
+msgid ""
+"Information about who can access the resource or an indication of its "
+"security status. Access Rights may include information regarding access or "
+"restrictions based on privacy, security, or other policies."
+msgstr "Modalités d'accès pour la ressource ou informations de sécurité concernant cette dernière. Les droits ou les restrictions d'accès sont définis en fonction de critères de confidentialité, de vie privée, de sécurité, etc."
+
+msgid "License"
+msgstr "Licence"
+
+msgid ""
+"A legal document giving official permission to do something with the "
+"resource."
+msgstr "Un document juridique donnant l'autorisation officielle de faire quelque chose avec la ressource."
+
+msgid "Conforms To"
+msgstr "Est conforme à"
+
+msgid "An established standard to which the described resource conforms."
+msgstr "Une norme établie à laquelle se conforme la ressource."
+
+msgid "Has Format"
+msgstr "A pour autre format"
+
+msgid ""
+"A related resource that is substantially the same as the pre-existing "
+"described resource, but in another format."
+msgstr "Ressource similaire à la ressource décrite mais dans un autre format"
+
+msgid "Has Part"
+msgstr "A comme partie"
+
+msgid ""
+"A related resource that is included either physically or logically in the "
+"described resource."
+msgstr "Une ressource liée qui est incluse physiquement ou logiquement dans la ressource décrite."
+
+msgid "Has Version"
+msgstr "A d'autres versions"
+
+msgid ""
+"A related resource that is a version, edition, or adaptation of the "
+"described resource."
+msgstr "Une ressource liée qui est une version, une édition ou une adaptation de la ressource décrite."
+
+msgid "Is Format Of"
+msgstr "Est un autre format de"
+
+msgid ""
+"A related resource that is substantially the same as the described resource,"
+" but in another format."
+msgstr "Une ressource liée, globalement identique à la ressource décrite, existant sous un autre format."
+
+msgid "Is Part Of"
+msgstr "Est une partie de "
+
+msgid ""
+"A related resource in which the described resource is physically or "
+"logically included."
+msgstr "Ressource similaire à la ressource décrite physiquement."
+
+msgid "Is Referenced By"
+msgstr "Est référencé par"
+
+msgid ""
+"A related resource that references, cites, or otherwise points to the "
+"described resource."
+msgstr "Une ressource liée qui fait référence, cite ou pointe d’une autre manière vers la ressource décrite."
+
+msgid "Is Replaced By"
+msgstr "Est remplacé par"
+
+msgid ""
+"A related resource that supplants, displaces, or supersedes the described "
+"resource."
+msgstr "Une ressource similaire qui supplante ou remplace la ressource décrite."
+
+msgid "Is Required By"
+msgstr "Est requis par"
+
+msgid ""
+"A related resource that requires the described resource to support its "
+"function, delivery, or coherence."
+msgstr "Une ressource liée qui nécessite la ressource décrite pour permettre sa fonction, sa livraison ou sa cohérence."
+
+msgid "Is Version Of"
+msgstr "Est une version de"
+
+msgid ""
+"A related resource of which the described resource is a version, edition, or"
+" adaptation. Changes in version imply substantive changes in content rather "
+"than differences in format."
+msgstr "Une ressource liée pour laquelle la ressource décrite est une version, une édition ou une adaptation. Les changements de version impliquent des changements substantiels de contenu plutôt que des différences de format."
+
+msgid "References"
+msgstr "Référence"
+
+msgid ""
+"A related resource that is referenced, cited, or otherwise pointed to by the"
+" described resource."
+msgstr "Ressource similaire qui est référencée, citée, ou désigné par la ressource décrite."
+
+msgid "Replaces"
+msgstr "Remplace"
+
+msgid ""
+"A related resource that is supplanted, displaced, or superseded by the "
+"described resource."
+msgstr "Une ressource similaire qui est supplantée ou remplacée par la ressource décrite."
+
+msgid "Requires"
+msgstr "Requiert"
+
+msgid ""
+"A related resource that is required by the described resource to support its"
+" function, delivery, or coherence."
+msgstr "Une ressource similaire qui est requise par la ressource décrite pour sa fonction, distribution ou cohérence."
+
+msgid "Extent"
+msgstr "Étendue de la ressource, taille, durée"
+
+msgid "The size or duration of the resource."
+msgstr "La taille ou la durée de la ressource."
+
+msgid "Medium"
+msgstr "Support"
+
+msgid "The material or physical carrier of the resource."
+msgstr "Le support matériel ou physique de la ressource."
+
+msgid ""
+"A bibliographic reference for the resource. Recommended practice is to "
+"include sufficient bibliographic detail to identify the resource as "
+"unambiguously as possible."
+msgstr "Référence bibliographique de la ressource. Utile pour identifier la ressource sans ambiguïté."
+
+msgid "Spatial Coverage"
+msgstr "Couverture spatiale"
+
+msgid "Spatial characteristics of the resource."
+msgstr "Les caractéristiques spatiales de la ressource"
+
+msgid "Temporal Coverage"
+msgstr "Couverture temporelle"
+
+msgid "Temporal characteristics of the resource."
+msgstr "Les caractéristiques temporelles de la ressource"
+
+msgid "Accrual Method"
+msgstr "Méthode d’abonnement"
+
+msgid "The method by which items are added to a collection."
+msgstr "La méthode consistant à ajouter les items dans une collection"
+
+msgid "Accrual Periodicity"
+msgstr "Périodicité d’acquisition"
+
+msgid "The frequency with which items are added to a collection."
+msgstr "Fréquence d'ajout des items dans une collection"
+
+msgid "Accrual Policy"
+msgstr "Politique d’acquisition"
+
+msgid "The policy governing the addition of items to a collection."
+msgstr "Politique d'acquisition d'une collection"
+
+msgid "Audience"
+msgstr "Public visé"
+
+msgid "A class of entity for whom the resource is intended or useful."
+msgstr "Une classe d’entité pour laquelle la ressource est destinée ou utile."
+
+msgid "Audience Education Level"
+msgstr "Niveau public destinataire"
+
+msgid ""
+"A class of entity, defined in terms of progression through an educational or"
+" training context, for which the described resource is intended."
+msgstr "Une classe d’entité, définie en termes de progression dans un contexte éducatif ou de formation, pour laquelle la ressource décrite est destinée."
+
+msgid "Mediator"
+msgstr "Médiateur"
+
+msgid ""
+"An entity that mediates access to the resource and for whom the resource is "
+"intended or useful. In an educational context, a mediator might be a parent,"
+" teacher, teaching assistant, or care-giver."
+msgstr "Une entité qui gère l’accès à la ressource et pour laquelle la ressource est destinée ou utile. Dans un contexte éducatif, un médiateur peut être un parent, un enseignant, un assistant d’enseignement ou un aide-soignant."
+
+msgid "Instructional Method"
+msgstr "Méthode d’enseignement"
+
+msgid ""
+"A process, used to engender knowledge, attitudes and skills, that the "
+"described resource is designed to support. Instructional Method will "
+"typically include ways of presenting instructional materials or conducting "
+"instructional activities, patterns of learner-to-learner and learner-to-"
+"instructor interactions, and mechanisms by which group and individual levels"
+" of learning are measured. Instructional methods include all aspects of the "
+"instruction and learning processes from planning and implementation through "
+"evaluation and feedback."
+msgstr "Un procédé, utilisé pour engendrer des connaissances, des attitudes et des compétences, pour lequel la ressource décrite est conçue comme support. La méthode pédagogique comprendra généralement des moyens pour présenter du matériel pédagogique ou pour mener des activités d’enseignement, des modèles d’interaction de l’apprenant à l’apprenant et de l’apprenant à l’instructeur et des mécanismes pour mesurer les niveaux individuels et collectifs. Les méthodes d’enseignement comprennent tous les aspects de l’instruction et des procédés d’apprentissage, de la planification, à la mise en œuvre, à l’évaluation et à la rétroaction."
+
+msgid "Provenance"
+msgstr "Provenance"
+
+msgid ""
+"A statement of any changes in ownership and custody of the resource since "
+"its creation that are significant for its authenticity, integrity, and "
+"interpretation. The statement may include a description of any changes "
+"successive custodians made to the resource."
+msgstr "Une déclaration de tout changement de propriété ou de conservation de la ressource depuis sa création, suffisamment important pour assurer son authenticité, son intégrité et son interprétation. La déclaration peut inclure une description de tous les changements que les gardiens successifs ont apportés à la ressource."
+
+msgid "Rights Holder"
+msgstr "Ayants droit"
+
+msgid "A person or organization owning or managing rights over the resource."
+msgstr "Une personne ou une organisation détentrice ou chargée de la gestion des droits concernant la ressource."
+
+#: DublinCoreExtendedPlugin.php:82
+#, php-format
+msgid ""
+"%sWarning%s: This will remove all the Dublin Core elements added by this "
+"plugin and permanently delete all element texts entered in those fields.%s"
+msgstr "%sAvertissement%s: Cela va supprimer tous les éléments Dublin Core ajoutés par cette extension et effacer définitivement tous les contenus textuels entrés dans ces champs.%s"

@@ -1,0 +1,320 @@
+# Translation for the Dublin Core Extended plugin for Omeka.
+# Copyright (C) 2012 Roy Rosenzweig Center for History and New Media
+# This file is distributed under the same license as the Omeka package.
+# 
+# Translators:
+# baatarsuren <mgllibrary@gmail.com>, 2016
+# Khaidav T. <khaidaw@yahoo.com>, 2016
+msgid ""
+msgstr ""
+"Project-Id-Version: Omeka\n"
+"Report-Msgid-Bugs-To: http://github.com/omeka/plugin-DublinCoreExtended/issues\n"
+"POT-Creation-Date: 2012-12-17 21:49-0500\n"
+"PO-Revision-Date: 2016-11-29 12:07+0000\n"
+"Last-Translator: Khaidav T. <khaidaw@yahoo.com>\n"
+"Language-Team: Mongolian (http://www.transifex.com/omeka/omeka/language/mn/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: mn\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+msgid "Alternative Title"
+msgstr "Өөр /нэр/ гарчиг"
+
+msgid ""
+"An alternative name for the resource. The distinction between titles and "
+"alternative titles is application-specific."
+msgstr "Нөөцийн өөр нэр. Тодорхой хэрэглээнд үндсэн гарчиг болон өөр гарчиг хоорондын ялгаа."
+
+msgid "Abstract"
+msgstr "Товч агуулга"
+
+msgid "A summary of the resource."
+msgstr "Эх сурвалжийн хураангуй"
+
+msgid "Table Of Contents"
+msgstr "Агуулгын гарчиг"
+
+msgid "A list of subunits of the resource."
+msgstr "Эх сурвалжийн дэд хэсгийн жагсаалт"
+
+msgid "Date Available"
+msgstr "Бэлэн болсон огноо"
+
+msgid ""
+"Date (often a range) that the resource became or will become available."
+msgstr "Он сар өдөр эх сурвалж бэлэн болсон эсвэл бэлэн болно (хүрээ)"
+
+msgid "Date Created"
+msgstr "Үүсгэгдсэн огноо"
+
+msgid "Date of creation of the resource."
+msgstr "Эх сурвалжийн үүсгэгдсэн огноо"
+
+msgid "Date Accepted"
+msgstr "Зөвшөөрөгдсөн огноо"
+
+msgid ""
+"Date of acceptance of the resource. Examples of resources to which a Date "
+"Accepted may be relevant are a thesis (accepted by a university department) "
+"or an article (accepted by a journal)."
+msgstr "Нөөцийн зөвшөөрөгдсөн огноо. Жишээлбэл: Холбогдох дипломын ажлыг хүлээж авсан (Их сургуулийн тэнхим) эсвэл нийтлэл хүлээж авсан (Сэтгүүлд хүлээж авсан) байж болно."
+
+msgid "Date Copyrighted"
+msgstr "Зохиогчийн эрх авсан огноо"
+
+msgid "Date of copyright."
+msgstr "Зохиогчийн эрхийн огноо"
+
+msgid "Date Submitted"
+msgstr "Оруулсан огноо"
+
+msgid ""
+"Date of submission of the resource. Examples of resources to which a Date "
+"Submitted may be relevant are a thesis (submitted to a university "
+"department) or an article (submitted to a journal)."
+msgstr "Нөөцийн танилцуулагдсан огноо. Жишээлбэл: Холбогдох дипломын ажилтай танилцсан (Их сургуулийн тэнхим) эсвэл нийтлэлтэй танилцсан (Сэтгүүлд танилцуулагдсан) байж болно."
+
+msgid "Date Issued"
+msgstr "Гаралтын огноо"
+
+msgid "Date of formal issuance (e.g., publication) of the resource."
+msgstr "Мэдээллийн албан ёсны нийтлэн гаргалт.  (гаралтын мэдээ г.м.)"
+
+msgid "Date on which the resource was changed."
+msgstr "Нөөцийн өөрчлөгдсөн огноо"
+
+msgid "Date Valid"
+msgstr "Зөвшөөрөгдсөн огноо"
+
+msgid "Date (often a range) of validity of a resource."
+msgstr "Мэдээллийг баталгаажуулсан огноо. (often a range)"
+
+msgid "Access Rights"
+msgstr "Хандах эрх"
+
+msgid ""
+"Information about who can access the resource or an indication of its "
+"security status. Access Rights may include information regarding access or "
+"restrictions based on privacy, security, or other policies."
+msgstr "Нөөцийн аюулгүй байдлын тухай заалт, эсвэл тухайн нөөцөд хэн хандаж болохыг харуулсан мэдээлэл. Хандалтын эрх нь нэвтрэх мэдээллийг багтаасан эсвэл нууцлал, аюулгүй байдал, бусад бодлогыг агуулсан болно."
+
+msgid "License"
+msgstr "Лиценз"
+
+msgid ""
+"A legal document giving official permission to do something with the "
+"resource."
+msgstr "Ямар нэг зүйл хийхэд албан ёсны зөвшөөрөл олгох эрзүйн баримт."
+
+msgid "Conforms To"
+msgstr "Нийцэж байгаа эсэх"
+
+msgid "An established standard to which the described resource conforms."
+msgstr "Тодорхойлсон нөөцтэй нийцтэй тогтсон стандарт."
+
+msgid "Has Format"
+msgstr "Форматтай"
+
+msgid ""
+"A related resource that is substantially the same as the pre-existing "
+"described resource, but in another format."
+msgstr "Урьдчилан тодорхойлсон нөөцүүд адил байна, гэвч формат нь зөрж байна."
+
+msgid "Has Part"
+msgstr "Хэсэгтэй"
+
+msgid ""
+"A related resource that is included either physically or logically in the "
+"described resource."
+msgstr "Тодорхойлсон нөөцөд холбогдох нөөц бодит эсвэл логикийн хувьд багтаж байна."
+
+msgid "Has Version"
+msgstr "Хувилбартай"
+
+msgid ""
+"A related resource that is a version, edition, or adaptation of the "
+"described resource."
+msgstr "Холбоотой нөөцийн хувилбар, хэвлэлт, эсвэл тодорхойлсон нөөцийн сайжруулалт."
+
+msgid "Is Format Of"
+msgstr "-ийн формат"
+
+msgid ""
+"A related resource that is substantially the same as the described resource,"
+" but in another format."
+msgstr "Холбоотой нөөц нь тодорхойлсон нөөцтэй ижил байна, гэвч формат нь зөрж байна."
+
+msgid "Is Part Of"
+msgstr "-ийн хэсэг"
+
+msgid ""
+"A related resource in which the described resource is physically or "
+"logically included."
+msgstr "Тодорхойлогдсон мэдээлэлд физикийн болон логикийн хувьд багтаж байгаа холбоотой мэдээлэл."
+
+msgid "Is Referenced By"
+msgstr "Гэхэд Норматив ишлэл байна"
+
+msgid ""
+"A related resource that references, cites, or otherwise points to the "
+"described resource."
+msgstr "Лавлагаанд холбоотой нөөц, ишлэл, эсвэл тодорхойлсон мэдээлэл рүү өөрөөр заасан тэмдэглэгээ."
+
+msgid "Is Replaced By"
+msgstr "Сольсон"
+
+msgid ""
+"A related resource that supplants, displaces, or supersedes the described "
+"resource."
+msgstr " Тодорхойлсон нөөцийг солих, эсвэл хасах, хамааралтай нөөцийн Оронд оруулах.  "
+
+msgid "Is Required By"
+msgstr "Заавал бөглөхийг шаардана"
+
+msgid ""
+"A related resource that requires the described resource to support its "
+"function, delivery, or coherence."
+msgstr "Холбоотой нөөцийн тодорхойлсон нөөцөд шаардлагатай функц,  хүргэлт, эсвэл уялдаа зэрэг дэмжлэг."
+
+msgid "Is Version Of"
+msgstr "Хувилбар"
+
+msgid ""
+"A related resource of which the described resource is a version, edition, or"
+" adaptation. Changes in version imply substantive changes in content rather "
+"than differences in format."
+msgstr "Тодорхойлогдсон нөөцийн хувилбар, дахин гаралт, эсвэл сайжруулалттай холбоотой нөөц. Хувилбарын өөрчлөлт агуулгын форматаас илүү бие даан өөрчлөгдөнө."
+
+msgid "References"
+msgstr "Лавлах"
+
+msgid ""
+"A related resource that is referenced, cited, or otherwise pointed to by the"
+" described resource."
+msgstr "Тодорхойлогдсон нөөц рүү лавлагаа, ишлэл болон өөрөөр заагдсан тэмдэглэгээ зэрэг хамааралтай нөөц."
+
+msgid "Replaces"
+msgstr "Сольсон"
+
+msgid ""
+"A related resource that is supplanted, displaced, or superseded by the "
+"described resource."
+msgstr "Холбоотой нөөц нь шахагдаж, байр нь солигдсон байна, эсвэл тодорхойлсон нөөц нь хүчингүй болсон байна."
+
+msgid "Requires"
+msgstr "Шаардлагатай"
+
+msgid ""
+"A related resource that is required by the described resource to support its"
+" function, delivery, or coherence."
+msgstr "Холбоотой нөөцийн тодорхойлсон нөөцөд шаардлагатай функц, хүргэлт, эсвэл уялдаа зэрэг дэмжлэг."
+
+msgid "Extent"
+msgstr "Сунгалт"
+
+msgid "The size or duration of the resource."
+msgstr "Нөөцийн хэмжээ, эсвэл хугацаа"
+
+msgid "Medium"
+msgstr "Дундаж"
+
+msgid "The material or physical carrier of the resource."
+msgstr "Нөөцийн мэтериал эсвэл физик шинжийг зөөгч."
+
+msgid ""
+"A bibliographic reference for the resource. Recommended practice is to "
+"include sufficient bibliographic detail to identify the resource as "
+"unambiguously as possible."
+msgstr "Нөөцөд зориулсан номзүйн лавлагаа. Практик зөвлөмж: нөөцийг аль болох хоёрдмол утгагүйгээр  тодорхойлох боломжтой ном зүйг оруулах."
+
+msgid "Spatial Coverage"
+msgstr "Орон зайн хамрах хүрээ"
+
+msgid "Spatial characteristics of the resource."
+msgstr "Нөөцийн орон зайн шинж чанар."
+
+msgid "Temporal Coverage"
+msgstr "Хугацааны хамрах хүрээ"
+
+msgid "Temporal characteristics of the resource."
+msgstr "Нөөцийн цаг хугацааны шинж чанар."
+
+msgid "Accrual Method"
+msgstr "Хуримтлалын /өсөлт/ арга"
+
+msgid "The method by which items are added to a collection."
+msgstr "Мэдээллийг сан хөмрөгт нэмсэн арга."
+
+msgid "Accrual Periodicity"
+msgstr "Хуримтлагдсан /өсөлт, нэмэлт/ үе"
+
+msgid "The frequency with which items are added to a collection."
+msgstr "Сан хөмрөгт нэмэгдсэн мэдээллийн давтамж, үечлэл."
+
+msgid "Accrual Policy"
+msgstr "Хуримтлалын /өсөлт/ бодлого"
+
+msgid "The policy governing the addition of items to a collection."
+msgstr "Сан хөмрөгт мэдээлэл нэмэх бодлого /журам/."
+
+msgid "Audience"
+msgstr "Үзэгчид"
+
+msgid "A class of entity for whom the resource is intended or useful."
+msgstr "Ашигтай эсвэл зорилготой мэдээлэлд хэн нэгэнд зориулсан хуулийн этгээдийн ангилал байна."
+
+msgid "Audience Education Level"
+msgstr "Үзэгчдийн боловсролын түвшин"
+
+msgid ""
+"A class of entity, defined in terms of progression through an educational or"
+" training context, for which the described resource is intended."
+msgstr "Тайлбарласан нөөцийн зорилготой боловсролын болон сургалтын агуулгаар дамжуулан дэвшлийн хувьд тодорхойлсон өгөгдлийн нэгжийн төрөл."
+
+msgid "Mediator"
+msgstr "Зохицуулагч"
+
+msgid ""
+"An entity that mediates access to the resource and for whom the resource is "
+"intended or useful. In an educational context, a mediator might be a parent,"
+" teacher, teaching assistant, or care-giver."
+msgstr "Хэн нэгэнд зориулсан, нөөц рүү зорилготой, эсвэл ашигтай хандах хандалтыг зуучилж байгаа нэгж."
+
+msgid "Instructional Method"
+msgstr "Сургалтын арга"
+
+msgid ""
+"A process, used to engender knowledge, attitudes and skills, that the "
+"described resource is designed to support. Instructional Method will "
+"typically include ways of presenting instructional materials or conducting "
+"instructional activities, patterns of learner-to-learner and learner-to-"
+"instructor interactions, and mechanisms by which group and individual levels"
+" of learning are measured. Instructional methods include all aspects of the "
+"instruction and learning processes from planning and implementation through "
+"evaluation and feedback."
+msgstr "Мэдлэг, хандлага, ур чадвар бий болгоход хүргэдэг тайлбарласан нөөцийг дэмжих зорилготой ашиглагдаж байгаа процесс. Сургалтын арга нь ихэвчлэн сургалтын материалыг танилцуулах арга замыг багтаана."
+
+msgid "Provenance"
+msgstr "Эх сурвалж"
+
+msgid ""
+"A statement of any changes in ownership and custody of the resource since "
+"its creation that are significant for its authenticity, integrity, and "
+"interpretation. The statement may include a description of any changes "
+"successive custodians made to the resource."
+msgstr "Нөөцийг бий болгосноос хойшхи түүний   эзэмших, хадгалалтын аливаа өөрчлөлтийн тухай, бодит эсэх, бүрэн байдал, ач холбогдолын  мэдэгдэл. Нөөцөд хийсэн хадгалагчийн өөрчлөлтүүдийн мэдээг багтаасан байж болно. "
+
+msgid "Rights Holder"
+msgstr "Эрх эзэмшигч"
+
+msgid "A person or organization owning or managing rights over the resource."
+msgstr "Нөөцийг удирдах эрх, эсвэл  хүн, эсвэл өөрийн байгууллага."
+
+#: DublinCoreExtendedPlugin.php:82
+#, php-format
+msgid ""
+"%sWarning%s: This will remove all the Dublin Core elements added by this "
+"plugin and permanently delete all element texts entered in those fields.%s"
+msgstr "%sWarning%s: Энэ плагинаар нэмэгдсэн Dublin Core элемэнтүүд бүгд устана. Дараах талбаруудад буй бүх мэдээлэл бас устна. %s"

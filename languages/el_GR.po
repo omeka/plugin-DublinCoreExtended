@@ -1,0 +1,318 @@
+# Translation for the Dublin Core Extended plugin for Omeka.
+# Copyright (C) 2012 Roy Rosenzweig Center for History and New Media
+# This file is distributed under the same license as the Omeka package.
+# 
+# Translators:
+msgid ""
+msgstr ""
+"Project-Id-Version: Omeka\n"
+"Report-Msgid-Bugs-To: http://github.com/omeka/plugin-DublinCoreExtended/issues\n"
+"POT-Creation-Date: 2012-12-17 21:49-0500\n"
+"PO-Revision-Date: 2014-02-13 16:11+0000\n"
+"Last-Translator: Paul Kottas <kottas@avmap.gr>\n"
+"Language-Team: Greek (Greece) (http://www.transifex.com/omeka/omeka/language/el_GR/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: el_GR\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+msgid "Alternative Title"
+msgstr "Εναλλακτικός τίτλος"
+
+msgid ""
+"An alternative name for the resource. The distinction between titles and "
+"alternative titles is application-specific."
+msgstr "Μια εναλλακτική ονομασία για τον πόρο. Η διάκριση μεταξύ των τίτλων και των εναλλακτικών τίτλων είναι ανάλογα με την εφαρμογή."
+
+msgid "Abstract"
+msgstr "Περίληψη"
+
+msgid "A summary of the resource."
+msgstr "Μια περίληψη του πόρου."
+
+msgid "Table Of Contents"
+msgstr "Πίνακας Περιεχομένων"
+
+msgid "A list of subunits of the resource."
+msgstr "Μια λίστα με υποενότητες του πόρου."
+
+msgid "Date Available"
+msgstr "Ημερομηνία Διαθεσιμότητας"
+
+msgid ""
+"Date (often a range) that the resource became or will become available."
+msgstr "Ημερομηνία (συχνά ένα εύρος), κατά την οποία ο πόρος θα είναι ή θα γίνει διαθέσιμος."
+
+msgid "Date Created"
+msgstr "Ημερομηνία Δημιουργίας"
+
+msgid "Date of creation of the resource."
+msgstr "Ημερομηνία δημιουργίας του πόρου."
+
+msgid "Date Accepted"
+msgstr "Ημερομηνία Αποδοχής"
+
+msgid ""
+"Date of acceptance of the resource. Examples of resources to which a Date "
+"Accepted may be relevant are a thesis (accepted by a university department) "
+"or an article (accepted by a journal)."
+msgstr "Ημερομηνία της αποδοχής του πόρου. Παραδείγματα πόρων, στα οποία η ημερομηνία αποδοχής είναι σημαντική, είναι μια διατριβή (αποδεκτή από ένα πανεπιστημιακό ίδρυμα) ή ένα άρθρο (αποδεκτό από ένα περιοδικό)."
+
+msgid "Date Copyrighted"
+msgstr "Ημερομηνία Πνευματικών Δικαιωμάτων"
+
+msgid "Date of copyright."
+msgstr "Η ημερομηνία από τα πνευματικά δικαιώματα"
+
+msgid "Date Submitted"
+msgstr "Ημερομηνία Υποβολής"
+
+msgid ""
+"Date of submission of the resource. Examples of resources to which a Date "
+"Submitted may be relevant are a thesis (submitted to a university "
+"department) or an article (submitted to a journal)."
+msgstr "Ημερομηνία υποβολής του πόρου. Παραδείγματα  πόρων στα οποία η ημερομηνία υποβολής μπορεί να είναι σημντική είναι μια διατριβή (που υποβάλλεται σε ένα πανεπιστημιακό ίδρυμα) ή ένα άρθρο (υποβάλλεται σε περιοδικό)."
+
+msgid "Date Issued"
+msgstr "Ημερομηνία Έκδοσης"
+
+msgid "Date of formal issuance (e.g., publication) of the resource."
+msgstr "Ημερομηνία επίσημης έκδοσης του πόρου (π.χ. δημοσίευση)."
+
+msgid "Date on which the resource was changed."
+msgstr "Ημερομηνία κατά την οποία ο πόρος άλλαξε."
+
+msgid "Date Valid"
+msgstr "Ημερομηνία Εγκυρότητας"
+
+msgid "Date (often a range) of validity of a resource."
+msgstr "Ημερομηνία (συχνά ένα εύρος) εγκυρότητας του πόρου."
+
+msgid "Access Rights"
+msgstr "Δικαιώματα Πρόσβασης"
+
+msgid ""
+"Information about who can access the resource or an indication of its "
+"security status. Access Rights may include information regarding access or "
+"restrictions based on privacy, security, or other policies."
+msgstr "Πληροφορίες σχετικά με το ποιος μπορεί να έχει πρόσβαση στον πόρο ή μια ένδειξη της κατάστασης της ασφάλειας. Τα Δικαιώματα Πρόσβασης μπορεί να περιλαμβάνουν πληροφορίες σχετικά με την πρόσβαση ή τους περιορισμούς που βασίζονται στην ιδιωτική ζωή, την ασφάλεια, ή άλλες πολιτικές."
+
+msgid "License"
+msgstr "Άδεια"
+
+msgid ""
+"A legal document giving official permission to do something with the "
+"resource."
+msgstr "Ένα νομικό έγγραφο, το οποίο δίνει άδεια για επεξεργασία του πόρου."
+
+msgid "Conforms To"
+msgstr "Συμμορφώνεται με"
+
+msgid "An established standard to which the described resource conforms."
+msgstr "Ένα καθιερωμένο πρότυπο με το οποίο συμμορφώνεται ο περιγραφόμενος πόρος."
+
+msgid "Has Format"
+msgstr "Έχει μορφοποίηση"
+
+msgid ""
+"A related resource that is substantially the same as the pre-existing "
+"described resource, but in another format."
+msgstr "Ένας σχετικός πόρος που είναι ουσιαστικά ο ίδιος με τον προϋπάρχον περιγραφόμενο πόρο, αλλά με άλλη μορφή."
+
+msgid "Has Part"
+msgstr "Έχει τμήμα"
+
+msgid ""
+"A related resource that is included either physically or logically in the "
+"described resource."
+msgstr "Ένας σχετικός πόρος που περιέχεται είτε φυσικά είτε λογικά στον περιγραφόμενο πόρο."
+
+msgid "Has Version"
+msgstr "Έχει έκδοση"
+
+msgid ""
+"A related resource that is a version, edition, or adaptation of the "
+"described resource."
+msgstr "Ένας σχετικός πόρος που είναι μια έκδοση ή προσαρμογή του περιγραφόμενου πόρου."
+
+msgid "Is Format Of"
+msgstr "Είναι μορφοποίηση του "
+
+msgid ""
+"A related resource that is substantially the same as the described resource,"
+" but in another format."
+msgstr "Ένας σχετικός πόρος που είναι ουσιαστικά ο ίδιος όπως ο περιγραφόμενος πόρος, αλλά σε άλλη μορφή."
+
+msgid "Is Part Of"
+msgstr "Είναι τμήμα του"
+
+msgid ""
+"A related resource in which the described resource is physically or "
+"logically included."
+msgstr "Ένας σχετικός πόρος στον οποίο ο περιγραφόμενος πόρος συμπεριλαμβάνεται φυσικά ή λογικά."
+
+msgid "Is Referenced By"
+msgstr "Αναφέρεται από"
+
+msgid ""
+"A related resource that references, cites, or otherwise points to the "
+"described resource."
+msgstr "Ένας σχετικός πόρος που αναφέρεται, παραθέτει ή αλλιώς δείχνει τον περιγραφόμενο πόρο."
+
+msgid "Is Replaced By"
+msgstr "Αντικαθιστάται από"
+
+msgid ""
+"A related resource that supplants, displaces, or supersedes the described "
+"resource."
+msgstr "Ένας σχετικός πόρος που υποσκελίζει, μετατοπίζει ή αντικαθιστά τον περιγραφόμενο πόρο."
+
+msgid "Is Required By"
+msgstr "Απαιτείται από"
+
+msgid ""
+"A related resource that requires the described resource to support its "
+"function, delivery, or coherence."
+msgstr "Ένας σχετικός πόρος που απαιτεί τον περιγραφόμενο πόρο για να υποστηρίξει τη λειτουργία του, την παράδοση ή τη συνοχή του."
+
+msgid "Is Version Of"
+msgstr "Είναι έκδοση του"
+
+msgid ""
+"A related resource of which the described resource is a version, edition, or"
+" adaptation. Changes in version imply substantive changes in content rather "
+"than differences in format."
+msgstr "Ένας σχετικός πόρος, του οποίου ο περιγραφόμενος πόρος είναι μια έκδοση ή προσαρμογή του. Αλλαγές στην έκδοση του υπονοούν περισσότερο ουσιαστικές αλλαγές στο περιεχόμενο, παρά διαφορές στη μορφή."
+
+msgid "References"
+msgstr "Αναφέρει"
+
+msgid ""
+"A related resource that is referenced, cited, or otherwise pointed to by the"
+" described resource."
+msgstr "Ένας σχετικός πόρος, ο οποίος αναφέρεται, παρατίθεται ή αλλιώς καταδεικνύεται από τον περιγραφόμενο πόρο."
+
+msgid "Replaces"
+msgstr "Αντικαθιστά"
+
+msgid ""
+"A related resource that is supplanted, displaced, or superseded by the "
+"described resource."
+msgstr "Ένας σχετικός πόρος ο οποίος αντικαθίσταται, μετατοπίζεται ή υποσκελίζεται από τον περιγραφόμενο πόρο."
+
+msgid "Requires"
+msgstr "Απαιτεί"
+
+msgid ""
+"A related resource that is required by the described resource to support its"
+" function, delivery, or coherence."
+msgstr "Ένας σχετικός πόρος που απαιτείται από τον περιγραφόμενο πόρο για να υποστηρίξει τη λειτουργία του, την παράδοση ή συνοχή του."
+
+msgid "Extent"
+msgstr "Έκταση"
+
+msgid "The size or duration of the resource."
+msgstr "Το μέγεθος ή η διάρκεια του πόρου."
+
+msgid "Medium"
+msgstr "Μέσον"
+
+msgid "The material or physical carrier of the resource."
+msgstr "Το υλικό ή ο υλικός φορέας του πόρου."
+
+msgid ""
+"A bibliographic reference for the resource. Recommended practice is to "
+"include sufficient bibliographic detail to identify the resource as "
+"unambiguously as possible."
+msgstr "Μια βιβλιογραφική αναφορά του πόρου. Συνιστώμενη πρακτική είναι να περιλαμβάνονται επαρκείς βιβλιογραφικές λεπτομέρειες για τον εντοπισμό του πόρου, με όσο το δυνατόν μεγαλύτερη σαφήνεια."
+
+msgid "Spatial Coverage"
+msgstr "Χωρική Κάλυψη"
+
+msgid "Spatial characteristics of the resource."
+msgstr "Χωρικά χαρακτηριστικά του πόρου."
+
+msgid "Temporal Coverage"
+msgstr "Χρονική Κάλυψη"
+
+msgid "Temporal characteristics of the resource."
+msgstr "Χρονικά χαρακτηριστικά του πόρου."
+
+msgid "Accrual Method"
+msgstr "Μέθοδος λογιστικής μεταφοράς"
+
+msgid "The method by which items are added to a collection."
+msgstr "Η μέθοδος με την οποία στοιχεία προσθέτονται στην συλλογή."
+
+msgid "Accrual Periodicity"
+msgstr "Λογιστική Περιοδικότητα"
+
+msgid "The frequency with which items are added to a collection."
+msgstr "Η συχνότητα με την οποία στοιχεία προσθέτονται στη συλλογή."
+
+msgid "Accrual Policy"
+msgstr "Λογιστική Πολιτική"
+
+msgid "The policy governing the addition of items to a collection."
+msgstr "Η πολιτική που διέπει την προσθήκη αντικειμένων σε μια συλλογή."
+
+msgid "Audience"
+msgstr "Κοινό"
+
+msgid "A class of entity for whom the resource is intended or useful."
+msgstr "Μια κατηγορία οντότητας για την οποία ο πόρος προορίζεται ή είναι χρήσιμος."
+
+msgid "Audience Education Level"
+msgstr "Μορφωτικό Επίπεδο Κοινού"
+
+msgid ""
+"A class of entity, defined in terms of progression through an educational or"
+" training context, for which the described resource is intended."
+msgstr "Μια κατηγορία οντότητας, η οποία ορίζεται με βάση την πρόοδο σε ένα πλαίσιο εκπαίδευσης ή κατάρτισης, για την οποία προορίζεται ο πόρος."
+
+msgid "Mediator"
+msgstr "Μεσολαβητής"
+
+msgid ""
+"An entity that mediates access to the resource and for whom the resource is "
+"intended or useful. In an educational context, a mediator might be a parent,"
+" teacher, teaching assistant, or care-giver."
+msgstr "Μια οντότητα που μεσολαβεί για την πρόσβαση στον πόρο και για το για ποιον ο πόρος προορίζεται ή είναι χρήσιμος. Σε ένα εκπαιδευτικό πλαίσιο, ο μεσολαβητής μπορεί να είναι ένας γονιός, δάσκαλος, βοηθός διδασκαλίας ή κηδεμόνας. "
+
+msgid "Instructional Method"
+msgstr "Εκπαιδευτική Μέθοδος"
+
+msgid ""
+"A process, used to engender knowledge, attitudes and skills, that the "
+"described resource is designed to support. Instructional Method will "
+"typically include ways of presenting instructional materials or conducting "
+"instructional activities, patterns of learner-to-learner and learner-to-"
+"instructor interactions, and mechanisms by which group and individual levels"
+" of learning are measured. Instructional methods include all aspects of the "
+"instruction and learning processes from planning and implementation through "
+"evaluation and feedback."
+msgstr "Μια διαδικασία, που χρησιμοποιείται για να παράγει γνώσεις, συμπεριφορές και δεξιότητες, την οποία ο περιγραφόμενος πόρος έχει σχεδιαστεί να υποστηρίζει. Η εκπαιδευτική μέθοδος θα περιλαμβάνει συνήθως τρόπους παρουσίασης εκπαιδευτικού υλικού ή  διεξαγωγής εκπαιδευτικών δραστηριοτήτων, πρότυπα επικοινωνίας μαθητή-με-μαθητή και μαθητή-με-εκπαιδευτή, και μηχανισμούς με τους οποίους μετρώνται τα ομαδικά και ατομικά επίπεδα εκμάθησης. Οι εκπαιδευτικές μέθοδοι περιλαμβάνουν όλες τις πτυχές των διαδικασιών διδασκαλίας και εκμάθησης από τον σχεδιασμό και την εφαρμογή μέχρι την αξιολόγηση και την ανάδραση."
+
+msgid "Provenance"
+msgstr "Προέλευση"
+
+msgid ""
+"A statement of any changes in ownership and custody of the resource since "
+"its creation that are significant for its authenticity, integrity, and "
+"interpretation. The statement may include a description of any changes "
+"successive custodians made to the resource."
+msgstr "Μια δήλωση για τυχόν αλλαγές στο ιδιοκτησιακό καθεστώς και την επιμέλεια του πόρου από τη δημιουργία του, που είναι σημαντικές για την αυθεντικότητά του, την ακεραιότητα, και την ερμηνεία του. Η δήλωση μπορεί να περιλαμβάνει μια περιγραφή των όποιων αλλαγών έγιναν από τους διαδοχικούς κατόχους του πόρου."
+
+msgid "Rights Holder"
+msgstr "Κάτοχος Δικαιωμάτων"
+
+msgid "A person or organization owning or managing rights over the resource."
+msgstr "Ένα άτομο ή οργάνωση που του ανήκουν ή διαχειρίζεται τα δικαιώματα του πόρου."
+
+#: DublinCoreExtendedPlugin.php:82
+#, php-format
+msgid ""
+"%sWarning%s: This will remove all the Dublin Core elements added by this "
+"plugin and permanently delete all element texts entered in those fields.%s"
+msgstr "%sΠροειδοποίηση%s: Όλα τα στοιχεία του Dublin Core που προστέθηκαν από αυτό το plugin θα αφαιρεθούν, μαζί με όποιο κείμενο εισάχθηκε σε αυτά τα πεδία. %s"

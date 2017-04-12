@@ -3,288 +3,287 @@
 # This file is distributed under the same license as the Omeka package.
 # 
 # Translators:
-# dario hereñu <magallania@gmail.com>, 2014
-# Francisco Gálvez Prada <iguannaweb@gmail.com>, 2013
-# Rubén Alcaraz Martínez <rubenalcarazmartinez@gmail.com>, 2013
+# Kaisa Kulasalu <a71465@ut.ee>, 2013
+# Mari Sarv <mari@haldjas.folklore.ee>, 2013
 msgid ""
 msgstr ""
 "Project-Id-Version: Omeka\n"
 "Report-Msgid-Bugs-To: http://github.com/omeka/plugin-DublinCoreExtended/issues\n"
 "POT-Creation-Date: 2012-12-17 21:49-0500\n"
-"PO-Revision-Date: 2014-09-30 18:15+0000\n"
-"Last-Translator: dario hereñu <magallania@gmail.com>\n"
-"Language-Team: Spanish (http://www.transifex.com/omeka/omeka/language/es/)\n"
+"PO-Revision-Date: 2013-09-20 07:55+0000\n"
+"Last-Translator: Mari Sarv <mari@haldjas.folklore.ee>\n"
+"Language-Team: Estonian (http://www.transifex.com/omeka/omeka/language/et/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: es\n"
+"Language: et\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 msgid "Alternative Title"
-msgstr "Título alternativo"
+msgstr "Teine pealkiri"
 
 msgid ""
 "An alternative name for the resource. The distinction between titles and "
 "alternative titles is application-specific."
-msgstr "Un nombre alternativo para el recurso. "
+msgstr "Inforessursi teine nimi. Eristus pealkirja ja teise pealkirja vahel on rakenduse-spetsiifiline."
 
 msgid "Abstract"
-msgstr "Resumen"
+msgstr "Tees"
 
 msgid "A summary of the resource."
-msgstr "Un resumen del recurso."
+msgstr "Inforessursi kokkuvõte."
 
 msgid "Table Of Contents"
-msgstr "Sumario"
+msgstr "Sisukord"
 
 msgid "A list of subunits of the resource."
-msgstr "Lista de subunidades del recurso"
+msgstr "Inforessursi alaosade loend."
 
 msgid "Date Available"
-msgstr "Fecha disponibles"
+msgstr "Saadaval alates"
 
 msgid ""
 "Date (often a range) that the resource became or will become available."
-msgstr "Fecha (frecuentemente rango) en el que el recurso empezó o empezará a estar disponibles"
+msgstr "Inforessursi kättesaadavaks tegemise aeg (või ajavahemik)."
 
 msgid "Date Created"
-msgstr "Fecha de creación"
+msgstr "Loomise kuupäev"
 
 msgid "Date of creation of the resource."
-msgstr "Fecha de creación del recurso."
+msgstr "Inforessursi loomise aeg."
 
 msgid "Date Accepted"
-msgstr "Fecha aceptada"
+msgstr "Vastuvõtmise aeg"
 
 msgid ""
 "Date of acceptance of the resource. Examples of resources to which a Date "
 "Accepted may be relevant are a thesis (accepted by a university department) "
 "or an article (accepted by a journal)."
-msgstr "Fecha de aceptación del recurso. Ejemplos de recursos en los que la fecha de aceptación podría ser relevante: una tesis (aceptado por el departamento de la universidad) o un artículo (aceptado por una revista científica)."
+msgstr "Inforessursi vastuvõtmise aeg. Vastuvõtmise aeg võib olla oluline näiteks väitekirjade (vastu võetud ülikooli poolt), artiklite (vastu võetud ajakirja poolt) puhul."
 
 msgid "Date Copyrighted"
-msgstr "Fecha del copyright"
+msgstr "Autoriõiguste aeg"
 
 msgid "Date of copyright."
-msgstr "Fecha del copyright."
+msgstr "Autoriõiguse omandamise aeg."
 
 msgid "Date Submitted"
-msgstr "Fecha enviada"
+msgstr "Esitamise aeg"
 
 msgid ""
 "Date of submission of the resource. Examples of resources to which a Date "
 "Submitted may be relevant are a thesis (submitted to a university "
 "department) or an article (submitted to a journal)."
-msgstr "Fecha de envio del recurso.Ejemplos de recursos en los que la fecha de envio podría ser relevante: una tesis (enviado  al departamento de la universidad) o un artículo (enviado a una revista científica)."
+msgstr "Inforessursi esitamise aeg. Esitamise aeg võib olla oluline näiteks väitekirja (esitatud ülikooli osakonnale), artikli (esitatud ajakirjale) puhul."
 
 msgid "Date Issued"
-msgstr "Fecha de difusión"
+msgstr "Avaldamise aeg"
 
 msgid "Date of formal issuance (e.g., publication) of the resource."
-msgstr "Fecha formal de difusión (por ej. publicación) del recurso."
+msgstr "Inforessursi ametlik avaldamisaeg (nt publikatsioonil)."
 
 msgid "Date on which the resource was changed."
-msgstr "Fecha en la cual el recurso fue editado."
+msgstr "Inforessursi muutmise aeg."
 
 msgid "Date Valid"
-msgstr "Fecha de validación"
+msgstr "Kehtivusaeg"
 
 msgid "Date (often a range) of validity of a resource."
-msgstr "Fecha (o rango) de validación del recurso."
+msgstr "Inforessursi kehtivusaeg (sageli ajavahemik)."
 
 msgid "Access Rights"
-msgstr "Derechos de acceso"
+msgstr "Juurdepääsuõigused"
 
 msgid ""
 "Information about who can access the resource or an indication of its "
 "security status. Access Rights may include information regarding access or "
 "restrictions based on privacy, security, or other policies."
-msgstr "Información sobre quien puede acceder al recurso o indicación de su estado de seguridad. Derechos de acceso pueden incluir información de acceso de visualización o restricciones basado en privacidad, seguridad y otras políticas."
+msgstr "Teave selle kohta, kellel on õigus inforessursile juurde pääseda või teave ressursi kaitstuse staatuse kohta. Juurdepääsuõigused võivad sisaldada infot juurdepääsupiirangute kohta, mis on kehtestatud privaatsus-, turvalisus- või muudel kaalutlustel."
 
 msgid "License"
-msgstr "Licencia"
+msgstr "Litsents"
 
 msgid ""
 "A legal document giving official permission to do something with the "
 "resource."
-msgstr "Documento legal que le da permiso oficial para hacer algo con el recurso."
+msgstr "Ametlik dokument, mis annab ametliku loa inforessursiga midagi teha."
 
 msgid "Conforms To"
-msgstr "En cumplimento de"
+msgstr "On kooskõlas"
 
 msgid "An established standard to which the described resource conforms."
-msgstr "Estándar establecido para el que el recurso descrito es conforme."
+msgstr "Väljakujunenud standard, millega kirjeldatud inforessurss kooskõlas on."
 
 msgid "Has Format"
-msgstr "Tiene formato."
+msgstr "Teises vormingus"
 
 msgid ""
 "A related resource that is substantially the same as the pre-existing "
 "described resource, but in another format."
-msgstr "Recurso relacionado que es sustancialmente el mismo al pre-existente recurso descrito, pero sin otro formato."
+msgstr "Seotud inforessurss, mis on oma sisu poolest sama, mis varem kirjeldatud ressurss, kuid teises vormingus."
 
 msgid "Has Part"
-msgstr "Tiene parte."
+msgstr "Osaliselt"
 
 msgid ""
 "A related resource that is included either physically or logically in the "
 "described resource."
-msgstr "Recurso relacionado que está incluido física o lógicamente en el recurso descrito."
+msgstr "Seotud inforessurss, mis  kirjeldatud inforessursis kas kas füüsiliselt või loogiliselt sisaldub."
 
 msgid "Has Version"
-msgstr "Tiene versiones"
+msgstr "Teine versioon"
 
 msgid ""
 "A related resource that is a version, edition, or adaptation of the "
 "described resource."
-msgstr "Recurso relacionado que es una versión, edición o adaptación del recurso descrito."
+msgstr "Seotud inforessurss, mi on kirjeldatud versiooni teine versioon, toimetatud või kohandatud versioon."
 
 msgid "Is Format Of"
-msgstr "Es formato de "
+msgstr "Teises vormingus"
 
 msgid ""
 "A related resource that is substantially the same as the described resource,"
 " but in another format."
-msgstr "Recurso relacionado que es sustancialmente el mismo al descrito como recurso, pero en otro formato."
+msgstr "Seotud inforessurss, mis on oma sisu poolest sama kui kirjeldatud ressurss, kuid teises vormingus."
 
 msgid "Is Part Of"
-msgstr "Es Parte De"
+msgstr "Osaliselt"
 
 msgid ""
 "A related resource in which the described resource is physically or "
 "logically included."
-msgstr "Recurso relacionado en el cual el recurso descrito está física o lógicamente incluido. "
+msgstr "Seotud ressurss, mis kas füüsiliselt või loogiliselt sisaldab kirjeldatud ressurssi."
 
 msgid "Is Referenced By"
-msgstr "Es referenciado por"
+msgstr "Viidatud inforessursis"
 
 msgid ""
 "A related resource that references, cites, or otherwise points to the "
 "described resource."
-msgstr "Recurso relacionado que referencia, cita o apunta de algún modo al recurso descrito."
+msgstr "Seotud inforessurss, mis viitab, tsiteerib või osundab muul moel kirjeldatud inforessursile."
 
 msgid "Is Replaced By"
-msgstr "Es reemplazado por"
+msgstr "Asendatud"
 
 msgid ""
 "A related resource that supplants, displaces, or supersedes the described "
 "resource."
-msgstr "Recurso relacionado que suple, desplaza o precede al recurso descrito"
+msgstr "Seotud ressurss, mis asendab kirjeldatud inforessurssi."
 
 msgid "Is Required By"
-msgstr "Es requerido por"
+msgstr "Nõutav"
 
 msgid ""
 "A related resource that requires the described resource to support its "
 "function, delivery, or coherence."
-msgstr "Recurso relacionado que requiere que el recurso descrito soporte su función, envío o coherencia."
+msgstr "Seotud ressurss, mille toimimise, kättesaadavuse või sidususe jaoks on vajalik kirjeldatud inforessursi olemasolu."
 
 msgid "Is Version Of"
-msgstr "Es Versión De"
+msgstr "On versioon"
 
 msgid ""
 "A related resource of which the described resource is a version, edition, or"
 " adaptation. Changes in version imply substantive changes in content rather "
 "than differences in format."
-msgstr "Un recurso relacionado del cual el recurso descripto es una versión, edición o adaptación. Cambios en la versión implican cambios sustanciales en el contenido en lugar de las diferencias de formato."
+msgstr "Seotud ressurss, mille versioon, toimetatud või kohandatud versioon kirjeldatud inforessurss on. Versiooni muutused eeldavad olulisi muutusi pigem sisus kui vormingus."
 
 msgid "References"
-msgstr "Referencia"
+msgstr "Viited"
 
 msgid ""
 "A related resource that is referenced, cited, or otherwise pointed to by the"
 " described resource."
-msgstr "Un recurso relacionado que hace referencia, cita, o de alguna manera apunta el recurso descripto."
+msgstr "Seotud ressurss, mida kirjeldatud ressurss viitab, tsiteerib või osundab muul moel."
 
 msgid "Replaces"
-msgstr "Reenplazos"
+msgstr "Asendab"
 
 msgid ""
 "A related resource that is supplanted, displaced, or superseded by the "
 "described resource."
-msgstr "Un recurso relacionado que está sustituido, desplazado o reemplazado por el recurso descripto."
+msgstr "Seotud ressurss, mille käesolev inforessurss asendab."
 
 msgid "Requires"
-msgstr "Requiere"
+msgstr "Nõuab"
 
 msgid ""
 "A related resource that is required by the described resource to support its"
 " function, delivery, or coherence."
-msgstr "Un recurso relacionado que es requerido por el recurso descripto para apoyar su función, entrega o coherencia."
+msgstr "Seotud ressurss, mis on vajalik kirjeldatud ressursi toimimise, kättesaamise või sidususe tagamiseks."
 
 msgid "Extent"
-msgstr "Extensión"
+msgstr "Maht"
 
 msgid "The size or duration of the resource."
-msgstr "El tamaño o duración del recurso."
+msgstr "Inforessursi suurus või kestus."
 
 msgid "Medium"
-msgstr "Medio"
+msgstr "Kandja"
 
 msgid "The material or physical carrier of the resource."
-msgstr "El material o portador físico del recurso."
+msgstr "Inforessursi materjal või füüsiline kandja."
 
 msgid ""
 "A bibliographic reference for the resource. Recommended practice is to "
 "include sufficient bibliographic detail to identify the resource as "
 "unambiguously as possible."
-msgstr "Una referencia bibliográfica para el recurso. La práctica recomendada es incluir suficientes detalles bibliográficos para identificar el recurso de un modo inequívoco."
+msgstr "Ressursi bibliograafiline viide. Soovitav on lisada piisavalt bibliograafilisi üksikasju inforessursi üheselt tuvastamiseks."
 
 msgid "Spatial Coverage"
-msgstr "Cobertura espacial"
+msgstr "Ruumiline hõlme"
 
 msgid "Spatial characteristics of the resource."
-msgstr "Características espaciales del recurso."
+msgstr "Inforessursi ruumilised tunnused"
 
 msgid "Temporal Coverage"
-msgstr "Cobertura temporal"
+msgstr "Ajaline hõlme"
 
 msgid "Temporal characteristics of the resource."
-msgstr "Características temporales del recurso."
+msgstr "Inforessursi ajalised tunnused."
 
 msgid "Accrual Method"
-msgstr "Método de acumulación"
+msgstr "Juurdekasvumeetod"
 
 msgid "The method by which items are added to a collection."
-msgstr "Los métodos por los cuales los elementos son agregados a la colección."
+msgstr "Meetod, mille alusel ühikud kogusse lisanduvad."
 
 msgid "Accrual Periodicity"
-msgstr "Periodicidad de la acumulación"
+msgstr "Juurdekasvu perioodilisus"
 
 msgid "The frequency with which items are added to a collection."
-msgstr "La frecuencia con que los elementos son agregados a la colección."
+msgstr "Sagedus, kui tihti ühikuid kogusse lisatakse."
 
 msgid "Accrual Policy"
-msgstr "Política de acumulación"
+msgstr "Juurdekasvupõhimõte"
 
 msgid "The policy governing the addition of items to a collection."
-msgstr "La política que rige la adición de elementos a una colección."
+msgstr "Põhimõte, mille kohaselt ühikuid kogusse lisatakse."
 
 msgid "Audience"
-msgstr "Audiencia"
+msgstr "Sihtrühm"
 
 msgid "A class of entity for whom the resource is intended or useful."
-msgstr "Una clase de entidad para la que el recurso tiene por destino o utilidad."
+msgstr "Rühm või kogum, kellele inforessurss on mõeldud või kelle jaoks see on kasulik."
 
 msgid "Audience Education Level"
-msgstr "Nivel de educación de la audiencia"
+msgstr "Sihtrühma haridustase"
 
 msgid ""
 "A class of entity, defined in terms of progression through an educational or"
 " training context, for which the described resource is intended."
-msgstr "Una clase de entidad, definida en términos de progresión a través de un contexto educación o de entrenamiento, por el cual el recurso descripto es destinado."
+msgstr "Haridus- või koolitustaseme kaudu määratletud rühm, kelle jaoks kirjeldatud inforessurss on mõeldud."
 
 msgid "Mediator"
-msgstr "Mediador"
+msgstr "Vahendaja"
 
 msgid ""
 "An entity that mediates access to the resource and for whom the resource is "
 "intended or useful. In an educational context, a mediator might be a parent,"
 " teacher, teaching assistant, or care-giver."
-msgstr "Una entidad que media en el acceso al recurso y para lo que el recurso tiene por destino o utilidad. En un contexto educativo, un mediador puede ser un padre, maestro, ayudante de enseñanza o cuidador."
+msgstr "Isik, kes vahendab juurdepääsu inforessursile ning kelle jaoks ressurss on mõeldud või kasulik. Hariduskontekstis võib vahendajaks olla lapsevanem, õpetaja, abiõpetaja või hooldaja."
 
 msgid "Instructional Method"
-msgstr "Método de instrucción"
+msgstr "Õpetusviis"
 
 msgid ""
 "A process, used to engender knowledge, attitudes and skills, that the "
@@ -295,27 +294,27 @@ msgid ""
 " of learning are measured. Instructional methods include all aspects of the "
 "instruction and learning processes from planning and implementation through "
 "evaluation and feedback."
-msgstr "Un proceso que el recurso descrito está diseñado para soportar, utilizado para generar conocimientos, actitudes y habilidades,  Métodos de instrucción típicos incluirán formas de presentación de materiales de instrucción, realización de actividades de instrucción, los patrones de alumno a alumno, las interacciones del alumno al instructor, y los mecanismos por los cuales se mide el nivel de aprendizaje sea de un grupo o un individuo. Los métodos de instrucción incluyen todos los aspectos de la instrucción y los procesos de aprendizaje, desde la planificación y la implementación a través de la evaluación y la retroalimentación."
+msgstr "Protsess, mida kasutatakse teadmiste, suhtumiste ja oskuste õpetamiseks ning mida kirjeldatud ressurss peaks toetama. Õpetusviis hõlmab tavaliselt õppematerjalide esitamise viise, õppetegevuste läbiviimist, õppijalt õppijale ning õppijalt õpetajale suhtlemisviise ning meetodeid, mille abil rühma ja indiviidi õppimistaset mõõdetakse. Õpetusviis hõlmab õpetuse ja õppeprotsessi kõiki aspekte alates kavandamisest ja rakendamisest kuni hindamise ja tagasisideni."
 
 msgid "Provenance"
-msgstr "Procedencia"
+msgstr "Päritolu"
 
 msgid ""
 "A statement of any changes in ownership and custody of the resource since "
 "its creation that are significant for its authenticity, integrity, and "
 "interpretation. The statement may include a description of any changes "
 "successive custodians made to the resource."
-msgstr "Una declaración de cualquier cambio en la propiedad y custodia del recurso desde su creación, que sean significativas por su autenticidad, integridad e interpretación. La declaración puede incluir una descripción de cualquier cambio que los custodios realizan al recurso."
+msgstr "Inforessursi omaniku ja haldaja mistahes muutused alates selle loomisest, mis on olulised selle autentsuse, terviklikkuse ja tõlgendamise seisukohast. Võib sisaldada ka nende muutuste kirjeldusi, mida haldajad on inforessursiga toime pannud."
 
 msgid "Rights Holder"
-msgstr "Propietarios de los derechos"
+msgstr "Õiguste omanik"
 
 msgid "A person or organization owning or managing rights over the resource."
-msgstr "Una persona u organización que posee o administra los derechos sobre el recurso."
+msgstr "Isik või organisatsioon, kes omab või haldab inforessursiga seotud õigusi."
 
 #: DublinCoreExtendedPlugin.php:82
 #, php-format
 msgid ""
 "%sWarning%s: This will remove all the Dublin Core elements added by this "
 "plugin and permanently delete all element texts entered in those fields.%s"
-msgstr "%sAdvertencia%s: Esto eliminará todos los elementos de Dublin Core agregados por este plugin y eliminará de forma permanente todos los textos introducidos en dichos campos.%s"
+msgstr "%sHoiatus%s: See eemaldab kõik selle pluginaga lisatud Dublin Core tunnused ning kustutab jäädavalt kõik tunnusetekstid, mis on neile väljadele sisestatud.%s"
