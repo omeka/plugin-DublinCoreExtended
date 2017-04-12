@@ -3,286 +3,295 @@
 # This file is distributed under the same license as the Omeka package.
 # 
 # Translators:
-# Hong Zhang <zhangh@unlv.nevada.edu>, 2013
+# Cédric Valmary <cvalmary@yahoo.fr>, 2016
+# Cédric Valmary <cvalmary@yahoo.fr>, 2016
+# Delaye <stephane.delaye@biblibre.com>, 2015
+# fiuzzy <fiuzzy1@gmail.com>, 2016
+# Isabelle Gilles <isabelle.gillesgallet@gmail.com>, 2015
+# Julian Maurice <julian.maurice@biblibre.com>, 2015
+# Julien Sicot <julien.sicot@gmail.com>, 2013,2015
+# Mathieu Beaudin <macthieu@me.com>, 2013
+# rcheno <remi.cheno@ideo-cairo.org>, 2014
+# Thierry Pasquier <thierry.pasquier@emf.ccsti.eu>, 2013
 msgid ""
 msgstr ""
 "Project-Id-Version: Omeka\n"
 "Report-Msgid-Bugs-To: http://github.com/omeka/plugin-DublinCoreExtended/issues\n"
 "POT-Creation-Date: 2012-12-17 21:49-0500\n"
-"PO-Revision-Date: 2013-02-26 21:28+0000\n"
-"Last-Translator: Hong Zhang <zhangh@unlv.nevada.edu>\n"
-"Language-Team: Chinese (China) (http://www.transifex.com/omeka/omeka/language/zh_CN/)\n"
+"PO-Revision-Date: 2017-02-06 12:25+0000\n"
+"Last-Translator: Cédric Valmary <cvalmary@yahoo.fr>\n"
+"Language-Team: Occitan (post 1500) (http://www.transifex.com/omeka/omeka/language/oc/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: zh_CN\n"
-"Plural-Forms: nplurals=1; plural=0;\n"
+"Language: oc\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
 
 msgid "Alternative Title"
-msgstr "交替题名"
+msgstr "Autra forma de títol"
 
 msgid ""
 "An alternative name for the resource. The distinction between titles and "
 "alternative titles is application-specific."
-msgstr "资源的其它题名。题名和其它题名的区别取决于具体应用。"
+msgstr "Autre nom per la ressorsa. La distincion entre Títols e Autras formas de títols varia segon l'aplicacion"
 
 msgid "Abstract"
-msgstr "摘要"
+msgstr "Resumit"
 
 msgid "A summary of the resource."
-msgstr "资源内容的总结。"
+msgstr "Un resumit de la ressorsa."
 
 msgid "Table Of Contents"
-msgstr "目次"
+msgstr "Ensenhador"
 
 msgid "A list of subunits of the resource."
-msgstr "资源的子单元列表。"
+msgstr "Una lista de las sosunitats de la ressorsa."
 
 msgid "Date Available"
-msgstr "可获得日期"
+msgstr "Data de disponibilitat"
 
 msgid ""
 "Date (often a range) that the resource became or will become available."
-msgstr "资源可以获得或曾经可以获得的日期（通常是一个时间段）。"
+msgstr "La data (sovent un periòde) a la quala la ressorsa es venguda o vendrà disponibla."
 
 msgid "Date Created"
-msgstr "创建日期"
+msgstr "Data de creacion"
 
 msgid "Date of creation of the resource."
-msgstr "资源的创建日期。"
+msgstr "Data de creacion de la ressorsa."
 
 msgid "Date Accepted"
-msgstr "接受日期"
+msgstr "Data d'acceptacion"
 
 msgid ""
 "Date of acceptance of the resource. Examples of resources to which a Date "
 "Accepted may be relevant are a thesis (accepted by a university department) "
 "or an article (accepted by a journal)."
-msgstr "资源被接受的日期。与接受日期有关的资源例子有学位论文（被大学院系接受）或期刊论文（被期刊接受）。"
+msgstr "Data de l'acceptacion de la ressorsa. Exemples de ressorsas per las qualas una Data acceptada pòt far sens : una tèsi (acceptada per un departament d'universitat) o un article (acceptat per una revista)."
 
 msgid "Date Copyrighted"
-msgstr "版权授予日期"
+msgstr "Data del copyright"
 
 msgid "Date of copyright."
-msgstr "版权声明的日期。"
+msgstr "Data del copyright."
 
 msgid "Date Submitted"
-msgstr "提交日期"
+msgstr "Data de somission"
 
 msgid ""
 "Date of submission of the resource. Examples of resources to which a Date "
 "Submitted may be relevant are a thesis (submitted to a university "
 "department) or an article (submitted to a journal)."
-msgstr "资源被提交的日期。与提交日期有关的资源例子有学位论文（提交给大学院系）或期刊论文（提交给期刊）。"
+msgstr "Data de somission de la ressorsa. Exemples de ressorsas per las qualas una Data de somission pòt far sens : una tèsi (somesa a un departament d'universitat) o un article (somés a una revista)."
 
 msgid "Date Issued"
-msgstr "发行日期"
+msgstr "Data de parucion"
 
 msgid "Date of formal issuance (e.g., publication) of the resource."
-msgstr "资源的正式发行（例如出版）日期。"
+msgstr "Data de parucion oficiala (ex. : una publicacion) de la ressorsa."
 
 msgid "Date on which the resource was changed."
-msgstr "资源被修改的日期。"
+msgstr "Data a la quala la ressorsa es estada modificada."
 
 msgid "Date Valid"
-msgstr "生效日期"
+msgstr "Data de validitat"
 
 msgid "Date (often a range) of validity of a resource."
-msgstr "资源生效的日期（通常是一个时间段）。"
+msgstr "La data (sovent un periòde) de validitat d'una ressorsa."
 
 msgid "Access Rights"
-msgstr "访问权限"
+msgstr "Dreit d'accès"
 
 msgid ""
 "Information about who can access the resource or an indication of its "
 "security status. Access Rights may include information regarding access or "
 "restrictions based on privacy, security, or other policies."
-msgstr "关于谁能访问资源或者表明资源密级状态的信息。访问权限包括基于隐私、安全或其它规则才能对资源进行访问或限制的信息。"
+msgstr "Modalitats d'accès per la ressorsa o informacions de seguretat a prepaus d'aquesta darrièra. Los dreits o las restrictions d'accès son definits en foncion de critèris de confidencialitat, de vida privada, de seguretat, etc."
 
 msgid "License"
-msgstr "执照"
+msgstr "Licéncia"
 
 msgid ""
 "A legal document giving official permission to do something with the "
 "resource."
-msgstr "正式授权可以使用资源的法律文件。"
+msgstr "Un document juridic que dona l'autorizacion oficiala de far quicòm amb la ressorsa."
 
 msgid "Conforms To"
-msgstr "遵循"
+msgstr "Es confòrme a"
 
 msgid "An established standard to which the described resource conforms."
-msgstr "所描述资源所遵循的已确立标准。"
+msgstr "Una nòrma establida a la quala se confòrma la ressorsa."
 
 msgid "Has Format"
-msgstr "格式转换为"
+msgstr "A per autre format"
 
 msgid ""
 "A related resource that is substantially the same as the pre-existing "
 "described resource, but in another format."
-msgstr "与早先存在的所描述资源本质上相同但是不同格式的相关资源。"
+msgstr "Ressorsa similara a la ressorsa descrita mas dins un autre format"
 
 msgid "Has Part"
-msgstr "部分为"
+msgstr "A coma partida"
 
 msgid ""
 "A related resource that is included either physically or logically in the "
 "described resource."
-msgstr "在物理或逻辑上包容于所描述资源内的相关资源。"
+msgstr "Una ressorsa ligada qu'es inclusa fisicament o logicament dins la ressorsa descrita."
 
 msgid "Has Version"
-msgstr "版本关联"
+msgstr "A d'autras versions"
 
 msgid ""
 "A related resource that is a version, edition, or adaptation of the "
 "described resource."
-msgstr "是所描述资源的译本、修订本或改编本的相关资源。"
+msgstr "Una ressorsa ligada qu'es una version, una edicion o una adaptacion de la ressorsa descrita."
 
 msgid "Is Format Of"
-msgstr "格式转换于"
+msgstr "Es un autre format de"
 
 msgid ""
 "A related resource that is substantially the same as the described resource,"
 " but in another format."
-msgstr "与所描述资源在本质上相同但是不同格式的相关资源。"
+msgstr "Una ressorsa ligada, globalament identica a la ressorsa descrita, qu'existís jos un autre format."
 
 msgid "Is Part Of"
-msgstr "包含于"
+msgstr "Es una partida de "
 
 msgid ""
 "A related resource in which the described resource is physically or "
 "logically included."
-msgstr "在物理或逻辑上包括了所描述资源的相关资源。"
+msgstr "Ressorsa similara a la ressorsa descrita fisicament."
 
 msgid "Is Referenced By"
-msgstr "被参照"
+msgstr "Es referenciat per"
 
 msgid ""
 "A related resource that references, cites, or otherwise points to the "
 "described resource."
-msgstr "参考、引用或指向所描述资源的相关资源。"
+msgstr "Una ressorsa ligada que fa referéncia, cita o punta d'una autra manièra cap a la ressorsa descrita."
 
 msgid "Is Replaced By"
-msgstr "被替代"
+msgstr "Es remplaçat per"
 
 msgid ""
 "A related resource that supplants, displaces, or supersedes the described "
 "resource."
-msgstr "取代、置换或接替了所描述资源的相关资源。"
+msgstr "Una ressorsa similara que suplanta o remplaça la ressorsa descrita."
 
 msgid "Is Required By"
-msgstr "被需求"
+msgstr "Es requesit per"
 
 msgid ""
 "A related resource that requires the described resource to support its "
 "function, delivery, or coherence."
-msgstr "要求所描述资源支持它的功能、传送或一致性的相关资源。"
+msgstr ""
 
 msgid "Is Version Of"
-msgstr "原版本"
+msgstr "Es una version de"
 
 msgid ""
 "A related resource of which the described resource is a version, edition, or"
 " adaptation. Changes in version imply substantive changes in content rather "
 "than differences in format."
-msgstr "所描述的资源是相关资源的译本、修订本或改编本。版本的变化意味着是内容而不是格式有了实质的改变。"
+msgstr ""
 
 msgid "References"
-msgstr "参照"
+msgstr "Referéncia"
 
 msgid ""
 "A related resource that is referenced, cited, or otherwise pointed to by the"
 " described resource."
-msgstr "被所描述资源参考、引用或指向的相关资源。"
+msgstr "Ressorsa similara qu'es referenciada, citada, o designada per la ressorsa descrita."
 
 msgid "Replaces"
-msgstr "替代"
+msgstr "Remplaça"
 
 msgid ""
 "A related resource that is supplanted, displaced, or superseded by the "
 "described resource."
-msgstr "被所描述资源取代、置换或接替了的相关资源。"
+msgstr "Una ressorsa similara qu'es suplantada o remplaçada per la ressorsa descrita."
 
 msgid "Requires"
-msgstr "需求"
+msgstr "Requerís"
 
 msgid ""
 "A related resource that is required by the described resource to support its"
 " function, delivery, or coherence."
-msgstr "被所描述资源要求支持它的功能、传送或一致性的相关资源。"
+msgstr "Una ressorsa similara qu'es requesida per la ressorsa descrita per sa foncion, distribucion o coeréncia."
 
 msgid "Extent"
-msgstr "资源数量"
+msgstr "Espandida de la ressorsa, talha, durada"
 
 msgid "The size or duration of the resource."
-msgstr "资源的大小多寡或持续时间。"
+msgstr "La talha o la durada de la ressorsa."
 
 msgid "Medium"
-msgstr "媒体"
+msgstr "Supòrt"
 
 msgid "The material or physical carrier of the resource."
-msgstr "资源的物质载体或物理载体。"
+msgstr "Lo supòrt material o fisic de la ressorsa."
 
 msgid ""
 "A bibliographic reference for the resource. Recommended practice is to "
 "include sufficient bibliographic detail to identify the resource as "
 "unambiguously as possible."
-msgstr "对资源的文献引用。推荐用法为包括足够的文献细节以尽可能明确地识别资源。"
+msgstr "Referéncia bibliografica de la ressorsa. Utile per identificar la ressorsa sens ambigüitat."
 
 msgid "Spatial Coverage"
-msgstr "空间范围"
+msgstr "Cobèrta espaciala"
 
 msgid "Spatial characteristics of the resource."
-msgstr "资源的空间特征。"
+msgstr "Las caracteristicas espacialas de la ressorsa"
 
 msgid "Temporal Coverage"
-msgstr "时间范围"
+msgstr "Cobèrta temporala"
 
 msgid "Temporal characteristics of the resource."
-msgstr "资源的时间特征。"
+msgstr "Las caracteristicas temporalas de la ressorsa"
 
 msgid "Accrual Method"
-msgstr "更新方法"
+msgstr "Metòde d'abonament"
 
 msgid "The method by which items are added to a collection."
-msgstr "条目添加至馆藏中的方法。"
+msgstr "La metòde que consistís a apondre los items dins una colleccion"
 
 msgid "Accrual Periodicity"
-msgstr "更新周期"
+msgstr "Periodicitat d'aquisicion"
 
 msgid "The frequency with which items are added to a collection."
-msgstr "条目添加至馆藏中的频率。"
+msgstr "Frequéncia d'apondon dels items dins una colleccion"
 
 msgid "Accrual Policy"
-msgstr "更新政策"
+msgstr "Politica d'aquisicion"
 
 msgid "The policy governing the addition of items to a collection."
-msgstr "管理向馆藏添加条目的政策声明。"
+msgstr "Politica d'aquisicion d'una colleccion"
 
 msgid "Audience"
-msgstr "适用对象"
+msgstr "Public visat"
 
 msgid "A class of entity for whom the resource is intended or useful."
-msgstr "资源倾向或适用于的一类实体。"
+msgstr "Una classa d'entitat per la quala la ressorsa es destinada o utila."
 
 msgid "Audience Education Level"
-msgstr "适用对象的教育水平"
+msgstr "Nivèl public destinatari"
 
 msgid ""
 "A class of entity, defined in terms of progression through an educational or"
 " training context, for which the described resource is intended."
-msgstr "资源的适用对象在接受了教育或培训之后所能取得的教育程度的这一类实体的定义。"
+msgstr ""
 
 msgid "Mediator"
-msgstr "中介"
+msgstr "Mediator"
 
 msgid ""
 "An entity that mediates access to the resource and for whom the resource is "
 "intended or useful. In an educational context, a mediator might be a parent,"
 " teacher, teaching assistant, or care-giver."
-msgstr "协调对资源的访问以及资源倾向或适用于的最终用户的实体。在教育环境下，中介可能是家长、教师、教育助理、或护理者。"
+msgstr ""
 
 msgid "Instructional Method"
-msgstr "指导方法"
+msgstr "Metòde d'ensenhament"
 
 msgid ""
 "A process, used to engender knowledge, attitudes and skills, that the "
@@ -293,27 +302,27 @@ msgid ""
 " of learning are measured. Instructional methods include all aspects of the "
 "instruction and learning processes from planning and implementation through "
 "evaluation and feedback."
-msgstr "所描述资源所支持的用于生成知识、看法和技巧的过程。指导方法一般将会包括表现指导资料的方法、或者引导指导性行为的方法，还有学习者到学习者、学习者到教师的指导模式，还有衡量团体和个人学习水平的机制。指导方法包括指导和学习过程的所有方面，从规划和实施一直到评估和反馈。"
+msgstr ""
 
 msgid "Provenance"
-msgstr "保管历史"
+msgstr "Provenéncia"
 
 msgid ""
 "A statement of any changes in ownership and custody of the resource since "
 "its creation that are significant for its authenticity, integrity, and "
 "interpretation. The statement may include a description of any changes "
 "successive custodians made to the resource."
-msgstr "自创建历来的资源的所有权和保管方面的任何变更的陈述，这对资源的真实性，完整性和解释都是非常重要的。陈述可能包含对资源的历届保管人的变更描述。"
+msgstr ""
 
 msgid "Rights Holder"
-msgstr "版权拥有者"
+msgstr "Avents dreit"
 
 msgid "A person or organization owning or managing rights over the resource."
-msgstr "拥有或管理资源版权的个人或组织。"
+msgstr "Una persona o una organizacion detentritz o cargada de la gestion dels dreits que concernisson la ressorsa."
 
 #: DublinCoreExtendedPlugin.php:82
 #, php-format
 msgid ""
 "%sWarning%s: This will remove all the Dublin Core elements added by this "
 "plugin and permanently delete all element texts entered in those fields.%s"
-msgstr "%s警告%s：这将移除由该插件添加的所有都柏林核心元素，并永久删除在那些字段中输入的所有元素文本。%s"
+msgstr "%sAvertiment%s: Aquò va suprimir totes los elements Dublin Core aponduts per aquesta extension e escafar definitivament totes los contenguts textuals entrats dins aquestes camps.%s"

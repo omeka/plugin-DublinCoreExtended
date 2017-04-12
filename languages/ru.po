@@ -1,0 +1,320 @@
+# Translation for the Dublin Core Extended plugin for Omeka.
+# Copyright (C) 2012 Roy Rosenzweig Center for History and New Media
+# This file is distributed under the same license as the Omeka package.
+# 
+# Translators:
+# HadjaLSI <grebenkina007@mail.ru>, 2013
+# Mikhail Shvartsman <Shvar@rsl.ru>, 2013-2014
+msgid ""
+msgstr ""
+"Project-Id-Version: Omeka\n"
+"Report-Msgid-Bugs-To: http://github.com/omeka/plugin-DublinCoreExtended/issues\n"
+"POT-Creation-Date: 2012-12-17 21:49-0500\n"
+"PO-Revision-Date: 2014-01-29 09:03+0000\n"
+"Last-Translator: Mikhail Shvartsman <Shvar@rsl.ru>\n"
+"Language-Team: Russian (http://www.transifex.com/omeka/omeka/language/ru/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: ru\n"
+"Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || (n%100>=11 && n%100<=14)? 2 : 3);\n"
+
+msgid "Alternative Title"
+msgstr "Другие варианты заглавия"
+
+msgid ""
+"An alternative name for the resource. The distinction between titles and "
+"alternative titles is application-specific."
+msgstr "Альтернативное имя для этого ресурса. Различие между заглавием и альтернативным заглавием зависит от того, какое приложение используется."
+
+msgid "Abstract"
+msgstr "Реферат"
+
+msgid "A summary of the resource."
+msgstr "Краткое изложение текста."
+
+msgid "Table Of Contents"
+msgstr "Оглавление"
+
+msgid "A list of subunits of the resource."
+msgstr "Список элементов ресурса."
+
+msgid "Date Available"
+msgstr "Доступная дата"
+
+msgid ""
+"Date (often a range) that the resource became or will become available."
+msgstr "Дата (часто диапазон), когда ресурс стал или станет доступным."
+
+msgid "Date Created"
+msgstr "Дата создания"
+
+msgid "Date of creation of the resource."
+msgstr "Дата создания ресурса."
+
+msgid "Date Accepted"
+msgstr "Дата утверждения"
+
+msgid ""
+"Date of acceptance of the resource. Examples of resources to which a Date "
+"Accepted may be relevant are a thesis (accepted by a university department) "
+"or an article (accepted by a journal)."
+msgstr "Дата утверждения ресурса. Примерами ресурсов для которых может быть применим квалификатор \"Дата утверждения\" являются диссертация (одобренная университетской кафедрой) или статья (одобренная журналом)."
+
+msgid "Date Copyrighted"
+msgstr "Дата начала действия авторского права"
+
+msgid "Date of copyright."
+msgstr "Дата начала действия авторского права."
+
+msgid "Date Submitted"
+msgstr "Дата предоставления"
+
+msgid ""
+"Date of submission of the resource. Examples of resources to which a Date "
+"Submitted may be relevant are a thesis (submitted to a university "
+"department) or an article (submitted to a journal)."
+msgstr "Дата предоставления ресурса. Примерами ресурсов для которых может быть применим квалификатор \"Дата предоставления\" являются диссертация (одобренная университетской кафедрой) или статья (одобренная журналом)."
+
+msgid "Date Issued"
+msgstr "Дата публикации"
+
+msgid "Date of formal issuance (e.g., publication) of the resource."
+msgstr "Дата официального выпуска (например, публикации) ресурса."
+
+msgid "Date on which the resource was changed."
+msgstr "Дата, когда был изменён ресурс."
+
+msgid "Date Valid"
+msgstr "Достоверная дата"
+
+msgid "Date (often a range) of validity of a resource."
+msgstr "Дата (часто диапазон), когда ресурс достоверен."
+
+msgid "Access Rights"
+msgstr "Права доступа"
+
+msgid ""
+"Information about who can access the resource or an indication of its "
+"security status. Access Rights may include information regarding access or "
+"restrictions based on privacy, security, or other policies."
+msgstr "Информация о том, кто может получить доступ к ресурсу или признак его статуса безопасности. Права доступа могут включать информацию относительно доступа или ограничений, основанных на конфиденциальности, безопасности или других правил."
+
+msgid "License"
+msgstr "Лицензионное соглашение"
+
+msgid ""
+"A legal document giving official permission to do something with the "
+"resource."
+msgstr "Правовой документ дающий официальное разрешение на какую-либо работу с ресурсом."
+
+msgid "Conforms To"
+msgstr "Соответствует"
+
+msgid "An established standard to which the described resource conforms."
+msgstr "Установленный стандарт, которому соответствует описываемый ресурс."
+
+msgid "Has Format"
+msgstr "Имеет формат"
+
+msgid ""
+"A related resource that is substantially the same as the pre-existing "
+"described resource, but in another format."
+msgstr "Связанный ресурс, который в значительной степени является таким же, как и описанный ранее ресурс, но в другом формате."
+
+msgid "Has Part"
+msgstr "Имеет часть"
+
+msgid ""
+"A related resource that is included either physically or logically in the "
+"described resource."
+msgstr "Связанный ресурс, который либо физически, либо логически включён в описываемый ресурс."
+
+msgid "Has Version"
+msgstr "Имеет версию"
+
+msgid ""
+"A related resource that is a version, edition, or adaptation of the "
+"described resource."
+msgstr "Связанный ресурс, который является версией, редакцией или переработкой описываемого ресурса."
+
+msgid "Is Format Of"
+msgstr "Следующего формата"
+
+msgid ""
+"A related resource that is substantially the same as the described resource,"
+" but in another format."
+msgstr "Связанный ресурс, который в значительной степени является таким же, как и описанный ресурс, но в другом формате."
+
+msgid "Is Part Of"
+msgstr "Является частью"
+
+msgid ""
+"A related resource in which the described resource is physically or "
+"logically included."
+msgstr "Связанный ресурс, в который описываемый ресурс включён либо физически, либо логически."
+
+msgid "Is Referenced By"
+msgstr "Ссылаются"
+
+msgid ""
+"A related resource that references, cites, or otherwise points to the "
+"described resource."
+msgstr "Связанный ресурс, который ссылается, цитирует или как-то указывает на описываемый ресурс."
+
+msgid "Is Replaced By"
+msgstr "Ссылается"
+
+msgid ""
+"A related resource that supplants, displaces, or supersedes the described "
+"resource."
+msgstr "Связанный ресурс, который замещает или упраздняет описываемый ресурс."
+
+msgid "Is Required By"
+msgstr "Требуется"
+
+msgid ""
+"A related resource that requires the described resource to support its "
+"function, delivery, or coherence."
+msgstr "Связанный ресурс, который требует, чтобы описываемый ресурс поддерживал свои функции, распространение или согласованность."
+
+msgid "Is Version Of"
+msgstr "Версия"
+
+msgid ""
+"A related resource of which the described resource is a version, edition, or"
+" adaptation. Changes in version imply substantive changes in content rather "
+"than differences in format."
+msgstr "Связанный ресурс, который является версией, редакцией или переработкой описываемого ресурса. Изменения в версии подразумевают существенные изменения в содержании, а не в формате."
+
+msgid "References"
+msgstr "Ссылки"
+
+msgid ""
+"A related resource that is referenced, cited, or otherwise pointed to by the"
+" described resource."
+msgstr "Связанный ресурс, на который ссылается, цитирует или как-то указывает описываемый ресурс."
+
+msgid "Replaces"
+msgstr "Замены"
+
+msgid ""
+"A related resource that is supplanted, displaced, or superseded by the "
+"described resource."
+msgstr "Связанный ресурс, который замещается или упраздняется описываемым ресурсом."
+
+msgid "Requires"
+msgstr "Требует"
+
+msgid ""
+"A related resource that is required by the described resource to support its"
+" function, delivery, or coherence."
+msgstr "Связанный ресурс, в котором нуждается описываемый ресурс для поддержания своих функций, распространения или согласованности."
+
+msgid "Extent"
+msgstr "Размер"
+
+msgid "The size or duration of the resource."
+msgstr "Размер или срок действия ресурса."
+
+msgid "Medium"
+msgstr "Область применения"
+
+msgid "The material or physical carrier of the resource."
+msgstr "Материальный или физический носитель ресурса."
+
+msgid ""
+"A bibliographic reference for the resource. Recommended practice is to "
+"include sufficient bibliographic detail to identify the resource as "
+"unambiguously as possible."
+msgstr "Библиографическая ссылка для ресурса. Рекомендуется включать достаточное количество библиографических деталей, чтобы однозначно, насколько это возможно идентифицировать ресурс."
+
+msgid "Spatial Coverage"
+msgstr "Широта охватываемого материала"
+
+msgid "Spatial characteristics of the resource."
+msgstr "Объёмные характеристики ресурса."
+
+msgid "Temporal Coverage"
+msgstr "Временной охват"
+
+msgid "Temporal characteristics of the resource."
+msgstr "Временные характеристики ресурса."
+
+msgid "Accrual Method"
+msgstr "Кумулятивный метод"
+
+msgid "The method by which items are added to a collection."
+msgstr "Метод, при котором документы добавляются в коллекцию."
+
+msgid "Accrual Periodicity"
+msgstr "Периодичность, с которой происходит наращивание."
+
+msgid "The frequency with which items are added to a collection."
+msgstr "Частота повторения добавляемых в коллекцию документов."
+
+msgid "Accrual Policy"
+msgstr "Принципы кумулятивного добавления"
+
+msgid "The policy governing the addition of items to a collection."
+msgstr "Правила, по которым документы добавляются в коллекцию."
+
+msgid "Audience"
+msgstr "Читатели"
+
+msgid "A class of entity for whom the resource is intended or useful."
+msgstr "Тип или класс субъекта, для которого ресурс предназначен или полезен."
+
+msgid "Audience Education Level"
+msgstr "Образовательный уровень аудитории"
+
+msgid ""
+"A class of entity, defined in terms of progression through an educational or"
+" training context, for which the described resource is intended."
+msgstr "Тип или класс субъекта, определённый с точки зрения развития через образовательное или обучающее содержание, для которого предназначен описываемый ресурс."
+
+msgid "Mediator"
+msgstr "Посредник"
+
+msgid ""
+"An entity that mediates access to the resource and for whom the resource is "
+"intended or useful. In an educational context, a mediator might be a parent,"
+" teacher, teaching assistant, or care-giver."
+msgstr "Субъект, выступающий в качестве посредника для доступа к ресурсу и для кого ресурс предназначен и полезен. В образовательном контексте посредник может быть в роли родителя, учителя, ассистента или попечителя."
+
+msgid "Instructional Method"
+msgstr "Метод обучения"
+
+msgid ""
+"A process, used to engender knowledge, attitudes and skills, that the "
+"described resource is designed to support. Instructional Method will "
+"typically include ways of presenting instructional materials or conducting "
+"instructional activities, patterns of learner-to-learner and learner-to-"
+"instructor interactions, and mechanisms by which group and individual levels"
+" of learning are measured. Instructional methods include all aspects of the "
+"instruction and learning processes from planning and implementation through "
+"evaluation and feedback."
+msgstr "Процесс, используемый для пробуждения интереса к знаниям, точкам зрения и мастерству; описываемый ресурс должен это поддерживать. Метод обучения в основном будет включать в себя способы представления обучающего материала либо проведение учебных действий, образцы поведения ученик-ученик и ученик-инструктор, а также алгоритмы, по которым как групповые, так и индивидуальные уровни обучения могут быть оценены. Методы обучения включают все стороны учебных процессов от планирования и внедрения посредством оценки и обратной связи."
+
+msgid "Provenance"
+msgstr "Источник происхождения"
+
+msgid ""
+"A statement of any changes in ownership and custody of the resource since "
+"its creation that are significant for its authenticity, integrity, and "
+"interpretation. The statement may include a description of any changes "
+"successive custodians made to the resource."
+msgstr "Документальные подтверждения любых изменений в правах собственности и попечительства над ресурсом, начиная со времени его создания, которые важны для его подлинности, целостности и толкования. Документальные подтверждения могут включать в себя описание любых изменений последовательно применённых к ресурсу."
+
+msgid "Rights Holder"
+msgstr "Правообладатель"
+
+msgid "A person or organization owning or managing rights over the resource."
+msgstr "Человек или организация, обладающая правами или управляющая ресурсом."
+
+#: DublinCoreExtendedPlugin.php:82
+#, php-format
+msgid ""
+"%sWarning%s: This will remove all the Dublin Core elements added by this "
+"plugin and permanently delete all element texts entered in those fields.%s"
+msgstr "%sПредупреждение%s: Это действие удалит все элементы Dublin Core, добавленные этим плагином и навсегда удалит все элементы текста, введённые в этих полях."

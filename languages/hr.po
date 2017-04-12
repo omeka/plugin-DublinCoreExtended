@@ -3,15 +3,15 @@
 # This file is distributed under the same license as the Omeka package.
 # 
 # Translators:
-# rijekateam <digitalizacija@gkri.hr>, 2013
+# rijekateam <digitalizacija@gkri.hr>, 2013-2015
 msgid ""
 msgstr ""
 "Project-Id-Version: Omeka\n"
-"Report-Msgid-Bugs-To: https://github.com/omeka/Omeka/issues\n"
+"Report-Msgid-Bugs-To: http://github.com/omeka/plugin-DublinCoreExtended/issues\n"
 "POT-Creation-Date: 2012-12-17 21:49-0500\n"
-"PO-Revision-Date: 2013-04-05 10:53+0000\n"
+"PO-Revision-Date: 2015-02-25 09:48+0000\n"
 "Last-Translator: rijekateam <digitalizacija@gkri.hr>\n"
-"Language-Team: Croatian (http://www.transifex.com/projects/p/omeka/language/hr/)\n"
+"Language-Team: Croatian (http://www.transifex.com/omeka/omeka/language/hr/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -24,32 +24,32 @@ msgstr "Alternativni naslov"
 msgid ""
 "An alternative name for the resource. The distinction between titles and "
 "alternative titles is application-specific."
-msgstr "Alternativno ime za resurs. Razlika između naslova i alternativnih naslova ovisi o njihovoj primjeni u konkretnim slučajevima. "
+msgstr "Alternativno ime za izvor. Razlika između naslova i alternativnih naslova ovisi o njihovoj primjeni u konkretnim slučajevima. "
 
 msgid "Abstract"
 msgstr "Sažetak"
 
 msgid "A summary of the resource."
-msgstr "Sažeti prikaz resursa. "
+msgstr "Sažetak izvora. "
 
 msgid "Table Of Contents"
 msgstr "Sadržaj"
 
 msgid "A list of subunits of the resource."
-msgstr "Popis podjedinica resursa. "
+msgstr "Popis podjedinica izvora. "
 
 msgid "Date Available"
 msgstr "Datum dostupnosti"
 
 msgid ""
 "Date (often a range) that the resource became or will become available."
-msgstr "Datum (često vremenski period) kada je resurs postao ili će postati dostupan. "
+msgstr "Datum (ili vremenski period) kada je izvor postao ili će postati dostupan. "
 
 msgid "Date Created"
 msgstr "Datum stvaranja"
 
 msgid "Date of creation of the resource."
-msgstr "Datum stvaranja resursa. "
+msgstr "Datum stvaranja izvora. "
 
 msgid "Date Accepted"
 msgstr "Datum prihvaćanja"
@@ -58,7 +58,7 @@ msgid ""
 "Date of acceptance of the resource. Examples of resources to which a Date "
 "Accepted may be relevant are a thesis (accepted by a university department) "
 "or an article (accepted by a journal)."
-msgstr "Datum prihvaćanja resursa. Primjeri resursa kojima datum prihvaćanja može biti od važnosti su disertacije (prihvaćene od strane sveučilišnog odsjeka) ili članak (prihvaćen u časopisu). "
+msgstr "Datum prihvaćanja izvora. Primjeri izvora kojima datum prihvaćanja može biti od važnosti su disertacije (prihvaćene od strane sveučilišnog odsjeka) ili članak (prihvaćen u časopisu). "
 
 msgid "Date Copyrighted"
 msgstr "Datum dodjeljivanja autorskih prava"
@@ -73,22 +73,22 @@ msgid ""
 "Date of submission of the resource. Examples of resources to which a Date "
 "Submitted may be relevant are a thesis (submitted to a university "
 "department) or an article (submitted to a journal)."
-msgstr "Datum kada je resurs predan. Primjeri resursa kojima datum predaje može biti od važnosti su disertacije (predane sveučilišnom odsjeku) ili članak (predan časopisu). "
+msgstr "Datum kada je izvor predan. Primjeri izvora kojima datum predaje može biti od važnosti su disertacije (predane sveučilišnom odsjeku) ili članak (predan časopisu). "
 
 msgid "Date Issued"
 msgstr "Datum izdavanja"
 
 msgid "Date of formal issuance (e.g., publication) of the resource."
-msgstr "Datum službenog izdavanja (publikacije) resursa."
+msgstr "Datum službenog izdavanja (publikacije) izvora."
 
 msgid "Date on which the resource was changed."
-msgstr "Datum kada je resurs promijenjen. "
+msgstr "Datum kada je izvor promijenjen. "
 
 msgid "Date Valid"
 msgstr "Datum valjanosti"
 
 msgid "Date (often a range) of validity of a resource."
-msgstr "Datum (često raspon) valjanosti resursa."
+msgstr "Datum (često raspon) valjanosti izvora."
 
 msgid "Access Rights"
 msgstr "Prava pristupa"
@@ -97,7 +97,7 @@ msgid ""
 "Information about who can access the resource or an indication of its "
 "security status. Access Rights may include information regarding access or "
 "restrictions based on privacy, security, or other policies."
-msgstr "Informacija o tome tko smije pristupiti resursu ili indikacija o njegovom sigurnosnom statusu. Prava pristupa mogu uključivati informacije o pristupu ili ograničenjima pristupa temeljenim na privatnosti, sigurnosti ili drugim politikama. "
+msgstr "Informacija o tome tko može pristupiti izvoru ili indikacija o njegovom sigurnosnom statusu. Prava pristupa mogu uključivati informacije o pristupu ili ograničenjima pristupa temeljenim na privatnosti, sigurnosti ili drugim politikama."
 
 msgid "License"
 msgstr "Licenca"
@@ -105,13 +105,13 @@ msgstr "Licenca"
 msgid ""
 "A legal document giving official permission to do something with the "
 "resource."
-msgstr "Pravi dokument koji daje službeno dopuštenje da se nešto učini s resursom. "
+msgstr "Pravni dokument koji daje službeno dopuštenje da se nešto učini s izvorom. "
 
 msgid "Conforms To"
-msgstr ""
+msgstr "Sukladan je s"
 
 msgid "An established standard to which the described resource conforms."
-msgstr ""
+msgstr "Utvrđeni standard s kojim je opisani izvor sukladan."
 
 msgid "Has Format"
 msgstr "Ima format"
@@ -119,39 +119,39 @@ msgstr "Ima format"
 msgid ""
 "A related resource that is substantially the same as the pre-existing "
 "described resource, but in another format."
-msgstr "Srodni resurs koji je uglavnom isti kao i postojeći opisani resurs, no u drugome formatu."
+msgstr "Srodni izvor koji je uglavnom isti kao i postojeći opisani izvor, no u drugome formatu."
 
 msgid "Has Part"
-msgstr "Ima Dijelove"
+msgstr "Ima dio"
 
 msgid ""
 "A related resource that is included either physically or logically in the "
 "described resource."
-msgstr "Srodni resurs koji je ili fizički ili logički uključen u opisani resurs. "
+msgstr "Srodni izvor koji je ili fizički ili logički uključen u opisani izvor. "
 
 msgid "Has Version"
-msgstr "Ima Verzije"
+msgstr "Ima inačice"
 
 msgid ""
 "A related resource that is a version, edition, or adaptation of the "
 "described resource."
-msgstr "Srodni resurs koji ja verzija, izdanje ili adaptacija opisanog resursa. "
+msgstr "Srodni izvor koji ja inačica, izdanje ili adaptacija opisanog izvora. "
 
 msgid "Is Format Of"
-msgstr "Format Od"
+msgstr "Je format"
 
 msgid ""
 "A related resource that is substantially the same as the described resource,"
 " but in another format."
-msgstr "Srodni resurs koji je uglavnm isti kao i postojeći opisani resurs, no u drugome formatu."
+msgstr "Srodni izvor koji je uglavnm isti kao i postojeći opisani izvor, no u drugome formatu."
 
 msgid "Is Part Of"
-msgstr "Dio Od"
+msgstr "Je dio"
 
 msgid ""
 "A related resource in which the described resource is physically or "
 "logically included."
-msgstr "Srodni resurs u koji je opisani resurs uključen fizički ili logički. "
+msgstr "Srodni izvor u koji je opisani izvir uključen fizički ili logički. "
 
 msgid "Is Referenced By"
 msgstr "Citira ga "
@@ -159,130 +159,130 @@ msgstr "Citira ga "
 msgid ""
 "A related resource that references, cites, or otherwise points to the "
 "described resource."
-msgstr ""
+msgstr "Srodni izvor koji navodi, citira ili na neki drugi način upućuje na opisani izvor."
 
 msgid "Is Replaced By"
-msgstr ""
+msgstr "Nadomješten je s"
 
 msgid ""
 "A related resource that supplants, displaces, or supersedes the described "
 "resource."
-msgstr ""
+msgstr "Srodni izvor koji zamijenjuje, istiskuje ili nasljeđuje opisani izvor. "
 
 msgid "Is Required By"
-msgstr ""
+msgstr "Potražuje ga"
 
 msgid ""
 "A related resource that requires the described resource to support its "
 "function, delivery, or coherence."
-msgstr ""
+msgstr "Srodni izvor koji zahtijeva opisani izvor kako bi podržao njegovu funkciju, izvedbu ili dosljednost."
 
 msgid "Is Version Of"
-msgstr ""
+msgstr "Inačica je"
 
 msgid ""
 "A related resource of which the described resource is a version, edition, or"
 " adaptation. Changes in version imply substantive changes in content rather "
 "than differences in format."
-msgstr ""
+msgstr "Srodni izvor, gdje je opisani izvor njegova verzija, izdanje ili adaptacija. Promjene u verziji odnose se na znatne promjene u sadržaju, a ne na razlike u formatu. "
 
 msgid "References"
-msgstr ""
+msgstr "Citira"
 
 msgid ""
 "A related resource that is referenced, cited, or otherwise pointed to by the"
 " described resource."
-msgstr ""
+msgstr "Srodni izvor koji opisani izvor navodi, citira ili na neki drugi način upućuje na njega. "
 
 msgid "Replaces"
-msgstr ""
+msgstr "Zamjenjuje"
 
 msgid ""
 "A related resource that is supplanted, displaced, or superseded by the "
 "described resource."
-msgstr ""
+msgstr "Srodni izvor kojega opisani izvor zamjenjuje ili nasljeđuje."
 
 msgid "Requires"
-msgstr ""
+msgstr "Zahtijeva"
 
 msgid ""
 "A related resource that is required by the described resource to support its"
 " function, delivery, or coherence."
-msgstr ""
+msgstr "Srodni izvor koji zahtijeva opisani izvor kako bi podržao njegovu funkciju, izvedbu ili dosljednost."
 
 msgid "Extent"
-msgstr ""
+msgstr "Opseg"
 
 msgid "The size or duration of the resource."
-msgstr ""
+msgstr "Veličina ili trajanje izvora."
 
 msgid "Medium"
-msgstr ""
+msgstr "Medij"
 
 msgid "The material or physical carrier of the resource."
-msgstr ""
+msgstr "Materijal ili fizički nositelj izvora."
 
 msgid ""
 "A bibliographic reference for the resource. Recommended practice is to "
 "include sufficient bibliographic detail to identify the resource as "
 "unambiguously as possible."
-msgstr ""
+msgstr "Bibliografski citat za izvor. Preporučena praksa je da se uključi dovoljno bibliografskih detalja kako bi se izvor mogao nedvojbeno identificirati. "
 
 msgid "Spatial Coverage"
-msgstr ""
+msgstr "Prostorna odrednica"
 
 msgid "Spatial characteristics of the resource."
-msgstr ""
+msgstr "Prostorne karakteristike izvora."
 
 msgid "Temporal Coverage"
-msgstr ""
+msgstr "Vremenska odrednica"
 
 msgid "Temporal characteristics of the resource."
-msgstr ""
+msgstr "Vremenske karakteristike izvora."
 
 msgid "Accrual Method"
-msgstr ""
+msgstr "Metoda nabave"
 
 msgid "The method by which items are added to a collection."
-msgstr ""
+msgstr "Metoda pomoću koje se dokumenti dodaju zbirci."
 
 msgid "Accrual Periodicity"
-msgstr ""
+msgstr "Period nabave"
 
 msgid "The frequency with which items are added to a collection."
-msgstr ""
+msgstr "Učestalost kojom se dokumenti dodaju zbirci."
 
 msgid "Accrual Policy"
-msgstr ""
+msgstr "Politika nabave"
 
 msgid "The policy governing the addition of items to a collection."
-msgstr ""
+msgstr "Politika nabave primjeraka za zbirku."
 
 msgid "Audience"
-msgstr ""
+msgstr "Ciljani korisnici"
 
 msgid "A class of entity for whom the resource is intended or useful."
-msgstr ""
+msgstr "Skupina kojoj je izvor namijenjen ili koristan."
 
 msgid "Audience Education Level"
-msgstr ""
+msgstr "Razina obrazovanja korisnika"
 
 msgid ""
 "A class of entity, defined in terms of progression through an educational or"
 " training context, for which the described resource is intended."
-msgstr ""
+msgstr "Skupina, definirana u smislu napredovanja kroz obrazovni ili tečajni kontekst, kojoj je opisani izvor namijenjen."
 
 msgid "Mediator"
-msgstr ""
+msgstr "Posrednik"
 
 msgid ""
 "An entity that mediates access to the resource and for whom the resource is "
 "intended or useful. In an educational context, a mediator might be a parent,"
 " teacher, teaching assistant, or care-giver."
-msgstr ""
+msgstr "Osoba koji posreduje pri pristupu izvoru i kojem je izvor namijenjen ili od koristi. U obrazovnom kontekstu posrednik može biti roditelj, učitelj, asistent ili skrbnik. "
 
 msgid "Instructional Method"
-msgstr ""
+msgstr "Obrazovna metoda"
 
 msgid ""
 "A process, used to engender knowledge, attitudes and skills, that the "
@@ -293,27 +293,27 @@ msgid ""
 " of learning are measured. Instructional methods include all aspects of the "
 "instruction and learning processes from planning and implementation through "
 "evaluation and feedback."
-msgstr ""
+msgstr "Proces koji se koristi za oblikovanje onih znanja, stavova i vještina za koje je opisani izvor stvoren da podržava. Obrazovna metoda uglavnom uključuje načine prezentacije obrazovnih materijala ili vršenja obrazovnih aktivnosti, uzoraka interakcije učenik-učenik i učenik-instruktor i mehanizme kojima se mjeri razina znanja grupe ili pojedinca. Obrazovne metode uključuje sve aspekte nastave i procesa učenja, od planiranja i implementacije do vrednovanja i povratne informacije."
 
 msgid "Provenance"
-msgstr ""
+msgstr "Porijeklo"
 
 msgid ""
 "A statement of any changes in ownership and custody of the resource since "
 "its creation that are significant for its authenticity, integrity, and "
 "interpretation. The statement may include a description of any changes "
 "successive custodians made to the resource."
-msgstr ""
+msgstr "Izjava o promjenama u vlasništvu ili nadležnosti izvora od njegova stvaranja, a koje su važne za njegovu autentičnost, cjelovitost i interpretaciju. Izjava može sadržavati opis promjena koje su vlasnici načinili na izvoru."
 
 msgid "Rights Holder"
 msgstr "Nositelj autorskog prava"
 
 msgid "A person or organization owning or managing rights over the resource."
-msgstr "Osoba ili organizacija koja posjeduje ili upravlja vlasničkim pravima nad resursom. "
+msgstr "Osoba ili organizacija koja posjeduje ili upravlja vlasničkim pravima nad izvorom. "
 
 #: DublinCoreExtendedPlugin.php:82
 #, php-format
 msgid ""
 "%sWarning%s: This will remove all the Dublin Core elements added by this "
 "plugin and permanently delete all element texts entered in those fields.%s"
-msgstr ""
+msgstr "%sUpozorenje%s: Ovo će ukloniti sve elemente Dublinske jezgre koji su dio ovog dodatka i trajno obrisati sav tekst unesen u polja elemenata.%s"
