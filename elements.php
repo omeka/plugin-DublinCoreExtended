@@ -93,7 +93,7 @@ $elements = array(
     ), 
     array(
         'label'        => 'Date Modified', 
-        'name'        => '', 
+        'name'        => 'modified',
         'description' => 'Date on which the resource was changed.', 
         '_refines'    => 'Date'
     ), 
