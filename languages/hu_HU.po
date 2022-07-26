@@ -3,14 +3,16 @@
 # This file is distributed under the same license as the Omeka package.
 # 
 # Translators:
+# Adam Katona, 2018
+# Dora Nagy, 2019,2022
 # RustySheriff <jozsef.bone@gmail.com>, 2016
 msgid ""
 msgstr ""
-"Project-Id-Version: Omeka\n"
+"Project-Id-Version: Omeka Classic\n"
 "Report-Msgid-Bugs-To: http://github.com/omeka/plugin-DublinCoreExtended/issues\n"
 "POT-Creation-Date: 2012-12-17 21:49-0500\n"
-"PO-Revision-Date: 2016-02-16 19:01+0000\n"
-"Last-Translator: RustySheriff <jozsef.bone@gmail.com>\n"
+"PO-Revision-Date: 2013-02-13 18:04+0000\n"
+"Last-Translator: Dora Nagy, 2019,2022\n"
 "Language-Team: Hungarian (Hungary) (http://www.transifex.com/omeka/omeka/language/hu_HU/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -24,41 +26,41 @@ msgstr "Alternatív cím"
 msgid ""
 "An alternative name for the resource. The distinction between titles and "
 "alternative titles is application-specific."
-msgstr ""
+msgstr "A forrás alternatív címe. A címek és alternatív címek közötti különbség alkalmazás-specifikus. "
 
 msgid "Abstract"
-msgstr "Összefoglalás"
+msgstr "Absztrakt"
 
 msgid "A summary of the resource."
-msgstr ""
+msgstr "Forrásgyűjtemény"
 
 msgid "Table Of Contents"
 msgstr "Tartalomjegyzék"
 
 msgid "A list of subunits of the resource."
-msgstr ""
+msgstr "A forrás alegységeinek listája."
 
 msgid "Date Available"
 msgstr "Elérhetőség dátuma"
 
 msgid ""
 "Date (often a range) that the resource became or will become available."
-msgstr ""
+msgstr "Az az időpont (gyakran egy időtartomány) amikor a forrás elérhetővé vált vagy fog válni."
 
 msgid "Date Created"
-msgstr "Készítés dátuma"
+msgstr "Létrehozás dátuma"
 
 msgid "Date of creation of the resource."
-msgstr ""
+msgstr "A forrás létrehozásának dátuma."
 
 msgid "Date Accepted"
-msgstr "Elfogadás dátuma"
+msgstr "Jóváhagyás dátuma"
 
 msgid ""
 "Date of acceptance of the resource. Examples of resources to which a Date "
 "Accepted may be relevant are a thesis (accepted by a university department) "
 "or an article (accepted by a journal)."
-msgstr ""
+msgstr "A forrás elfogadásának dátuma. Példák olyan forrásokra, amelyekre az Elfogadás Dátuma releváns lehet és vagy értekezés (egyetemi tanszék által elfogadott) vagy egy cikk (egy folyóirat által elfogadott)."
 
 msgid "Date Copyrighted"
 msgstr "Szerzői jog dátuma"
@@ -73,69 +75,69 @@ msgid ""
 "Date of submission of the resource. Examples of resources to which a Date "
 "Submitted may be relevant are a thesis (submitted to a university "
 "department) or an article (submitted to a journal)."
-msgstr ""
+msgstr "A forrás beküldésének dátuma. Példák olyan forrásokra, amelyekre a Beküldés Dátuma releváns lehet és vagy értekezés (egyetemi tanszék által elfogadott) vagy egy cikk (egy folyóirat által elfogadott)."
 
 msgid "Date Issued"
-msgstr ""
+msgstr "A kiadás dátuma"
 
 msgid "Date of formal issuance (e.g., publication) of the resource."
-msgstr ""
+msgstr "A forrás hivatalos kiadásának (például közzétételének) dátuma."
 
 msgid "Date on which the resource was changed."
-msgstr ""
+msgstr "A forrás megváltoztatásának dátuma."
 
 msgid "Date Valid"
-msgstr ""
+msgstr "Érvényesség ideje"
 
 msgid "Date (often a range) of validity of a resource."
-msgstr ""
+msgstr "A forrás érvényességének dátuma (sokszor időtartomány)."
 
 msgid "Access Rights"
-msgstr ""
+msgstr "Hozzáférési Jogok"
 
 msgid ""
 "Information about who can access the resource or an indication of its "
 "security status. Access Rights may include information regarding access or "
 "restrictions based on privacy, security, or other policies."
-msgstr ""
+msgstr "Információ arról, hogy ki férhet hozzá a forráshoz vagy biztonsági beállításaihoz. A hozzáférési jogok magukban foglalhatják az információra vonatkozó hozzáféréseket vagy a személyiségi jogokon, biztonságon vagy egyéb szabályozáson alapuló korlátozásokat. "
 
 msgid "License"
-msgstr ""
+msgstr "Licensz"
 
 msgid ""
 "A legal document giving official permission to do something with the "
 "resource."
-msgstr ""
+msgstr "Egy olyan törvényes szabvány, amely engedélyezi, hogy a forrással végrehatjsunk valamit. "
 
 msgid "Conforms To"
-msgstr ""
+msgstr "Megfelel"
 
 msgid "An established standard to which the described resource conforms."
-msgstr ""
+msgstr "Egy olyan elfogadott szabvány, amelynek a meghatározott forrás megfelel. "
 
 msgid "Has Format"
-msgstr ""
+msgstr "Formátumelőzménye"
 
 msgid ""
 "A related resource that is substantially the same as the pre-existing "
 "described resource, but in another format."
-msgstr ""
+msgstr "Olyan kapcsolódó forrás, amely lényegében megegyezik a meghatározott forrás előző változatával, csak más formátumban van."
 
 msgid "Has Part"
-msgstr ""
+msgstr "Egésze"
 
 msgid ""
 "A related resource that is included either physically or logically in the "
 "described resource."
-msgstr ""
+msgstr "Olyan kapcsolódó forrás, amely fizikailag vagy logikailag szerepel a meghatározott forrásban, csak más formátumban van.  "
 
 msgid "Has Version"
-msgstr ""
+msgstr "Változat"
 
 msgid ""
 "A related resource that is a version, edition, or adaptation of the "
 "described resource."
-msgstr ""
+msgstr "Olyan kapcsolódó forrás, amely a meghatározott forrás egyik változata, kiadása vagy adaptációja."
 
 msgid "Is Format Of"
 msgstr ""
@@ -143,31 +145,31 @@ msgstr ""
 msgid ""
 "A related resource that is substantially the same as the described resource,"
 " but in another format."
-msgstr ""
+msgstr "Olyan kapcsolódó forrás, amely lényegében ugyanaz mint, a meghatározott forrás, csak más formátumban van."
 
 msgid "Is Part Of"
-msgstr ""
+msgstr "Részegység"
 
 msgid ""
 "A related resource in which the described resource is physically or "
 "logically included."
-msgstr ""
+msgstr "Olyan kapcsolódó forrás, amelyben a meghatározott forrás fizikailag vagy logikailag szerepel."
 
 msgid "Is Referenced By"
-msgstr ""
+msgstr "Hivatkozta"
 
 msgid ""
 "A related resource that references, cites, or otherwise points to the "
 "described resource."
-msgstr ""
+msgstr "Olyan kapcsolódó forrás, amely hivatkozik, idézi vagy valamilyen módon utal a meghatározott forrásra. "
 
 msgid "Is Replaced By"
-msgstr ""
+msgstr "Cserélte"
 
 msgid ""
 "A related resource that supplants, displaces, or supersedes the described "
 "resource."
-msgstr ""
+msgstr "Olyan kapcsolódó forrás, amely leváltja, helyettesíti vagy pótolja a meghatározott forrást. "
 
 msgid "Is Required By"
 msgstr ""
@@ -175,7 +177,7 @@ msgstr ""
 msgid ""
 "A related resource that requires the described resource to support its "
 "function, delivery, or coherence."
-msgstr ""
+msgstr "Olyan kapcsolódó forrás, amely megköveteli a meghatározott forrás funkciójának, a szállításának vagy koherenciájának támogatását. "
 
 msgid "Is Version Of"
 msgstr ""
@@ -184,23 +186,23 @@ msgid ""
 "A related resource of which the described resource is a version, edition, or"
 " adaptation. Changes in version imply substantive changes in content rather "
 "than differences in format."
-msgstr ""
+msgstr "Olyan kapcsolódó forrás, amelynek a meghatározott forrás az egyik változata, kiadása vagy adaptációja. A változatok közötti különbség inkább tartalmi, mint formátumbeli különbség. "
 
 msgid "References"
-msgstr ""
+msgstr "Hivatkozások"
 
 msgid ""
 "A related resource that is referenced, cited, or otherwise pointed to by the"
 " described resource."
-msgstr ""
+msgstr "Olyan kapcsolódó forrás, amelyre a meghatározott forrás hivatkozik, idéz vagy valamilyen módon utal."
 
 msgid "Replaces"
-msgstr ""
+msgstr "Cseréltek"
 
 msgid ""
 "A related resource that is supplanted, displaced, or superseded by the "
 "described resource."
-msgstr ""
+msgstr "Olyan kapcsolódó forrás, melyet levált, helyettesít vagy pótol a meghatározott forrás. "
 
 msgid "Requires"
 msgstr ""
@@ -208,81 +210,81 @@ msgstr ""
 msgid ""
 "A related resource that is required by the described resource to support its"
 " function, delivery, or coherence."
-msgstr ""
+msgstr "Olyan kapcsolódó forrás, amelyet a meghatározott forrás a funkció, a szállítás vagy a koherencia támogatásához követel meg."
 
 msgid "Extent"
-msgstr ""
+msgstr "Terjedelem"
 
 msgid "The size or duration of the resource."
-msgstr ""
+msgstr "A forrás mérete vagy időtartama."
 
 msgid "Medium"
-msgstr ""
+msgstr "Adathordozó"
 
 msgid "The material or physical carrier of the resource."
-msgstr ""
+msgstr "Az erőforrás anyagi vagy fizikai hordozója"
 
 msgid ""
 "A bibliographic reference for the resource. Recommended practice is to "
 "include sufficient bibliographic detail to identify the resource as "
 "unambiguously as possible."
-msgstr ""
+msgstr " A forrás bibliográfiai hivatkozása. Azt javasoljuk, hogy elegendő bibliográfiai adatot tartalmazzon, ahhoz, hogy egyértelműen beazonosítható legyen a forrás. "
 
 msgid "Spatial Coverage"
-msgstr ""
+msgstr "Térbeli lefedettség"
 
 msgid "Spatial characteristics of the resource."
-msgstr ""
+msgstr "A forrás térbeli jellemzői."
 
 msgid "Temporal Coverage"
-msgstr ""
+msgstr "Időbeli terjedelem"
 
 msgid "Temporal characteristics of the resource."
-msgstr ""
+msgstr "A forrás időbeli jellemzői."
 
 msgid "Accrual Method"
-msgstr ""
+msgstr "Gyarapodás módja"
 
 msgid "The method by which items are added to a collection."
-msgstr ""
+msgstr "Az a módszer, amivel az elemeket hozzáadhatja egy gyűjteményhez"
 
 msgid "Accrual Periodicity"
-msgstr ""
+msgstr "Gyarapodás gyakorisága"
 
 msgid "The frequency with which items are added to a collection."
-msgstr ""
+msgstr "Az elemek gyűjteményhez adásának gyakorisága. "
 
 msgid "Accrual Policy"
-msgstr ""
+msgstr "Gyarapodás szabályozása"
 
 msgid "The policy governing the addition of items to a collection."
-msgstr ""
+msgstr "Az elemek gyűjteményhez történő hozzáadásának szabályozása."
 
 msgid "Audience"
-msgstr ""
+msgstr "Közönség"
 
 msgid "A class of entity for whom the resource is intended or useful."
-msgstr ""
+msgstr "Egy olyan entitáscsoport akiknek a forrás hasznos lehet."
 
 msgid "Audience Education Level"
-msgstr ""
+msgstr "A közönség képzettsége"
 
 msgid ""
 "A class of entity, defined in terms of progression through an educational or"
 " training context, for which the described resource is intended."
-msgstr ""
+msgstr "Egy olyan entitáscsoport amelyet az oktatási vagy képzési kontextusban történő előrehaladás szempontjából definiáltak, akik számára a meghatározott forrás készült."
 
 msgid "Mediator"
-msgstr ""
+msgstr "Közvetítő"
 
 msgid ""
 "An entity that mediates access to the resource and for whom the resource is "
 "intended or useful. In an educational context, a mediator might be a parent,"
 " teacher, teaching assistant, or care-giver."
-msgstr ""
+msgstr "Egy olyan entitás amely közvetíti a forráshoz való hozzáférést, akinek a forrás hasznos. Oktatási kontextusban a közvetítő lehet szülő, tanár, tanári asszisztens vagy gondozó."
 
 msgid "Instructional Method"
-msgstr ""
+msgstr "Oktatási módszer"
 
 msgid ""
 "A process, used to engender knowledge, attitudes and skills, that the "
@@ -293,27 +295,27 @@ msgid ""
 " of learning are measured. Instructional methods include all aspects of the "
 "instruction and learning processes from planning and implementation through "
 "evaluation and feedback."
-msgstr ""
+msgstr "Egy olyan folyamat amely a tudás, az attitűdök és a készségek megteremtésére szolgál, ami a meghatározott forrás célja. Az oktatási módszer jellemzően magában foglalja az oktatási anyagok ismertetéseinek módjait, a tanuló-tanuló és a tanuló-oktató közötti együttműködések mintáit, valamint a csoportos és egyéni tanulási szintek mérési mechanizmusait. Az oktatási módszerek magukban foglalják az oktatási és tanulási folyamatok minden aspektusát a tervezéstől kezdve, az értékelésen és visszajelzésen át egészen a végrehajtásig. "
 
 msgid "Provenance"
-msgstr ""
+msgstr "Proveniancia"
 
 msgid ""
 "A statement of any changes in ownership and custody of the resource since "
 "its creation that are significant for its authenticity, integrity, and "
 "interpretation. The statement may include a description of any changes "
 "successive custodians made to the resource."
-msgstr ""
+msgstr "A forrás létrehozása óta bekövetkezett tulajdon- és felügyeletjogi változásokat tartalmazó nyilatkozat, amely a hitelesség, az integritás és az értelmezés szempontjából jelentős. A nyilatkozat bármilyen olyan változtatásról tartalmazhat leírást, melyet a forrás kezelői hajtottak végre. "
 
 msgid "Rights Holder"
-msgstr ""
+msgstr "Jogtulajdonos"
 
 msgid "A person or organization owning or managing rights over the resource."
-msgstr ""
+msgstr "A személy vagy intézmény, aki a jogokat birtolkolja."
 
 #: DublinCoreExtendedPlugin.php:82
 #, php-format
 msgid ""
 "%sWarning%s: This will remove all the Dublin Core elements added by this "
 "plugin and permanently delete all element texts entered in those fields.%s"
-msgstr ""
+msgstr "%s Figyelmeztetés %s: Ezzel eltávolítja a bővítmény által hozzáadott összes Dublin Core elemet és véglegesen törli a mezőkbe írt elemszövegeket. %s"

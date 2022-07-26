@@ -1,0 +1,319 @@
+# Translation for the Dublin Core Extended plugin for Omeka.
+# Copyright (C) 2012 Roy Rosenzweig Center for History and New Media
+# This file is distributed under the same license as the Omeka package.
+# 
+# Translators:
+# tanya chorna <tanya.chorna@gmail.com>, 2018-2019
+msgid ""
+msgstr ""
+"Project-Id-Version: Omeka Classic\n"
+"Report-Msgid-Bugs-To: http://github.com/omeka/plugin-DublinCoreExtended/issues\n"
+"POT-Creation-Date: 2012-12-17 21:49-0500\n"
+"PO-Revision-Date: 2013-02-13 18:04+0000\n"
+"Last-Translator: tanya chorna <tanya.chorna@gmail.com>, 2018-2019\n"
+"Language-Team: Ukrainian (http://www.transifex.com/omeka/omeka/language/uk/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: uk\n"
+"Plural-Forms: nplurals=4; plural=(n % 1 == 0 && n % 10 == 1 && n % 100 != 11 ? 0 : n % 1 == 0 && n % 10 >= 2 && n % 10 <= 4 && (n % 100 < 12 || n % 100 > 14) ? 1 : n % 1 == 0 && (n % 10 ==0 || (n % 10 >=5 && n % 10 <=9) || (n % 100 >=11 && n % 100 <=14 )) ? 2: 3);\n"
+
+msgid "Alternative Title"
+msgstr "Альтернативна назва"
+
+msgid ""
+"An alternative name for the resource. The distinction between titles and "
+"alternative titles is application-specific."
+msgstr "Альтернативна назва для ресурсу. Різниця між назвами та альтернативними назвами є специфічною для застосування."
+
+msgid "Abstract"
+msgstr "Резюме"
+
+msgid "A summary of the resource."
+msgstr "Короткий опис ресурсу"
+
+msgid "Table Of Contents"
+msgstr "Зміст"
+
+msgid "A list of subunits of the resource."
+msgstr "Список розділів ресурсу."
+
+msgid "Date Available"
+msgstr "Доступна дата"
+
+msgid ""
+"Date (often a range) that the resource became or will become available."
+msgstr "Дата (найчастіше діапазон), коли ресурс став або стане доступним."
+
+msgid "Date Created"
+msgstr "Дата створення"
+
+msgid "Date of creation of the resource."
+msgstr "Дата створення ресурсу."
+
+msgid "Date Accepted"
+msgstr "Дата прийняття"
+
+msgid ""
+"Date of acceptance of the resource. Examples of resources to which a Date "
+"Accepted may be relevant are a thesis (accepted by a university department) "
+"or an article (accepted by a journal)."
+msgstr "Дата прийняття ресурсу. Приклади ресурсів, до яких може застосовуватись Дата прийняття - це тези дисертацій (прийнята університетським підрозділом) або стаття (прийнята журналом)."
+
+msgid "Date Copyrighted"
+msgstr "Дата авторського права"
+
+msgid "Date of copyright."
+msgstr "Дата, коли почало діяти авторське право."
+
+msgid "Date Submitted"
+msgstr "Дата подання"
+
+msgid ""
+"Date of submission of the resource. Examples of resources to which a Date "
+"Submitted may be relevant are a thesis (submitted to a university "
+"department) or an article (submitted to a journal)."
+msgstr "Дата подання ресурсу. Приклади ресурсів, до яких може застосовуватися Дата подання - це тези дисертацій (подані до університетського підрозділу) або стаття (подана до журналу)."
+
+msgid "Date Issued"
+msgstr "Дата випуску"
+
+msgid "Date of formal issuance (e.g., publication) of the resource."
+msgstr "Дата офіційного випуску (наприклад, публікації) ресурсу."
+
+msgid "Date on which the resource was changed."
+msgstr "Дата зміни ресурсу."
+
+msgid "Date Valid"
+msgstr "Дійсна дата"
+
+msgid "Date (often a range) of validity of a resource."
+msgstr "Дата (часто діапазон) дії ресурсу."
+
+msgid "Access Rights"
+msgstr "Права доступу"
+
+msgid ""
+"Information about who can access the resource or an indication of its "
+"security status. Access Rights may include information regarding access or "
+"restrictions based on privacy, security, or other policies."
+msgstr "Інформація про те, хто може отримати доступ до ресурсу або вказати його статус безпеки. Права доступу можуть включати інформацію про доступ або обмеження доступу на основі конфіденційності, безпеки чи інших правил."
+
+msgid "License"
+msgstr "Ліцензія"
+
+msgid ""
+"A legal document giving official permission to do something with the "
+"resource."
+msgstr "Юридичний документ, що надає офіційний дозвіл щось зробити з ресурсом."
+
+msgid "Conforms To"
+msgstr "Відповідає "
+
+msgid "An established standard to which the described resource conforms."
+msgstr "Встановлений стандарт, якому відповідає описаний ресурс."
+
+msgid "Has Format"
+msgstr "Має формат"
+
+msgid ""
+"A related resource that is substantially the same as the pre-existing "
+"described resource, but in another format."
+msgstr "Пов'язаний ресурс, який по суті такий самий, як попередній описаний ресурс, але в іншому форматі."
+
+msgid "Has Part"
+msgstr "Має частину"
+
+msgid ""
+"A related resource that is included either physically or logically in the "
+"described resource."
+msgstr "Пов'язаний ресурс, який включений в описаному ресурсі або фізично або логічно."
+
+msgid "Has Version"
+msgstr "Має версію"
+
+msgid ""
+"A related resource that is a version, edition, or adaptation of the "
+"described resource."
+msgstr "Пов'язаний ресурс, є версією, іншим виданням або адаптацією описаного ресурсу."
+
+msgid "Is Format Of"
+msgstr "Формат"
+
+msgid ""
+"A related resource that is substantially the same as the described resource,"
+" but in another format."
+msgstr "Пов'язаний ресурс, який по суті такий самий, як описаний ресурс, але в іншому форматі."
+
+msgid "Is Part Of"
+msgstr "Частина з"
+
+msgid ""
+"A related resource in which the described resource is physically or "
+"logically included."
+msgstr "Пов'язаний ресурс, в якому описаний ресурс включений фізично або логічно."
+
+msgid "Is Referenced By"
+msgstr "Посилається на"
+
+msgid ""
+"A related resource that references, cites, or otherwise points to the "
+"described resource."
+msgstr "Пов'язаний ресурс, який посилається, цитує або іншим чином вказує на описаний ресурс."
+
+msgid "Is Replaced By"
+msgstr "Змінено на"
+
+msgid ""
+"A related resource that supplants, displaces, or supersedes the described "
+"resource."
+msgstr "Пов'язаний ресурс, який замінює описаний ресурс."
+
+msgid "Is Required By"
+msgstr "Вимагає"
+
+msgid ""
+"A related resource that requires the described resource to support its "
+"function, delivery, or coherence."
+msgstr "Пов'язаний ресурс, який вимагає описаного ресурсу для підтримки його функції, доставки або узгодженості."
+
+msgid "Is Version Of"
+msgstr "Версія"
+
+msgid ""
+"A related resource of which the described resource is a version, edition, or"
+" adaptation. Changes in version imply substantive changes in content rather "
+"than differences in format."
+msgstr "Пов'язаний ресурс, описаний ресурс якого є версією, перевиданням або адаптацією. Зміни у версії передбачають суттєві зміни у змісті, ніж відмінності у форматі."
+
+msgid "References"
+msgstr "Посилання"
+
+msgid ""
+"A related resource that is referenced, cited, or otherwise pointed to by the"
+" described resource."
+msgstr "Пов'язаний ресурс, на який посилається, цитує чи іншим чином вказує описаний ресурс."
+
+msgid "Replaces"
+msgstr "Зміни"
+
+msgid ""
+"A related resource that is supplanted, displaced, or superseded by the "
+"described resource."
+msgstr "Пов'язаний ресурс, який замінюється описаним ресурсом."
+
+msgid "Requires"
+msgstr "Вимоги"
+
+msgid ""
+"A related resource that is required by the described resource to support its"
+" function, delivery, or coherence."
+msgstr "Пов'язаний ресурс, який вимагається описаним ресурсом для підтримки його функції, доставки або узгодженості."
+
+msgid "Extent"
+msgstr "Розмір"
+
+msgid "The size or duration of the resource."
+msgstr "Розмір або тривалість ресурсу."
+
+msgid "Medium"
+msgstr "Матеріал"
+
+msgid "The material or physical carrier of the resource."
+msgstr "Матеріал або фізичний носій ресурсу."
+
+msgid ""
+"A bibliographic reference for the resource. Recommended practice is to "
+"include sufficient bibliographic detail to identify the resource as "
+"unambiguously as possible."
+msgstr "Бібліографічне посилання для ресурсу. Рекомендована практика - включити достатню бібліографічну інформацію, щоб максимально визначити ресурс."
+
+msgid "Spatial Coverage"
+msgstr "Просторове охоплення"
+
+msgid "Spatial characteristics of the resource."
+msgstr "Просторові характеристики для ресурсу."
+
+msgid "Temporal Coverage"
+msgstr "Тимчасове охоплення"
+
+msgid "Temporal characteristics of the resource."
+msgstr "Тимчасові характеристики ресурсу."
+
+msgid "Accrual Method"
+msgstr "Метод накопичення"
+
+msgid "The method by which items are added to a collection."
+msgstr "Метод, за допомогою якого елементи додаються до колекції."
+
+msgid "Accrual Periodicity"
+msgstr "Періодичність додавання"
+
+msgid "The frequency with which items are added to a collection."
+msgstr "Частота, з якою елементи додаються до колекції."
+
+msgid "Accrual Policy"
+msgstr "Політики додавання"
+
+msgid "The policy governing the addition of items to a collection."
+msgstr "Політики додавання елементів до колекції."
+
+msgid "Audience"
+msgstr "Аудиторія"
+
+msgid "A class of entity for whom the resource is intended or useful."
+msgstr "Аудиторія, для якої призначений або корисний ресурс."
+
+msgid "Audience Education Level"
+msgstr "Рівень освіти аудиторії"
+
+msgid ""
+"A class of entity, defined in terms of progression through an educational or"
+" training context, for which the described resource is intended."
+msgstr "Аудиторія, яку визначено з точки зору прогресу через освітній або практичний контекст, для якого описаний ресурс призначений."
+
+msgid "Mediator"
+msgstr "Посередник"
+
+msgid ""
+"An entity that mediates access to the resource and for whom the resource is "
+"intended or useful. In an educational context, a mediator might be a parent,"
+" teacher, teaching assistant, or care-giver."
+msgstr "Особа, або установа, які є посередниками у створенні доступ до ресурсу і, для якого ресурс призначений або корисний. У навчальному контексті, посередником може бути батько, вчитель, вчитель-помічник або доглядач."
+
+msgid "Instructional Method"
+msgstr "Навчальний метод"
+
+msgid ""
+"A process, used to engender knowledge, attitudes and skills, that the "
+"described resource is designed to support. Instructional Method will "
+"typically include ways of presenting instructional materials or conducting "
+"instructional activities, patterns of learner-to-learner and learner-to-"
+"instructor interactions, and mechanisms by which group and individual levels"
+" of learning are measured. Instructional methods include all aspects of the "
+"instruction and learning processes from planning and implementation through "
+"evaluation and feedback."
+msgstr "Процес, який використовується для поглиблення знань та вміння, що призначений для підтримки описаного ресурсу. Навчальний метод, як правило, включає способи подання навчальних матеріалів або проведення навчальних заходів, моделей взаємодії між вчителями-учнями та учнями-інструкторами, а також механізми, за допомогою яких вимірюються групові та індивідуальні рівні навчання. Навчальні методи включають в себе всі аспекти навчання та процесів навчання від планування та впровадження шляхом оцінки та зворотного зв'язку."
+
+msgid "Provenance"
+msgstr "Походження"
+
+msgid ""
+"A statement of any changes in ownership and custody of the resource since "
+"its creation that are significant for its authenticity, integrity, and "
+"interpretation. The statement may include a description of any changes "
+"successive custodians made to the resource."
+msgstr "Угода про будь-які зміни власності та зберіганні ресурсу з моменту його створення, які є важливими для його автентичності, цілісності та тлумачення. Угода може містити опис будь-яких змін, що послідовно вносяться зберігачами ресурсу."
+
+msgid "Rights Holder"
+msgstr "Правовласник"
+
+msgid "A person or organization owning or managing rights over the resource."
+msgstr "Людина або організація, що володіє чи управляє правами на ресурс."
+
+#: DublinCoreExtendedPlugin.php:82
+#, php-format
+msgid ""
+"%sWarning%s: This will remove all the Dublin Core elements added by this "
+"plugin and permanently delete all element texts entered in those fields.%s"
+msgstr "%s Застереження %s : Це призведе до видалення всіх елементів Dublin Core, доданих цим плагіном, і назавжди видалить всі текстові елементи, введені в ці поля. %s"

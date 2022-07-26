@@ -3,57 +3,58 @@
 # This file is distributed under the same license as the Omeka package.
 # 
 # Translators:
-# Andrzej Kubicki <ankubicki@gmail.com>, 2014
-# Tomasz Sopylo <tomasz@sopylo.pl>, 2015
+# Anna Svensson <anna.svensson@ub.gu.se>, 2020
+# Jonas Lindqvist <info@melvik.se>, 2013
+# Peter Krantz <peter.krantz@gmail.com>, 2015
 msgid ""
 msgstr ""
 "Project-Id-Version: Omeka Classic\n"
 "Report-Msgid-Bugs-To: http://github.com/omeka/plugin-DublinCoreExtended/issues\n"
 "POT-Creation-Date: 2012-12-17 21:49-0500\n"
 "PO-Revision-Date: 2013-02-13 18:04+0000\n"
-"Last-Translator: Tomasz Sopylo <tomasz@sopylo.pl>, 2015\n"
-"Language-Team: Polish (http://www.transifex.com/omeka/omeka/language/pl/)\n"
+"Last-Translator: Anna Svensson <anna.svensson@ub.gu.se>, 2020\n"
+"Language-Team: Swedish (Sweden) (http://www.transifex.com/omeka/omeka/language/sv_SE/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: pl\n"
-"Plural-Forms: nplurals=4; plural=(n==1 ? 0 : (n%10>=2 && n%10<=4) && (n%100<12 || n%100>14) ? 1 : n!=1 && (n%10>=0 && n%10<=1) || (n%10>=5 && n%10<=9) || (n%100>=12 && n%100<=14) ? 2 : 3);\n"
+"Language: sv_SE\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 msgid "Alternative Title"
-msgstr "Alternatywny tytuł"
+msgstr "Alternativ titel"
 
 msgid ""
 "An alternative name for the resource. The distinction between titles and "
 "alternative titles is application-specific."
-msgstr "Alternatywna nazwa dla zasobu. Rozróżnienie pomiędzy tytułem i tytułem alternatywnym jest uzależnione od zastosowania."
+msgstr ""
 
 msgid "Abstract"
-msgstr "Abstrakt"
+msgstr "Sammanfattning"
 
 msgid "A summary of the resource."
-msgstr "Podsumowanie zasobu."
+msgstr ""
 
 msgid "Table Of Contents"
-msgstr "Spis treści"
+msgstr "Innehållsförteckning"
 
 msgid "A list of subunits of the resource."
-msgstr "Lista jednostek podrzędnych dla zasobu."
+msgstr ""
 
 msgid "Date Available"
-msgstr "Data udostępnienia"
+msgstr "Datum för tillgängliggörande"
 
 msgid ""
 "Date (often a range) that the resource became or will become available."
-msgstr "Data (często zakres dat) kiedy zasób został lub zostanie udostępniony."
+msgstr ""
 
 msgid "Date Created"
-msgstr "Data utworzenia"
+msgstr "Tillkomstdatum"
 
 msgid "Date of creation of the resource."
-msgstr "Data utworzenia zasobu."
+msgstr ""
 
 msgid "Date Accepted"
-msgstr ""
+msgstr "Antagningsdatum"
 
 msgid ""
 "Date of acceptance of the resource. Examples of resources to which a Date "
@@ -62,13 +63,13 @@ msgid ""
 msgstr ""
 
 msgid "Date Copyrighted"
-msgstr ""
+msgstr "Copyrightdatum"
 
 msgid "Date of copyright."
 msgstr ""
 
 msgid "Date Submitted"
-msgstr ""
+msgstr "Inlämningsdatum"
 
 msgid ""
 "Date of submission of the resource. Examples of resources to which a Date "
@@ -77,22 +78,22 @@ msgid ""
 msgstr ""
 
 msgid "Date Issued"
-msgstr ""
+msgstr "Utgivningsdatum"
 
 msgid "Date of formal issuance (e.g., publication) of the resource."
 msgstr ""
 
 msgid "Date on which the resource was changed."
-msgstr ""
+msgstr "Ändringsdatum"
 
 msgid "Date Valid"
-msgstr ""
+msgstr "Giltighetsdatum"
 
 msgid "Date (often a range) of validity of a resource."
 msgstr ""
 
 msgid "Access Rights"
-msgstr ""
+msgstr "Åtkomsträttigheter"
 
 msgid ""
 "Information about who can access the resource or an indication of its "
@@ -101,7 +102,7 @@ msgid ""
 msgstr ""
 
 msgid "License"
-msgstr ""
+msgstr "Licens"
 
 msgid ""
 "A legal document giving official permission to do something with the "
@@ -109,13 +110,13 @@ msgid ""
 msgstr ""
 
 msgid "Conforms To"
-msgstr ""
+msgstr "Överrensstämmer med"
 
 msgid "An established standard to which the described resource conforms."
 msgstr ""
 
 msgid "Has Format"
-msgstr ""
+msgstr "Har format"
 
 msgid ""
 "A related resource that is substantially the same as the pre-existing "
@@ -123,7 +124,7 @@ msgid ""
 msgstr ""
 
 msgid "Has Part"
-msgstr ""
+msgstr "Har del"
 
 msgid ""
 "A related resource that is included either physically or logically in the "
@@ -131,7 +132,7 @@ msgid ""
 msgstr ""
 
 msgid "Has Version"
-msgstr ""
+msgstr "Har version"
 
 msgid ""
 "A related resource that is a version, edition, or adaptation of the "
@@ -139,7 +140,7 @@ msgid ""
 msgstr ""
 
 msgid "Is Format Of"
-msgstr ""
+msgstr "Är format av"
 
 msgid ""
 "A related resource that is substantially the same as the described resource,"
@@ -147,7 +148,7 @@ msgid ""
 msgstr ""
 
 msgid "Is Part Of"
-msgstr ""
+msgstr "Är del av"
 
 msgid ""
 "A related resource in which the described resource is physically or "
@@ -155,7 +156,7 @@ msgid ""
 msgstr ""
 
 msgid "Is Referenced By"
-msgstr ""
+msgstr "Citerad av"
 
 msgid ""
 "A related resource that references, cites, or otherwise points to the "
@@ -163,7 +164,7 @@ msgid ""
 msgstr ""
 
 msgid "Is Replaced By"
-msgstr ""
+msgstr "Ersatt av"
 
 msgid ""
 "A related resource that supplants, displaces, or supersedes the described "
@@ -179,7 +180,7 @@ msgid ""
 msgstr ""
 
 msgid "Is Version Of"
-msgstr ""
+msgstr "Är version av"
 
 msgid ""
 "A related resource of which the described resource is a version, edition, or"
@@ -188,7 +189,7 @@ msgid ""
 msgstr ""
 
 msgid "References"
-msgstr ""
+msgstr "Referenser"
 
 msgid ""
 "A related resource that is referenced, cited, or otherwise pointed to by the"
@@ -196,7 +197,7 @@ msgid ""
 msgstr ""
 
 msgid "Replaces"
-msgstr ""
+msgstr "Ersätter"
 
 msgid ""
 "A related resource that is supplanted, displaced, or superseded by the "
@@ -204,7 +205,7 @@ msgid ""
 msgstr ""
 
 msgid "Requires"
-msgstr ""
+msgstr "Kräver"
 
 msgid ""
 "A related resource that is required by the described resource to support its"
@@ -212,13 +213,13 @@ msgid ""
 msgstr ""
 
 msgid "Extent"
-msgstr ""
+msgstr "Omfattning"
 
 msgid "The size or duration of the resource."
 msgstr ""
 
 msgid "Medium"
-msgstr ""
+msgstr "Medium"
 
 msgid "The material or physical carrier of the resource."
 msgstr ""
@@ -230,13 +231,13 @@ msgid ""
 msgstr ""
 
 msgid "Spatial Coverage"
-msgstr ""
+msgstr "Geografisk täckning"
 
 msgid "Spatial characteristics of the resource."
 msgstr ""
 
 msgid "Temporal Coverage"
-msgstr ""
+msgstr "Tidsmässig täckning"
 
 msgid "Temporal characteristics of the resource."
 msgstr ""
@@ -260,7 +261,7 @@ msgid "The policy governing the addition of items to a collection."
 msgstr ""
 
 msgid "Audience"
-msgstr ""
+msgstr "Publik"
 
 msgid "A class of entity for whom the resource is intended or useful."
 msgstr ""
@@ -297,7 +298,7 @@ msgid ""
 msgstr ""
 
 msgid "Provenance"
-msgstr ""
+msgstr "Proveniens"
 
 msgid ""
 "A statement of any changes in ownership and custody of the resource since "
@@ -307,7 +308,7 @@ msgid ""
 msgstr ""
 
 msgid "Rights Holder"
-msgstr ""
+msgstr "Rättighetsinnehavare"
 
 msgid "A person or organization owning or managing rights over the resource."
 msgstr ""

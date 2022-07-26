@@ -3,14 +3,14 @@
 # This file is distributed under the same license as the Omeka package.
 # 
 # Translators:
-# Hong Zhang <zhangh@unlv.nevada.edu>, 2013
+# Hong Zhang <zhangh@unlv.nevada.edu>, 2013,2018
 msgid ""
 msgstr ""
-"Project-Id-Version: Omeka\n"
+"Project-Id-Version: Omeka Classic\n"
 "Report-Msgid-Bugs-To: http://github.com/omeka/plugin-DublinCoreExtended/issues\n"
 "POT-Creation-Date: 2012-12-17 21:49-0500\n"
-"PO-Revision-Date: 2013-02-26 21:28+0000\n"
-"Last-Translator: Hong Zhang <zhangh@unlv.nevada.edu>\n"
+"PO-Revision-Date: 2013-02-13 18:04+0000\n"
+"Last-Translator: Hong Zhang <zhangh@unlv.nevada.edu>, 2013,2018\n"
 "Language-Team: Chinese (China) (http://www.transifex.com/omeka/omeka/language/zh_CN/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -19,21 +19,21 @@ msgstr ""
 "Plural-Forms: nplurals=1; plural=0;\n"
 
 msgid "Alternative Title"
-msgstr "交替题名"
+msgstr "替代标题"
 
 msgid ""
 "An alternative name for the resource. The distinction between titles and "
 "alternative titles is application-specific."
-msgstr "资源的其它题名。题名和其它题名的区别取决于具体应用。"
+msgstr "资源的替代名称。标题和替代标题的区别取决于具体应用。"
 
 msgid "Abstract"
 msgstr "摘要"
 
 msgid "A summary of the resource."
-msgstr "资源内容的总结。"
+msgstr "资源总结。"
 
 msgid "Table Of Contents"
-msgstr "目次"
+msgstr "目录表"
 
 msgid "A list of subunits of the resource."
 msgstr "资源的子单元列表。"
@@ -85,10 +85,10 @@ msgid "Date on which the resource was changed."
 msgstr "资源被修改的日期。"
 
 msgid "Date Valid"
-msgstr "生效日期"
+msgstr "有效日期"
 
 msgid "Date (often a range) of validity of a resource."
-msgstr "资源生效的日期（通常是一个时间段）。"
+msgstr "资源有效日期（通常是一个时间段）。"
 
 msgid "Access Rights"
 msgstr "访问权限"
@@ -97,7 +97,7 @@ msgid ""
 "Information about who can access the resource or an indication of its "
 "security status. Access Rights may include information regarding access or "
 "restrictions based on privacy, security, or other policies."
-msgstr "关于谁能访问资源或者表明资源密级状态的信息。访问权限包括基于隐私、安全或其它规则才能对资源进行访问或限制的信息。"
+msgstr "关于谁能访问资源或者表明资源安全状态的信息。访问权限包括基于隐私、安全或其它规则才能对资源进行访问或限制的信息。"
 
 msgid "License"
 msgstr "执照"
@@ -108,29 +108,29 @@ msgid ""
 msgstr "正式授权可以使用资源的法律文件。"
 
 msgid "Conforms To"
-msgstr "遵循"
+msgstr "符合"
 
 msgid "An established standard to which the described resource conforms."
-msgstr "所描述资源所遵循的已确立标准。"
+msgstr "所描述资源符合的已确立标准。"
 
 msgid "Has Format"
-msgstr "格式转换为"
+msgstr "有格式为"
 
 msgid ""
 "A related resource that is substantially the same as the pre-existing "
 "described resource, but in another format."
-msgstr "与早先存在的所描述资源本质上相同但是不同格式的相关资源。"
+msgstr "与已存在的所描述资源极其相似的但是不同格式的相关资源。"
 
 msgid "Has Part"
-msgstr "部分为"
+msgstr "有部分为"
 
 msgid ""
 "A related resource that is included either physically or logically in the "
 "described resource."
-msgstr "在物理或逻辑上包容于所描述资源内的相关资源。"
+msgstr "在物理或逻辑上包括在所描述资源内的相关资源。"
 
 msgid "Has Version"
-msgstr "版本关联"
+msgstr "有版本为"
 
 msgid ""
 "A related resource that is a version, edition, or adaptation of the "
@@ -143,7 +143,7 @@ msgstr "格式转换于"
 msgid ""
 "A related resource that is substantially the same as the described resource,"
 " but in another format."
-msgstr "与所描述资源在本质上相同但是不同格式的相关资源。"
+msgstr "与所描述资源极其相似的但是不同格式的相关资源。"
 
 msgid "Is Part Of"
 msgstr "包含于"
@@ -154,7 +154,7 @@ msgid ""
 msgstr "在物理或逻辑上包括了所描述资源的相关资源。"
 
 msgid "Is Referenced By"
-msgstr "被参照"
+msgstr "被以下的引用："
 
 msgid ""
 "A related resource that references, cites, or otherwise points to the "
@@ -162,7 +162,7 @@ msgid ""
 msgstr "参考、引用或指向所描述资源的相关资源。"
 
 msgid "Is Replaced By"
-msgstr "被替代"
+msgstr "被以下的替代："
 
 msgid ""
 "A related resource that supplants, displaces, or supersedes the described "
@@ -170,24 +170,24 @@ msgid ""
 msgstr "取代、置换或接替了所描述资源的相关资源。"
 
 msgid "Is Required By"
-msgstr "被需求"
+msgstr "被以下的需求："
 
 msgid ""
 "A related resource that requires the described resource to support its "
 "function, delivery, or coherence."
-msgstr "要求所描述资源支持它的功能、传送或一致性的相关资源。"
+msgstr "要求所描述资源支持它的功能、交付或一致性的相关资源。"
 
 msgid "Is Version Of"
-msgstr "原版本"
+msgstr "原版本为"
 
 msgid ""
 "A related resource of which the described resource is a version, edition, or"
 " adaptation. Changes in version imply substantive changes in content rather "
 "than differences in format."
-msgstr "所描述的资源是相关资源的译本、修订本或改编本。版本的变化意味着是内容而不是格式有了实质的改变。"
+msgstr "所描述资源是相关资源的译本、修订本或改编本。版本的变化意味着是内容而不是格式有了实质的改变。"
 
 msgid "References"
-msgstr "参照"
+msgstr "参考资料"
 
 msgid ""
 "A related resource that is referenced, cited, or otherwise pointed to by the"
@@ -203,24 +203,24 @@ msgid ""
 msgstr "被所描述资源取代、置换或接替了的相关资源。"
 
 msgid "Requires"
-msgstr "需求"
+msgstr "要求"
 
 msgid ""
 "A related resource that is required by the described resource to support its"
 " function, delivery, or coherence."
-msgstr "被所描述资源要求支持它的功能、传送或一致性的相关资源。"
+msgstr "被所描述资源要求支持它的功能、交付或一致性的相关资源。"
 
 msgid "Extent"
-msgstr "资源数量"
+msgstr "程度"
 
 msgid "The size or duration of the resource."
-msgstr "资源的大小多寡或持续时间。"
+msgstr "资源的尺寸或持续时间。"
 
 msgid "Medium"
-msgstr "媒体"
+msgstr "媒介"
 
 msgid "The material or physical carrier of the resource."
-msgstr "资源的物质载体或物理载体。"
+msgstr "资源的物质或物理载体。"
 
 msgid ""
 "A bibliographic reference for the resource. Recommended practice is to "
@@ -241,31 +241,31 @@ msgid "Temporal characteristics of the resource."
 msgstr "资源的时间特征。"
 
 msgid "Accrual Method"
-msgstr "更新方法"
+msgstr "收藏方法"
 
 msgid "The method by which items are added to a collection."
 msgstr "条目添加至馆藏中的方法。"
 
 msgid "Accrual Periodicity"
-msgstr "更新周期"
+msgstr "收藏周期"
 
 msgid "The frequency with which items are added to a collection."
-msgstr "条目添加至馆藏中的频率。"
+msgstr "条目添加至馆藏中的频度。"
 
 msgid "Accrual Policy"
-msgstr "更新政策"
+msgstr "收藏政策"
 
 msgid "The policy governing the addition of items to a collection."
-msgstr "管理向馆藏添加条目的政策声明。"
+msgstr "指导将条目添加进馆藏的政策。"
 
 msgid "Audience"
-msgstr "适用对象"
+msgstr "听众"
 
 msgid "A class of entity for whom the resource is intended or useful."
 msgstr "资源倾向或适用于的一类实体。"
 
 msgid "Audience Education Level"
-msgstr "适用对象的教育水平"
+msgstr "听众受教育程度"
 
 msgid ""
 "A class of entity, defined in terms of progression through an educational or"
@@ -273,7 +273,7 @@ msgid ""
 msgstr "资源的适用对象在接受了教育或培训之后所能取得的教育程度的这一类实体的定义。"
 
 msgid "Mediator"
-msgstr "中介"
+msgstr "调停者"
 
 msgid ""
 "An entity that mediates access to the resource and for whom the resource is "
@@ -296,7 +296,7 @@ msgid ""
 msgstr "所描述资源所支持的用于生成知识、看法和技巧的过程。指导方法一般将会包括表现指导资料的方法、或者引导指导性行为的方法，还有学习者到学习者、学习者到教师的指导模式，还有衡量团体和个人学习水平的机制。指导方法包括指导和学习过程的所有方面，从规划和实施一直到评估和反馈。"
 
 msgid "Provenance"
-msgstr "保管历史"
+msgstr "出处"
 
 msgid ""
 "A statement of any changes in ownership and custody of the resource since "
